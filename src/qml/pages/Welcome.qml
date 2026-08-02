@@ -26,7 +26,7 @@ Welcome.Page {
     actions: [
         Kirigami.Action {
             text: i18nc("@action:inmenu", "About Welcome Center")
-            icon.name: "start-here-kde-plasma"
+            icon.name: "start-here-sonicde-plasma"
             onTriggered: pageStack.layers.push(aboutAppPage)
             displayHint: Kirigami.DisplayHint.AlwaysHide
         },

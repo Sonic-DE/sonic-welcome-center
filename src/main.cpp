@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
         KAboutLicense::GPL,
         // Copyright Statement.
         i18nc("@info copyright string", "© 2021–2024, KDE Community"));
-    aboutData.setProgramLogo(QIcon::fromTheme(QStringLiteral("start-here-kde-plasma")));
+    aboutData.setProgramLogo(QIcon::fromTheme(QStringLiteral("start-here-sonicde-plasma")));
     aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"),
                         i18nc("@info:credit", "Author"),
                         QStringLiteral("kinofhek@gmail.com"),

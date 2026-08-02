@@ -22,6 +22,6 @@ Private.MockAppletBase {
         implicitWidth: 36  // Hardcoded from original
         implicitHeight: 36 // Hardcoded from original
 
-        source: "start-here-kde-symbolic"
+        source: "start-here-sonicde-symbolic"
     }
 }

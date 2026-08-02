@@ -332,7 +332,7 @@ Welcome.Page {
 
                             implicitWidth: Kirigami.Units.iconSizes.enormous
                             implicitHeight: Kirigami.Units.iconSizes.enormous
-                            source: "start-here-kde-plasma"
+                            source: "start-here-sonicde-plasma"
                         }
 
                         Kirigami.Icon {

@@ -11,7 +11,7 @@ import org.kde.kirigami as Kirigami
 Item {
     id: trayIcon
 
-    property string source: "start-here-kde-symbolic"
+    property string source: "start-here-sonicde-symbolic"
 
     implicitWidth: 30
     implicitHeight: 30
