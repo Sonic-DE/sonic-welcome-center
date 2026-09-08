@@ -6,16 +6,17 @@
 
 import QtQuick
 import QtQuick.Effects
-import Qt5Compat.GraphicalEffects
 
 import org.kde.kirigami as Kirigami
 
 import org.kde.plasma.welcome.private as Private
 
+pragma ComponentBehavior: Bound
+
 Kirigami.AbstractCard {
     id: root
 
-    default property alias children: container.children
+    default property alias contentChildren: container.children
 
     property bool applyPlasmaColors: true
     property int backgroundAlignment: Qt.AlignRight | Qt.AlignBottom
@@ -40,11 +41,11 @@ Kirigami.AbstractCard {
     Item {
         id: container
         anchors.fill: parent
-        anchors.margins: root.background.borderWidth
+        anchors.margins: root.background.borderWidth // qmllint disable missing-property
 
         layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
         layer.effect: Kirigami.ShadowedTexture {
-            radius: Kirigami.Units.cornerRadius - root.background.borderWidth
+            radius: Kirigami.Units.cornerRadius - root.background.borderWidth // qmllint disable missing-property
         }
 
         clip: true
@@ -58,10 +59,10 @@ Kirigami.AbstractCard {
 
         Image {
             id: wallpaperImage
-            anchors.left: (root.backgroundAlignment & Qt.AlignLeft) ? parent.left : undefined
+            anchors.left: (root.backgroundAlignment & Qt.AlignLeft) ? parent.left : undefined // qmllint disable Quick.anchor-combinations
             anchors.right: (root.backgroundAlignment & Qt.AlignRight) ? parent.right: undefined
             anchors.horizontalCenter: (root.backgroundAlignment & Qt.AlignHCenter) ? parent.horizontalCenter : undefined
-            anchors.top: (root.backgroundAlignment & Qt.AlignTop) ? parent.top : undefined
+            anchors.top: (root.backgroundAlignment & Qt.AlignTop) ? parent.top : undefined // qmllint disable Quick.anchor-combinations
             anchors.bottom: (root.backgroundAlignment & Qt.AlignBottom) ? parent.bottom : undefined
             anchors.verticalCenter: (root.backgroundAlignment & Qt.AlignVCenter) ? parent.verticalCenter : undefined
 

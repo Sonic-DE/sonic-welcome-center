@@ -6,7 +6,7 @@
 
 import QtQuick
 import QtQuick.Layouts
-import Qt5Compat.GraphicalEffects
+import QtQuick.Effects
 
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.components as PC3
@@ -14,13 +14,17 @@ import org.kde.plasma.extras as PlasmaExtras
 
 import org.kde.plasma.welcome.private as Private
 
+pragma ComponentBehavior: Bound
+
 Item {
     id: root
 
     // We're intentionally ignoring our 16:10 desktop wallpaper (MockDesktop) - whilst that fits the square
     // window, we want to be more representative of what a user will see - most use a 16:9 display.
     readonly property string wallpaper: "file:" + Private.App.installPrefix + "/share/wallpapers/Silver/contents/images/2560x1600.png"
-    readonly property double scale: layout.scale
+    // Named layoutScale rather than scale: scale is a real visual property of
+    // QQuickItem and must not be shadowed.
+    readonly property double layoutScale: layout.scale
 
     // Underlay
     Rectangle {
@@ -36,8 +40,8 @@ Item {
         anchors.centerIn: parent
 
         // Scale nicely (and dynamically, not with a fixed factor)
-        width: (parent.width - Kirigami.Units.smallSpacing * 2) * (1 / scale)
-        height: (parent.height - Kirigami.Units.smallSpacing * 2) * (1 / scale)
+        width: (parent.width - Kirigami.Units.smallSpacing * 2) * (1 / root.layoutScale)
+        height: (parent.height - Kirigami.Units.smallSpacing * 2) * (1 / root.layoutScale)
         scale: Math.max(0.5, Math.min(1, parent.width / (Kirigami.Units.gridUnit * 30), parent.height / (Kirigami.Units.gridUnit * 40)))
         layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
         layer.smooth: true
@@ -65,13 +69,14 @@ Item {
                         mipmap: true
 
                         layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
-                        // MultiEffect does not work for this, so using Qt5Compat.GraphicalEffects
-                        layer.effect: OpacityMask {
+                        layer.effect: MultiEffect {
+                            maskEnabled: true
                             maskSource: Rectangle {
                                 anchors.centerIn: parent
                                 width: desktopThumbnailImage.width
                                 height: desktopThumbnailImage.height
-                                radius: width / 20 // This is the behaviour in overview's DesktopBar
+                                radius: width / 20
+                                layer.enabled: true
                             }
                         }
                     }
@@ -94,7 +99,7 @@ Item {
                         anchors.fill: parent
 
                         elide: Text.ElideRight
-                        text: i18nc("@title The default name of a Plasma desktop as seen in the overview", "Desktop 1")
+                        text: i18nc("@title The default name of a Plasma desktop as seen in the overview", "Desktop 1") // qmllint disable unqualified
                         textFormat: Text.PlainText
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter

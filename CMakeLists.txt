@@ -28,6 +28,7 @@ find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 
+include(CTest)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
 include(KDEInstallDirs)
@@ -54,6 +55,9 @@ ecm_setup_version(${PROJECT_VERSION}
 )
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Network Qml QuickControls2 Svg)
+if(BUILD_TESTING)
+    find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS QuickTest Test)
+endif()
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS Kirigami Config CoreAddons ConfigWidgets Crash DBusAddons I18n KIO NewStuff Service WindowSystem DBusAddons KCMUtils Svg JobWidgets GlobalAccel)
 find_package(Plasma ${PROJECT_DEP_VERSION} REQUIRED)
 find_package(KF6KirigamiAddons 1.12.0 REQUIRED)
@@ -70,6 +74,9 @@ ecm_set_disabled_deprecation_versions(QT 6.11.0
 )
 
 add_subdirectory(src)
+if(BUILD_TESTING)
+    add_subdirectory(tests)
+endif()
 
 install(PROGRAMS org.kde.plasma-welcome.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.plasma-welcome.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})

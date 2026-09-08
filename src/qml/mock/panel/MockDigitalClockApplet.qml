@@ -6,10 +6,10 @@
 
 import QtQuick
 import QtQuick.Layouts
+import QtQml
 
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.components as PC3
-import org.kde.plasma.plasma5support as P5Support
 
 import org.kde.plasma.welcome.private as Private
 
@@ -24,12 +24,14 @@ Private.MockAppletBase {
     // this, the width becomes 79 (even when set explicitly)
     Layout.preferredWidth: implicitWidth
 
-    // To get the current date and time
-    P5Support.DataSource {
-        id: timeSource
-        engine: "time"
-        connectedSources: ["Local"]
+    property date dateTime: new Date()
+    property bool clockUpdatesEnabled: true
+
+    Timer {
         interval: 1000
+        repeat: true
+        running: applet.clockUpdatesEnabled
+        onTriggered: applet.dateTime = new Date()
     }
 
     PC3.Label {
@@ -42,13 +44,14 @@ Private.MockAppletBase {
         height: 15.68 // Hardcoded from original
         font.pixelSize: 16 // Hardcoded from original
 
-        text: Qt.formatTime(timeSource.data["Local"]["DateTime"])
+        text: Qt.formatTime(applet.dateTime)
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
     }
 
     PC3.Label {
         id: dateLabel
+        objectName: "dateLabel"
         anchors.top: timeLabel.bottom
         anchors.horizontalCenter: timeLabel.horizontalCenter
 
@@ -56,7 +59,7 @@ Private.MockAppletBase {
         height: 12.544 // Hardcoded from original
         font.pixelSize: 13 // Hardcoded from original
 
-        text: Qt.formatDate(timeSource.data["Local"]["DateTime"], Qt.DefaultLocaleShortDate)
+        text: Qt.locale().toString(applet.dateTime, Locale.ShortFormat)
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
     }

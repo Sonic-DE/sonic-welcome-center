@@ -24,7 +24,6 @@ Dependencies:
     'libraries/kirigami-addons': '@latest-kf6'
 
 runtime-dependencies:
- 'plasma/plasma5support': '@same'
  'plasma/plasma-nm': '@same'
 
 Options:
