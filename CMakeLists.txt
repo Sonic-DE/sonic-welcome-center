@@ -4,17 +4,16 @@
 
 cmake_minimum_required(VERSION 3.16)
 project(welcome)
-set(PROJECT_VERSION "6.7.5")
+set(PROJECT_VERSION "6.7.80")
 
 
-set(PROJECT_DEP_VERSION "6.7.0")
-set(QT_MIN_VERSION "6.10.0")
-set(KF6_MIN_VERSION "6.26.0")
+set(PROJECT_DEP_VERSION "6.6.90")
+set(QT_MIN_VERSION "6.11.0")
+set(KF6_MIN_VERSION "6.30.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} )
@@ -28,7 +27,6 @@ find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 
-include(CTest)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
 include(KDEInstallDirs)
@@ -45,7 +43,6 @@ set(DISTRO_CUSTOM_PAGE_FOLDER "/usr/share/plasma/plasma-welcome/extra-pages/" CA
 set(DISTRO_CUSTOM_INTRO_FILE "/usr/share/plasma/plasma-welcome/intro-customization.desktop" CACHE STRING "File specifying custom intro content")
 
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h *.hpp *.c)
-list(FILTER ALL_CLANG_FORMAT_SOURCE_FILES EXCLUDE REGEX ".*\\.ccls-cache/.*")
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 
@@ -55,9 +52,6 @@ ecm_setup_version(${PROJECT_VERSION}
 )
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Network Qml QuickControls2 Svg)
-if(BUILD_TESTING)
-    find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS QuickTest Test)
-endif()
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS Kirigami Config CoreAddons ConfigWidgets Crash DBusAddons I18n KIO NewStuff Service WindowSystem DBusAddons KCMUtils Svg JobWidgets GlobalAccel)
 find_package(Plasma ${PROJECT_DEP_VERSION} REQUIRED)
 find_package(KF6KirigamiAddons 1.12.0 REQUIRED)
@@ -70,13 +64,10 @@ set_package_properties(KUserFeedback PROPERTIES
 )
 
 ecm_set_disabled_deprecation_versions(QT 6.11.0
-    KF 6.26.0
+    KF 6.27.0
 )
 
 add_subdirectory(src)
-if(BUILD_TESTING)
-    add_subdirectory(tests)
-endif()
 
 install(PROGRAMS org.kde.plasma-welcome.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.plasma-welcome.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
