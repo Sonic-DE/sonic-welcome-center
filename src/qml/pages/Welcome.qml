@@ -101,6 +101,7 @@ Welcome.Page {
                     id: image
                     source: Private.App.customIntroIcon || "sonron-welcome.png"
                     fillMode: Image.PreserveAspectFit
+                    mipmap: true
 
                     Kirigami.PlaceholderMessage {
                         width: image.width
