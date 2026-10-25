@@ -54,7 +54,7 @@ Welcome.Page {
             Layout.fillWidth: true
 
             text: xi18nc("@info:usagetip", "To get started, launch <interface>System Settings</interface> and search for “Activities”. On that page, you can create more Activities. You can then switch between them using the <shortcut>%1</shortcut> keyboard shortcut.",
-                         Welcome.Utils.globalShortcutText("plasmashell", "manage activities"))
+                         Welcome.Utils.globalShortcutText("sonicshell", "manage activities"))
             wrapMode: Text.WordWrap
         }
     }
