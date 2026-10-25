@@ -71,20 +71,14 @@ ecm_target_qml_sources(plasma-welcome
     qml/pages/powerfulwhenneeded/KDEConnect.qml
     qml/pages/powerfulwhenneeded/Activities.qml
     qml/pages/powerfulwhenneeded/Vaults.qml
-    qml/pages/Discover.qml
     qml/pages/Feedback.qml
     qml/pages/Enjoy.qml
-    qml/pages/enjoy/Supporters.qml
+    # Donation-related supporting-member UI is disabled for now.
+    # qml/pages/enjoy/Supporters.qml
 
     RESOURCES
-    assets/blender.svg
-    assets/endlesssky.png
-    assets/gimp.svg
-    assets/krita.svg
     assets/konqi-kde-hi.png
     assets/konqi-default.png
-    assets/kstars.svg
-    assets/vlc.png
 )
 
 target_compile_definitions(plasma-welcome PRIVATE "DISTRO_CUSTOM_PAGE_FOLDER=\"${DISTRO_CUSTOM_PAGE_FOLDER}\"")

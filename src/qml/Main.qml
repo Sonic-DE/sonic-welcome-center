@@ -138,8 +138,6 @@ Kirigami.ApplicationWindow {
                 _pushPage(_createPage("SimpleByDefault.qml"));
                 _pushPage(_createPage("PowerfulWhenNeeded.qml"));
 
-                _pushPage(_createPage("Discover.qml"));
-
                 if (Private.App.mode !== Private.App.Live) {
                     _pushPage(_createPage("Feedback.qml"));
                 }

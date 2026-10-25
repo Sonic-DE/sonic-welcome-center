@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-13 00:45+0000\n"
+"Report-Msgid-Bugs-To: https://sonicde.org\n"
+"POT-Creation-Date: 2026-10-25 21:33+1000\n"
 "PO-Revision-Date: 2026-06-05 22:03+0200\n"
 "Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -23,21 +23,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.04.2\n"
 
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Deutsches KDE-Übersetzungsteam"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde-i18n-de@kde.org"
-
 #: src/main.cpp:43
 #, kde-format
 msgctxt "@info:usagetip"
-msgid "Friendly onboarding wizard for Plasma"
-msgstr "Der freundliche Begrüßungsassistent für Plasma"
+msgid "Friendly onboarding wizard for SonicDE"
+msgstr "Der freundliche Begrüßungsassistent für SonicDE"
 
 #: src/main.cpp:48
 #, kde-format
@@ -75,10 +65,15 @@ msgctxt "@info:credit"
 msgid "Oliver Beard"
 msgstr "Oliver Beard"
 
+#: src/main.cpp:67
+msgctxt "@info:credit"
+msgid "Joseph Crowell"
+msgstr ""
+
 #: src/main.cpp:77
 #, kde-format
-msgid "Display release notes for the current Plasma release."
-msgstr "Hinweise zur aktuellen Plasma-Veröffentlichung anzeigen."
+msgid "Display release notes for the current SonicDE release."
+msgstr "Hinweise zur aktuellen SonicDE-Veröffentlichung anzeigen."
 
 #: src/main.cpp:78
 #, kde-format
@@ -135,29 +130,51 @@ msgid "Unassigned"
 msgstr "Nicht zugewiesen"
 
 #: src/qml/ContributionCard.qml:18
-#, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"If you find Plasma to be useful, consider getting involved or donating. KDE "
-"is an international volunteer community, not a big company; your "
-"contributions make a real difference!"
+msgid "If you find SonicDE useful, consider getting involved. Your contributions to the SonicDE community make a real difference!"
 msgstr ""
-"Sofern Sie Plasma hilfreich finden, sollten Sie eine Beteiligung oder Spende "
-"in Betracht ziehen. KDE ist eine internationale Gemeinschaft Freiwilliger "
-"und keine große Firma. Ihre Beiträge münden in einem tatsächlichen "
-"Unterschied."
-
-#: src/qml/ContributionCard.qml:29
-#, kde-format
-msgctxt "@action:button"
-msgid "Make a donation"
-msgstr "Etwas spenden"
 
 #: src/qml/ContributionCard.qml:36
 #, kde-format
 msgctxt "@action:button"
 msgid "Get involved"
 msgstr "Machen Sie mit"
+
+#: src/qml/PageError.qml:22
+#, kde-format
+msgctxt "@info:window"
+msgid "Error loading page"
+msgstr "Fehler beim Laden der Seite"
+
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
+#, kde-format
+msgctxt "@action:button"
+msgid "Report Bug…"
+msgstr "Problem melden …"
+
+#: src/qml/PageError.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Details kopieren"
+
+#: src/qml/PageError.qml:46
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page could not be loaded"
+msgstr "Diese Seite kann nicht geladen werden"
+
+#: src/qml/PageError.qml:49
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by your distribution could not be loaded"
+msgstr "Diese Seite Ihrer Distribution kann nicht geladen werden"
+
+#: src/qml/PageError.qml:51
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by Welcome Center could not be loaded"
+msgstr "Diese Seite des Begrüßungsassistenten kann nicht geladen werden"
 
 #: src/qml/footers/FooterDefault.qml:28
 #, kde-format
@@ -186,8 +203,8 @@ msgstr "&Weiter"
 #: src/qml/footers/FooterUpdate.qml:21
 #, kde-format
 msgctxt "@option:check"
-msgid "Show after Plasma is updated"
-msgstr "Nach dem Aktualisieren von Plasma zeigen"
+msgid "Show after SonicDE is updated"
+msgstr "Nach dem Aktualisieren von SonicDE zeigen"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -237,11 +254,6 @@ msgctxt "@action:button Button in the Plasma activities sidebar"
 msgid "Create activity…"
 msgstr "Aktivität erstellen …"
 
-#: src/qml/mock/MockKRunner.qml:81
-#, kde-format
-msgid "Search…"
-msgstr "Suchen …"
-
 #: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
@@ -254,70 +266,6 @@ msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "Fenster vergrößern"
 
-#: src/qml/PageError.qml:22
-#, kde-format
-msgctxt "@info:window"
-msgid "Error loading page"
-msgstr "Fehler beim Laden der Seite"
-
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
-#, kde-format
-msgctxt "@action:button"
-msgid "Report Bug…"
-msgstr "Problem melden …"
-
-#: src/qml/PageError.qml:33
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy Details"
-msgstr "Details kopieren"
-
-#: src/qml/PageError.qml:46
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page could not be loaded"
-msgstr "Diese Seite kann nicht geladen werden"
-
-#: src/qml/PageError.qml:49
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by your distribution could not be loaded"
-msgstr "Diese Seite Ihrer Distribution kann nicht geladen werden"
-
-#: src/qml/PageError.qml:51
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by Welcome Center could not be loaded"
-msgstr "Diese Seite des Begrüßungsassistenten kann nicht geladen werden"
-
-#: src/qml/pages/Discover.qml:20
-#, kde-format
-msgctxt "@title:window"
-msgid "Find Great Apps"
-msgstr "Tolle Apps finden"
-
-#: src/qml/pages/Discover.qml:21
-#, kde-kuit-format
-msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
-"%2 is the distro name."
-msgid ""
-"There’s no need to search the web to download app installers or use a "
-"command-line package manager; KDE’s app store <application>%1</application> "
-"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
-"try!"
-msgstr ""
-"Sie müssen nicht mehr das Web durchsuchen, um Installationsprogramme "
-"herunterzuladen oder einen Kommandozeilen-Paketmanager verwenden. KDEs "
-"Programmverwaltung <application>%1</application> erledigt das alles für Sie!"
-"<nl/><nl/>Klicken Sie auf eines der Symbole unten, um es auszuprobieren!"
-
-#: src/qml/pages/Discover.qml:103
-#, kde-format
-msgctxt "@action:button %1 is the name of an app"
-msgid "Show %1 in Discover"
-msgstr "%1 in Discover anzeigen"
-
 #: src/qml/pages/Enjoy.qml:20
 #, kde-format
 msgctxt "@title:window"
@@ -327,87 +275,19 @@ msgstr "Genießen Sie es!"
 #: src/qml/pages/Enjoy.qml:21
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"We hope you love Plasma as much as we loved making it for you! Now it’s time "
-"to jump right in. Explore its features, install your favorite apps and "
-"games, and get busy doing what makes you you!"
-msgstr ""
-"Wir hoffen Sie lieben Plasma genauso, wie wir es beim Erstellen für Sie tun. "
-"Nun ist es an der Zeit zum Loslegen. Erkunden Sie die Funktionen, "
-"installieren Sie Anwendungen oder Spiele und erledigen Sie die Dinge, die "
-"Sie ausmachen."
+msgid "We hope you love SonicDE as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!"
+msgstr "Wir hoffen Sie lieben SonicDE genauso, wie wir es beim Erstellen für Sie tun. Nun ist es an der Zeit zum Loslegen. Erkunden Sie die Funktionen, installieren Sie Anwendungen oder Spiele und erledigen Sie die Dinge, die Sie ausmachen."
 
 #: src/qml/pages/Enjoy.qml:26
 #, kde-format
 msgctxt "@label:URL"
-msgid "Learn more about the KDE community"
-msgstr "Erfahren Sie mehr über die KDE-Gemeinschaft"
+msgid "Learn more about the SonicDE community"
+msgstr "Erfahren Sie mehr über die SonicDE-Gemeinschaft"
 
 #: src/qml/pages/Enjoy.qml:31
-#, kde-format
 msgctxt "@label:URL"
-msgid "Get help at KDE’s discussion forums"
-msgstr "Erhalten Sie Hilfe bei KDEs den Diskussionsforen"
-
-#: src/qml/pages/Enjoy.qml:39
-#, kde-format
-msgctxt "@action:button"
-msgid "Supporting Members"
-msgstr "Unterstützende Mitglieder"
-
-#: src/qml/pages/enjoy/Supporters.qml:18
-#, kde-format
-msgctxt "@title:window"
-msgid "Supporting Members"
-msgstr "Unterstützende Mitglieder"
-
-#: src/qml/pages/enjoy/Supporters.qml:19
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"We thank the following supporting members for their recurring donation to "
-"KDE:"
+msgid "Find help with SonicDE"
 msgstr ""
-"Wir danken den folgenden unterstützenden Mitgliedern für die wiederholte "
-"Spende an KDE:"
-
-#: src/qml/pages/enjoy/Supporters.qml:39
-#, kde-format
-msgctxt "@action:button %1 is the selected sort order, e.g. Random"
-msgid "Sort: %1"
-msgstr "Sortieren nach: %1"
-
-#: src/qml/pages/enjoy/Supporters.qml:45
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Random"
-msgstr "Zufällig"
-
-#: src/qml/pages/enjoy/Supporters.qml:56
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Last Name"
-msgstr "Nachnamen"
-
-#: src/qml/pages/enjoy/Supporters.qml:67
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "First Name"
-msgstr "Vornamen"
-
-#: src/qml/pages/enjoy/Supporters.qml:78
-#, kde-format
-msgctxt ""
-"@action:inmenu An order to sort a list, referring to the date a user has "
-"first made a donation"
-msgid "Contribution Date"
-msgstr "Beitragszeitpunkt"
-
-#: src/qml/pages/enjoy/Supporters.qml:91
-#, kde-format
-msgctxt "@action:inmenu An option to sort a list in reverse order"
-msgid "Reverse"
-msgstr "Umkehren"
 
 #: src/qml/pages/Feedback.qml:16
 #, kde-format
@@ -416,15 +296,9 @@ msgid "Share Anonymous Usage Information"
 msgstr "Anonyme Nutzungsstatistiken übermitteln"
 
 #: src/qml/pages/Feedback.qml:17
-#, kde-format
 msgctxt "@info:usagetip"
-msgid ""
-"Our developers will use this anonymous data to improve KDE software. You can "
-"choose how much to share in System Settings, and here too."
+msgid "You can choose how much anonymous usage information to share in System Settings, and here too."
 msgstr ""
-"Unsere Entwickler werden diese anonymen Daten zur Verbesserung der KDE-"
-"Software nutzen. Sie können den Umfang der Datenübermittlung in den "
-"Systemeinstellungen und auch hier festlegen."
 
 #: src/qml/pages/Live.qml:21
 #, kde-format
@@ -435,24 +309,14 @@ msgstr "Willkommen zu %1!"
 #: src/qml/pages/Live.qml:24
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Pressing the icon below will begin installing %1. Alternatively, you can "
-"close the window to explore the live environment or continue here to find "
-"out about KDE Plasma."
-msgstr ""
-"Durch das Drücken des unteren Symbols wird mit der Installation von %1 "
-"begonnen. Sie können auch das Fenster zum Erkunden der Echtzeitumgebung "
-"schließen oder für weitere Informationen zu KDE Plasma hier fortfahren."
+msgid "Pressing the icon below will begin installing %1. Alternatively, you can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Durch das Drücken des unteren Symbols wird mit der Installation von %1 begonnen. Sie können auch das Fenster zum Erkunden der Echtzeitumgebung schließen oder für weitere Informationen zu SonicDE hier fortfahren."
 
 #: src/qml/pages/Live.qml:26
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"You can close the window to explore the live environment or continue here to "
-"find out about KDE Plasma."
-msgstr ""
-"Sie können das Fenster zum Erkunden der Echtzeitumgebung schließen oder für "
-"weitere Informationen zu KDE Plasma hier fortfahren."
+msgid "You can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Sie können das Fenster zum Erkunden der Echtzeitumgebung schließen oder für weitere Informationen zu SonicDE hier fortfahren."
 
 #: src/qml/pages/Live.qml:32
 #, kde-format
@@ -484,15 +348,13 @@ msgstr ""
 #: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Networking support for Plasma is not currently installed"
-msgstr "Die Netzwerkunterstützung von Plasma ist zurzeit nicht installiert"
+msgid "Networking support for SonicDE is not currently installed"
+msgstr "Die Netzwerkunterstützung von SonicDE ist zurzeit nicht installiert"
 
 #: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"To manage network connections, Plasma requires <icode>plasma-nm</icode> to "
-"be installed. Please report this omission to %1."
+msgid "To manage network connections, SonicDE requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1."
 msgstr ""
 "Um Netzwerkverbindungen verwalten zu können, muss <icode>plasma-nm</icode> "
 "installiert sein. Bitte berichten Sie dies an %1."
@@ -530,31 +392,20 @@ msgstr "Status ändern"
 #: src/qml/pages/PlasmaUpdate.qml:21
 #, kde-format
 msgctxt "@title:window"
-msgid "Plasma has been updated to %1"
-msgstr "Plasma wurde auf %1 aktualisiert"
+msgid "SonicDE has been updated to %1"
+msgstr "SonicDE wurde auf %1 aktualisiert"
 
 #: src/qml/pages/PlasmaUpdate.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Thank you for testing this beta release of Plasma — your feedback is "
-"fundamental to helping us improve it! Please report any and all bugs you "
-"find so that we can fix them."
-msgstr ""
-"Vielen Dank für das Testen dieser Betaversion von Plasma — Ihre Rückmeldung "
-"ist für die weitere Verbesserung elementar. Bitte melden Sie deshalb alle "
-"Fehler, die Sie finden, damit wir sie beheben können."
+msgid "Thank you for testing this beta release of SonicDE — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them."
+msgstr "Vielen Dank für das Testen dieser Betaversion von SonicDE — Ihre Rückmeldung ist für die weitere Verbesserung elementar. Bitte melden Sie deshalb alle Fehler, die Sie finden, damit wir sie beheben können."
 
 #: src/qml/pages/PlasmaUpdate.qml:22
-#, kde-kuit-format
+#, kde-kuit-format, fuzzy
 msgctxt "@info:usagetip"
-msgid ""
-"KDE contributors have spent the last four months hard at work on this "
-"release. We hope you enjoy using Plasma as much as we enjoyed making it!"
-msgstr ""
-"Die an KDE Mitwirkenden haben in den letzten vier Monaten harte Arbeit in "
-"diese Veröffentlichung investiert. Wir hoffen, dass Sie soviel Spaß an der "
-"Verwendung von Plasma haben werden, wie wir an der Entwicklung hatten!"
+msgid "SonicDE contributors have been hard at work on this release. We hope you enjoy using SonicDE as much as we enjoyed making it!"
+msgstr "Die an SonicDE Mitwirkenden haben in den letzten vier Monaten harte Arbeit in diese Veröffentlichung investiert. Wir hoffen, dass Sie soviel Spaß an der Verwendung von SonicDE haben werden, wie wir an der Entwicklung hatten!"
 
 #: src/qml/pages/PlasmaUpdate.qml:29
 #, kde-format
@@ -628,13 +479,8 @@ msgstr "Vorschau automatisch laden"
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
 msgctxt "@info:tooltip"
-msgid ""
-"The preview will be loaded automatically when this page is shown for future "
-"Plasma updates, except when using a metered network connection."
-msgstr ""
-"Die Vorschau wird automatisch geladen, wenn diese Seite für künftige Plasma-"
-"Updates angezeigt wird. Dies ist nur der Fall, wenn Sie eine "
-"gebührenpflichtige Netzwerkverbindung verwenden."
+msgid "The preview will be loaded automatically when this page is shown for future SonicDE updates, except when using a metered network connection."
+msgstr "Die Vorschau wird automatisch geladen, wenn diese Seite für künftige SonicDE-Updates angezeigt wird. Dies ist nur der Fall, wenn Sie eine gebührenpflichtige Netzwerkverbindung verwenden."
 
 #: src/qml/pages/PlasmaUpdate.qml:422
 #, kde-format
@@ -651,14 +497,8 @@ msgstr "Mächtig bei Bedarf"
 #: src/qml/pages/PowerfulWhenNeeded.qml:20
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma is a feature-rich environment, designed to super-charge your "
-"productivity!<nl/><nl/>Click the cards below to see just a smattering of "
-"what it can do for you:"
-msgstr ""
-"Plasma ist eine funktionsreiche Arbeitsumgebung, die dafür entworfen wurde, "
-"Ihre Produktivität zu steigern!<nl/><nl/>Klicken Sie unten auf die Karten, "
-"um ein paar wenige Beispiele zu sehen, was Plasma für Sie tun kann:"
+msgid "SonicDE is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>Click the cards below to see just a smattering of what it can do for you:"
+msgstr "SonicDE ist eine funktionsreiche Arbeitsumgebung, die dafür entworfen wurde, Ihre Produktivität zu steigern!<nl/><nl/>Klicken Sie unten auf die Karten, um ein paar wenige Beispiele zu sehen, was SonicDE für Sie tun kann:"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:44
 #, kde-format
@@ -737,8 +577,190 @@ msgstr "Sensible Dateien sicher speichern"
 #: src/qml/pages/PowerfulWhenNeeded.qml:124
 #, kde-format
 msgctxt "@action:button"
-msgid "Learn about more Plasma features"
-msgstr "Erfahren Sie mehr über weitere Plasma-Funktionen"
+msgid "Learn about more SonicDE features"
+msgstr "Erfahren Sie mehr über weitere SonicDE-Funktionen"
+
+#: src/qml/pages/SimpleByDefault.qml:21
+#, kde-format
+msgctxt "@info:window"
+msgid "Simple by Default"
+msgstr "Von Haus aus einfach"
+
+#: src/qml/pages/SimpleByDefault.qml:22
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "SonicDE is designed to be simple and usable out of the box. Things are where you would expect, and there is generally no need to configure anything before you can be comfortable and productive.<nl/><nl/>Below is a visual representation of a typical SonicDE desktop; move the pointer over or click on something to learn about it!"
+msgstr "SonicDE ist so gestaltet, dass es ohne weiteren Aufwand einfach funktioniert. Die Dinge sind da, wo Sie sie erwarten, und es besteht keine Notwendigkeit irgendetwas aufwendig einzurichten, bevor Sie bequem und produktiv arbeiten können.<nl/><nl/>Unten wird ein Beispiel einer typischen SonicDE-Arbeitsfläche gezeigt. Bewegen Sie den Mauszeiger über oder klicken Sie auf etwas, um Informationen dazu zu erhalten."
+
+#: src/qml/pages/SimpleByDefault.qml:33
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is the “Desktop”. It shows files and folders that are contained in your "
+"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
+"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
+"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
+"interface> to add, remove or modify widgets."
+msgstr ""
+"Das ist die „Arbeitsfläche“. Sie zeigt die Dateien und Ordner Ihres "
+"<filename>Arbeitsflächen</filename>-Ordners an und kann Miniprogramme "
+"beinhalten. Durch einen Rechtsklick und Auswahl von <interface>Arbeitsfläche "
+"und Hintergrundbild …</interface> kann das Erscheinungsbild der "
+"Arbeitsfläche eingerichtet werden. Mit <interface>Bearbeitungsmodus starten</"
+"interface> können Miniprogramme hinzugefügt, geändert oder entfernt werden."
+
+#: src/qml/pages/SimpleByDefault.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is a “Panel” — a container to hold widgets. Right-click on it and "
+"choose <interface>Show Panel Configuration</interface> to change how it "
+"behaves, which screen edge it lives on, and to add, remove or modify widgets."
+msgstr ""
+"Das ist eine „Kontrollleiste” – ein Container für Miniprogramme. Klicken Sie "
+"mit der rechten Maustaste darauf und wählen Sie "
+"<interface>Kontrollleisteneinstellungen anzeigen</interface>, um das "
+"Verhalten der Kontrollleiste anzupassen, um festzulegen, an welchem "
+"Bildschirmrand sie angezeigt werden soll, sowie um Widgets hinzuzufügen, zu "
+"entfernen oder zu bearbeiten."
+
+#: src/qml/pages/SimpleByDefault.qml:39
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
+msgstr ""
+"Das ist das „Anwendungsstarter“-Miniprogramm mit einem universellen Starter. "
+"Hier können unter anderem Anwendungen gestartet, das System heruntergefahren "
+"oder neu gestartet sowie zuletzt verwendete Daten geöffnet werden. Klicken "
+"Sie, um loszulegen!"
+
+#: src/qml/pages/SimpleByDefault.qml:42
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Task Manager” widget, where you can switch between open apps "
+"and also launch new ones. Drag app icons to re-arrange them."
+msgstr ""
+"Das ist die „Fensterleiste” mit der die geöffneten Anwendungen gewechselt "
+"und weitere gestartet werden können. Die Symbole können durch Ziehen neu "
+"angeordnet werden."
+
+#: src/qml/pages/SimpleByDefault.qml:45
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “System Tray” widget, which lets you control system functions "
+"like changing the volume and connecting to networks. Items will become "
+"visible here only when relevant. To see all available items, click the ⌃ "
+"arrow next to the clock."
+msgstr ""
+"Das ist der „Systemabschnitt” mit dem Systemfunktionen wie die Lautstärke "
+"oder das Netzwerk bedient werden können. Die Symbole erscheinen hier nur, "
+"wenn Sie relevant sind. Durch einen Klick auf den ⌃-Pfeil neben der Uhr "
+"werden alle Symbole angezeigt."
+
+#: src/qml/pages/SimpleByDefault.qml:48
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
+"be also configured to show other timezones and events from your digital "
+"calendars."
+msgstr ""
+"Das ist die „digitale Uhr”. Mit einem Klick darauf wird ein Kalender "
+"angezeigt. Sie kann auch zur Anzeige anderer Zeitzonen oder Terminen aus "
+"digitalen Kalendern eingerichtet werden."
+
+#: src/qml/pages/SimpleByDefault.qml:51
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
+"open windows so you can access the desktop. Click on it again to bring them "
+"back."
+msgstr ""
+"Das ist der „Blick auf die Arbeitsfläche”. Mit einem Klick darauf werden "
+"alle offenen Fenster vorübergehend ausgeblendet und die Arbeitfläche "
+"angezeigt. Durch einen weiteren Klick darauf werden sie wieder eingeblendet."
+
+#: src/qml/pages/Welcome.qml:21
+#, kde-format
+msgctxt "@title"
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: src/qml/pages/Welcome.qml:23
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is custom text supplied by the distro"
+msgid "%1<nl/><nl/>This operating system is running SonicDE, a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "%1<nl/><nl/>SonicDE ist eine von SonicDE, einer internationalen Gemeinschaft von Freiwilligen, geschaffene freie quelloffene Arbeitsumgebung. Die SonicDE-Arbeitsumgebung ist standardmäßig einfach gehalten, aber ausgesprochen leistungsstark, wenn große Dinge erledigt werden möchten. Wir hoffen, dass Sie sie lieben werden!"
+
+#: src/qml/pages/Welcome.qml:24
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is the name of the user's distro"
+msgid "Welcome to the %1 operating system running SonicDE!<nl/><nl/>SonicDE is a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "Willkommen beim %1-Betriebssystem, das SonicDE verwendet.<nl/><nl/>SonicDE ist eine freie und quelloffene Arbeitsumgebung von SonicDE, einer internationalen Gemeinschaft von Freiwilligen. Es ist standardmäßig einfach gehalten, aber ausgesprochen leistungsstark, wenn große Dinge erledigt werden möchten. Wir hoffen, dass Sie sie lieben werden!"
+
+#: src/qml/pages/Welcome.qml:28
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Welcome Center"
+msgstr "Über Begrüßungsassistent"
+
+#: src/qml/pages/Welcome.qml:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About SonicDE"
+msgstr "Über SonicDE"
+
+#: src/qml/pages/Welcome.qml:45
+msgctxt "@title:window"
+msgid "About SonicDE"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:46
+msgctxt "@info:usagetip"
+msgid "SonicDE is a free and open-source desktop project. SonicDE builds on KDE Plasma to provide a desktop experience with continued X11 support."
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:49
+msgctxt "@action:button"
+msgid "Visit the SonicDE website"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Learn more about the SonicDE community"
+msgstr "Erfahren Sie mehr über die SonicDE-Gemeinschaft"
+
+#: src/qml/pages/Welcome.qml:62
+#, kde-format
+msgctxt "@action:button %1 is the name of the user's distro"
+msgid "Learn more about %1"
+msgstr "Mehr über %1 erfahren"
+
+#: src/qml/pages/Welcome.qml:99
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "Das Laden des Bildes ist fehlgeschlagen"
+
+#: src/qml/pages/Welcome.qml:100
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr ""
+"<filename>%1</filename> lässt sich nicht laden. Vergewissern Sie sich, dass "
+"die Datei existiert."
+
+#: src/qml/pages/Welcome.qml:130
+msgctxt "@info"
+msgid "The SonicDE mascot Sonron welcomes you to the SonicDE community!"
+msgstr "Das SonicDE-Maskottchen Sonron begrüßt Sie in der SonicDE-Gemeinschaft!"
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:22
 #, kde-format
@@ -849,21 +871,8 @@ msgstr "KRunner"
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"KRunner is Plasma’s exceptionally powerful and versatile search system. It "
-"powers the search functionality in the Application Launcher menu and the "
-"Overview screen, and it can be accessed as a standalone search bar using the "
-"<shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding "
-"your files and folders, KRunner can launch apps, search the web, convert "
-"between currencies, calculate math problems, and a lot more."
-msgstr ""
-"KRunner ist Plasmas außergewöhnlich leistungsstarkes und vielseitiges "
-"Suchsystem. Es stellt die Suchfunktion im Anwendungsstarter und dem "
-"Überblick-Bildschirm zur Verfügung, kann aber als eigenständige Suchleiste "
-"über den Tastaturkurzbefehl <shortcut>%1</shortcut> aufgerufen werden.<nl/"
-"><nl/>Neben dem Auffinden von Dateien und Ordnern kann KRunner auch "
-"Anwendungen starten, im Internet suchen, Währungen umrechnen, mathematische "
-"Probleme lösen und vieles mehr."
+msgid "KRunner is SonicDE’s exceptionally powerful and versatile search system. It powers the search functionality in the Application Launcher menu and the Overview screen, and it can be accessed as a standalone search bar using the <shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding your files and folders, KRunner can launch apps, search the web, convert between currencies, calculate math problems, and a lot more."
+msgstr "KRunner ist SonicDEs außergewöhnlich leistungsstarkes und vielseitiges Suchsystem. Es stellt die Suchfunktion im Anwendungsstarter und dem Überblick-Bildschirm zur Verfügung, kann aber als eigenständige Suchleiste über den Tastaturkurzbefehl <shortcut>%1</shortcut> aufgerufen werden.<nl/><nl/>Neben dem Auffinden von Dateien und Ordnern kann KRunner auch Anwendungen starten, im Internet suchen, Währungen umrechnen, mathematische Probleme lösen und vieles mehr."
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:58
 #, kde-kuit-format
@@ -935,30 +944,14 @@ msgstr "Kurzbefehle einrichten …"
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
-"keyboard, this is the “Command” key:"
-msgstr ""
-"In Plasma kann fast alles mit der Tastatur erledigt werden – durch "
-"Tastenkürzel, meistens zusammen mit der <shortcut>Meta</shortcut>-Taste.<nl/"
-"><nl/>Auf einer Mac-Tastatur ist das die „command“-Taste:"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac keyboard, this is the “Command” key:"
+msgstr "In SonicDE kann fast alles mit der Tastatur erledigt werden – durch Tastenkürzel, meistens zusammen mit der <shortcut>Meta</shortcut>-Taste.<nl/><nl/>Auf einer Mac-Tastatur ist das die „command“-Taste:"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
-"usually located between the left <shortcut>Ctrl</shortcut> and "
-"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
-"the word “Super”:"
-msgstr ""
-"In Plasma kann fast alles mit der Tastatur erledigt werden – durch "
-"Tastenkürzel, meistens zusammen mit der <shortcut>Meta</shortcut>-Taste.<nl/"
-"><nl/>Diese Taste befindet sich zwischen den linken <shortcut>Strg</"
-"shortcut>- und <shortcut>Alt</shortcut>-Tasten. In der Regel ist darauf ein "
-"Symbol oder das Wort „Super“ abgebildet:"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is usually located between the left <shortcut>Ctrl</shortcut> and <shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or the word “Super”:"
+msgstr "In SonicDE kann fast alles mit der Tastatur erledigt werden – durch Tastenkürzel, meistens zusammen mit der <shortcut>Meta</shortcut>-Taste.<nl/><nl/>Diese Taste befindet sich zwischen den linken <shortcut>Strg</shortcut>- und <shortcut>Alt</shortcut>-Tasten. In der Regel ist darauf ein Symbol oder das Wort „Super“ abgebildet:"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
 #, kde-format
@@ -1089,25 +1082,14 @@ msgstr ""
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
 msgctxt "@info:window"
-msgid "Plasma Vaults"
-msgstr "Plasma Tresore"
+msgid "SonicDE Vaults"
+msgstr "SonicDE Tresore"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma Vaults allows you to create encrypted folders, called "
-"<interface>Vaults.</interface> Inside each Vault, you can securely store "
-"your passwords, files, pictures, and documents, safe from prying eyes. "
-"Vaults can live inside folders that are synced to cloud storage services "
-"too, providing extra privacy for that content."
-msgstr ""
-"Plasma Tresore ermöglichen es Ihnen, verschlüsselte Ordner, genannt "
-"<interface>Tresore</interface>, zu erstellen. In jedem Tresor können Sie "
-"Passwörter, Dateien, Bilder und Dokumente vor neugierigen Augen geschützt "
-"hinterlegen. Tresore können auch innerhalb von mit Cloud-Speichern "
-"synchronisierten Ordnern angelegt werden und so zusätzliche Privatsphäre für "
-"Ihre Inhalte schaffen."
+msgid "SonicDE Vaults allows you to create encrypted folders, called <interface>Vaults.</interface> Inside each Vault, you can securely store your passwords, files, pictures, and documents, safe from prying eyes. Vaults can live inside folders that are synced to cloud storage services too, providing extra privacy for that content."
+msgstr "SonicDE Tresore ermöglichen es Ihnen, verschlüsselte Ordner, genannt <interface>Tresore</interface>, zu erstellen. In jedem Tresor können Sie Passwörter, Dateien, Bilder und Dokumente vor neugierigen Augen geschützt hinterlegen. Tresore können auch innerhalb von mit Cloud-Speichern synchronisierten Ordnern angelegt werden und so zusätzliche Privatsphäre für Ihre Inhalte schaffen."
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
@@ -1127,11 +1109,6 @@ msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "Meine Fotos"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
-#, kde-format
-msgid "Unlock and Open"
-msgstr "Entsperren und öffnen"
-
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
@@ -1143,205 +1120,6 @@ msgstr ""
 "<interface>Systemabschnitt der Kontrollleiste</interface>, um die "
 "ausgeblendeten Symbole anzuzeigen, und dann auf das <interface>Tresore</"
 "interface>-Symbol."
-
-#: src/qml/pages/SimpleByDefault.qml:21
-#, kde-format
-msgctxt "@info:window"
-msgid "Simple by Default"
-msgstr "Von Haus aus einfach"
-
-#: src/qml/pages/SimpleByDefault.qml:22
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"Plasma is designed to be simple and usable out of the box. Things are where "
-"you would expect, and there is generally no need to configure anything "
-"before you can be comfortable and productive.<nl/><nl/>Below is a visual "
-"representation of a typical Plasma Desktop; move the pointer over or click "
-"on something to learn about it!"
-msgstr ""
-"Plasma ist so gestaltet, dass es ohne weiteren Aufwand einfach funktioniert. "
-"Die Dinge sind da, wo Sie sie erwarten, und es besteht keine Notwendigkeit "
-"irgendetwas aufwendig einzurichten, bevor Sie bequem und produktiv arbeiten "
-"können.<nl/><nl/>Unten wird ein Beispiel einer typischen Plasma-"
-"Arbeitsfläche gezeigt. Bewegen Sie den Mauszeiger über oder klicken Sie auf "
-"etwas, um Informationen dazu zu erhalten."
-
-#: src/qml/pages/SimpleByDefault.qml:33
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is the “Desktop”. It shows files and folders that are contained in your "
-"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
-"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
-"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
-"interface> to add, remove or modify widgets."
-msgstr ""
-"Das ist die „Arbeitsfläche“. Sie zeigt die Dateien und Ordner Ihres "
-"<filename>Arbeitsflächen</filename>-Ordners an und kann Miniprogramme "
-"beinhalten. Durch einen Rechtsklick und Auswahl von <interface>Arbeitsfläche "
-"und Hintergrundbild …</interface> kann das Erscheinungsbild der "
-"Arbeitsfläche eingerichtet werden. Mit <interface>Bearbeitungsmodus starten</"
-"interface> können Miniprogramme hinzugefügt, geändert oder entfernt werden."
-
-#: src/qml/pages/SimpleByDefault.qml:36
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is a “Panel” — a container to hold widgets. Right-click on it and "
-"choose <interface>Show Panel Configuration</interface> to change how it "
-"behaves, which screen edge it lives on, and to add, remove or modify widgets."
-msgstr ""
-"Das ist eine „Kontrollleiste” – ein Container für Miniprogramme. Klicken Sie "
-"mit der rechten Maustaste darauf und wählen Sie "
-"<interface>Kontrollleisteneinstellungen anzeigen</interface>, um das "
-"Verhalten der Kontrollleiste anzupassen, um festzulegen, an welchem "
-"Bildschirmrand sie angezeigt werden soll, sowie um Widgets hinzuzufügen, zu "
-"entfernen oder zu bearbeiten."
-
-#: src/qml/pages/SimpleByDefault.qml:39
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
-"can launch apps, shut down or restart the system, access recent files, and "
-"more. Click on it to get started!"
-msgstr ""
-"Das ist das „Anwendungsstarter“-Miniprogramm mit einem universellen Starter. "
-"Hier können unter anderem Anwendungen gestartet, das System heruntergefahren "
-"oder neu gestartet sowie zuletzt verwendete Daten geöffnet werden. Klicken "
-"Sie, um loszulegen!"
-
-#: src/qml/pages/SimpleByDefault.qml:42
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Task Manager” widget, where you can switch between open apps "
-"and also launch new ones. Drag app icons to re-arrange them."
-msgstr ""
-"Das ist die „Fensterleiste” mit der die geöffneten Anwendungen gewechselt "
-"und weitere gestartet werden können. Die Symbole können durch Ziehen neu "
-"angeordnet werden."
-
-#: src/qml/pages/SimpleByDefault.qml:45
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “System Tray” widget, which lets you control system functions "
-"like changing the volume and connecting to networks. Items will become "
-"visible here only when relevant. To see all available items, click the ⌃ "
-"arrow next to the clock."
-msgstr ""
-"Das ist der „Systemabschnitt” mit dem Systemfunktionen wie die Lautstärke "
-"oder das Netzwerk bedient werden können. Die Symbole erscheinen hier nur, "
-"wenn Sie relevant sind. Durch einen Klick auf den ⌃-Pfeil neben der Uhr "
-"werden alle Symbole angezeigt."
-
-#: src/qml/pages/SimpleByDefault.qml:48
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
-"be also configured to show other timezones and events from your digital "
-"calendars."
-msgstr ""
-"Das ist die „digitale Uhr”. Mit einem Klick darauf wird ein Kalender "
-"angezeigt. Sie kann auch zur Anzeige anderer Zeitzonen oder Terminen aus "
-"digitalen Kalendern eingerichtet werden."
-
-#: src/qml/pages/SimpleByDefault.qml:51
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
-"open windows so you can access the desktop. Click on it again to bring them "
-"back."
-msgstr ""
-"Das ist der „Blick auf die Arbeitsfläche”. Mit einem Klick darauf werden "
-"alle offenen Fenster vorübergehend ausgeblendet und die Arbeitfläche "
-"angezeigt. Durch einen weiteren Klick darauf werden sie wieder eingeblendet."
-
-#: src/qml/pages/Welcome.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome"
-msgstr "Willkommen"
-
-#: src/qml/pages/Welcome.qml:23
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is custom text supplied by the distro"
-msgid ""
-"%1<nl/><nl/>This operating system is running Plasma, a free and open-source "
-"desktop environment created by KDE, an international software community of "
-"volunteers. It is designed to be simple by default for a smooth experience, "
-"but powerful when needed to help you really get things done. We hope you "
-"love it!"
-msgstr ""
-"%1<nl/><nl/>Plasma ist eine von KDE, einer internationalen Gemeinschaft von "
-"Freiwilligen, geschaffene freie quelloffene Arbeitsumgebung. Die Plasma-"
-"Arbeitsumgebung ist standardmäßig einfach gehalten, aber ausgesprochen "
-"leistungsstark, wenn große Dinge erledigt werden möchten. Wir hoffen, dass "
-"Sie sie lieben werden!"
-
-#: src/qml/pages/Welcome.qml:24
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a "
-"free and open-source desktop environment created by KDE, an international "
-"software community of volunteers. It is designed to be simple by default for "
-"a smooth experience, but powerful when needed to help you really get things "
-"done. We hope you love it!"
-msgstr ""
-"Willkommen beim %1-Betriebssystem, das KDE Plasma verwendet.<nl/><nl/>Plasma "
-"ist eine freie und quelloffene Arbeitsumgebung von KDE, einer "
-"internationalen Gemeinschaft von Freiwilligen. Es ist standardmäßig einfach "
-"gehalten, aber ausgesprochen leistungsstark, wenn große Dinge erledigt "
-"werden möchten. Wir hoffen, dass Sie sie lieben werden!"
-
-#: src/qml/pages/Welcome.qml:28
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About Welcome Center"
-msgstr "Über Begrüßungsassistent"
-
-#: src/qml/pages/Welcome.qml:34
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About KDE"
-msgstr "Über KDE"
-
-#: src/qml/pages/Welcome.qml:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Learn more about the KDE community"
-msgstr "Erfahren Sie mehr über die KDE-Gemeinschaft"
-
-#: src/qml/pages/Welcome.qml:62
-#, kde-format
-msgctxt "@action:button %1 is the name of the user's distro"
-msgid "Learn more about %1"
-msgstr "Mehr über %1 erfahren"
-
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "Das Laden des Bildes ist fehlgeschlagen"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr ""
-"<filename>%1</filename> lässt sich nicht laden. Vergewissern Sie sich, dass "
-"die Datei existiert."
-
-#: src/qml/pages/Welcome.qml:120
-#, kde-format
-msgctxt "@info"
-msgid "The KDE mascot Konqi welcomes you to the KDE community!"
-msgstr "Das KDE-Maskottchen Konqi begrüßt Sie in der KDE-Gemeinschaft!"
 
 #: src/release.cpp:42
 #, kde-format
@@ -1361,6 +1139,109 @@ msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
 
+#, kde-format
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Deutsches KDE-Übersetzungsteam"
+
+#, kde-format
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde-i18n-de@kde.org"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "If you find Plasma to be useful, consider getting involved or donating. KDE is an international volunteer community, not a big company; your contributions make a real difference!"
+#~ msgstr "Sofern Sie Plasma hilfreich finden, sollten Sie eine Beteiligung oder Spende in Betracht ziehen. KDE ist eine internationale Gemeinschaft Freiwilliger und keine große Firma. Ihre Beiträge münden in einem tatsächlichen Unterschied."
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Make a donation"
+#~ msgstr "Etwas spenden"
+
+#, kde-format
+#~ msgid "Search…"
+#~ msgstr "Suchen …"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Find Great Apps"
+#~ msgstr "Tolle Apps finden"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app, and %2 is the distro name."
+#~ msgid "There’s no need to search the web to download app installers or use a command-line package manager; KDE’s app store <application>%1</application> does it all for you!<nl/><nl/>Click on any of the icons below to give it a try!"
+#~ msgstr "Sie müssen nicht mehr das Web durchsuchen, um Installationsprogramme herunterzuladen oder einen Kommandozeilen-Paketmanager verwenden. KDEs Programmverwaltung <application>%1</application> erledigt das alles für Sie!<nl/><nl/>Klicken Sie auf eines der Symbole unten, um es auszuprobieren!"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the name of an app"
+#~ msgid "Show %1 in Discover"
+#~ msgstr "%1 in Discover anzeigen"
+
+#, kde-format
+#~ msgctxt "@label:URL"
+#~ msgid "Get help at KDE’s discussion forums"
+#~ msgstr "Erhalten Sie Hilfe bei KDEs den Diskussionsforen"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Supporting Members"
+#~ msgstr "Unterstützende Mitglieder"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Supporting Members"
+#~ msgstr "Unterstützende Mitglieder"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "We thank the following supporting members for their recurring donation to KDE:"
+#~ msgstr "Wir danken den folgenden unterstützenden Mitgliedern für die wiederholte Spende an KDE:"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the selected sort order, e.g. Random"
+#~ msgid "Sort: %1"
+#~ msgstr "Sortieren nach: %1"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Random"
+#~ msgstr "Zufällig"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Last Name"
+#~ msgstr "Nachnamen"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "First Name"
+#~ msgstr "Vornamen"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list, referring to the date a user has first made a donation"
+#~ msgid "Contribution Date"
+#~ msgstr "Beitragszeitpunkt"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An option to sort a list in reverse order"
+#~ msgid "Reverse"
+#~ msgstr "Umkehren"
+
+#, kde-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "Our developers will use this anonymous data to improve KDE software. You can choose how much to share in System Settings, and here too."
+#~ msgstr "Unsere Entwickler werden diese anonymen Daten zur Verbesserung der KDE-Software nutzen. Sie können den Umfang der Datenübermittlung in den Systemeinstellungen und auch hier festlegen."
+
+#, kde-format
+#~ msgid "Unlock and Open"
+#~ msgstr "Entsperren und öffnen"
+
+#, kde-format
+#~ msgctxt "@info"
+#~ msgid "The KDE mascot Konqi welcomes you to the KDE community!"
+#~ msgstr "Das KDE-Maskottchen Konqi begrüßt Sie in der KDE-Gemeinschaft!"
+
 #~ msgctxt "@action:button clicking on this takes the user to a web page"
 #~ msgid "Visit %1"
 #~ msgstr "%1 besuchen"
@@ -1378,33 +1259,16 @@ msgstr "%1 Beta %2"
 #~ msgstr "Systemeinstellungen"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The System Settings app lets you extensively customize the system to suit "
-#~ "your tastes and preferences. Default apps, wallpapers, visual styles and "
-#~ "icons, virtual desktops, power management, 3rd-party add-ons — you’ll "
-#~ "find it all there!"
-#~ msgstr ""
-#~ "Mit den Systemeinstellungen lässt sich das System an den eigenen "
-#~ "Geschmack und Vorlieben anpassen. Standard-Anwendungen, Hintergrundbild, "
-#~ "visuelles Erscheinungsbild und Symbole, virtuellen Arbeitsflächen, "
-#~ "Energieverwaltung und Erweiterungen von Drittanbietern — hier wird das "
-#~ "alles gefunden."
+#~ msgid "The System Settings app lets you extensively customize the system to suit your tastes and preferences. Default apps, wallpapers, visual styles and icons, virtual desktops, power management, 3rd-party add-ons — you’ll find it all there!"
+#~ msgstr "Mit den Systemeinstellungen lässt sich das System an den eigenen Geschmack und Vorlieben anpassen. Standard-Anwendungen, Hintergrundbild, visuelles Erscheinungsbild und Symbole, virtuellen Arbeitsflächen, Energieverwaltung und Erweiterungen von Drittanbietern — hier wird das alles gefunden."
 
 #~ msgctxt "@title:window"
 #~ msgid "Manage Software"
 #~ msgstr "Software verwalten"
 
-#~ msgctxt ""
-#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
-#~ msgid ""
-#~ "The <application>%1</application> app helps you find and install "
-#~ "applications, games, and tools. You can search or browse by category, "
-#~ "look at screenshots, and read reviews to help you find the perfect app."
-#~ msgstr ""
-#~ "<application>%1</application> hilft Ihnen dabei, Anwendungen, Spiele und "
-#~ "Werkzeuge zu finden und zu installieren. Sie können suchen oder durch "
-#~ "Kategorien blättern sowie Bildschirmfotos ansehen und Bewertungen lesen, "
-#~ "um die für Sie beste Anwendung zu finden."
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid "The <application>%1</application> app helps you find and install applications, games, and tools. You can search or browse by category, look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr "<application>%1</application> hilft Ihnen dabei, Anwendungen, Spiele und Werkzeuge zu finden und zu installieren. Sie können suchen oder durch Kategorien blättern sowie Bildschirmfotos ansehen und Bewertungen lesen, um die für Sie beste Anwendung zu finden."
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"
@@ -1414,10 +1278,8 @@ msgstr "%1 Beta %2"
 #~ msgid "Filter…"
 #~ msgstr "Filter …"
 
-#~ msgid ""
-#~ "Display release notes for the current Plasma release, for beta versions."
-#~ msgstr ""
-#~ "Hinweise zur aktuellen Plasma-Veröffentlichung bei Betaversionen anzeigen."
+#~ msgid "Display release notes for the current Plasma release, for beta versions."
+#~ msgstr "Hinweise zur aktuellen Plasma-Veröffentlichung bei Betaversionen anzeigen."
 
 #~ msgctxt "@label:URL"
 #~ msgid "<b>Find out what’s new</b>"
@@ -1436,15 +1298,8 @@ msgstr "%1 Beta %2"
 #~ msgstr "Bei der Arbeit an der nächsten Veröffentlichung helfen"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The KDE community relies on donations of expertise and funds, and is "
-#~ "supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support "
-#~ "the wider KDE community, and you can make a difference by donating today."
-#~ msgstr ""
-#~ "Die KDE-Gemeinschaft stützt sich auf Spenden von Fachwissen und Geldern "
-#~ "und wird vom deutschen gemeinnützigen Verein KDE e. V. unterstützt. "
-#~ "Spenden an den KDE e. V. unterstützen die breitere KDE-Gemeinschaft und "
-#~ "mit Ihrer heutigen Spende können Sie einen Unterschied machen."
+#~ msgid "The KDE community relies on donations of expertise and funds, and is supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support the wider KDE community, and you can make a difference by donating today."
+#~ msgstr "Die KDE-Gemeinschaft stützt sich auf Spenden von Fachwissen und Geldern und wird vom deutschen gemeinnützigen Verein KDE e. V. unterstützt. Spenden an den KDE e. V. unterstützen die breitere KDE-Gemeinschaft und mit Ihrer heutigen Spende können Sie einen Unterschied machen."
 
 #~ msgid "6.0 Dev"
 #~ msgstr "6.0 Dev"
@@ -1471,47 +1326,16 @@ msgstr "%1 Beta %2"
 #~ msgstr "(c) 2021"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "KDE is not a big company; it's an international volunteer community, and "
-#~ "its software is made by people like you donating their time and passion. "
-#~ "You too can help make things better, whether it's through translation, "
-#~ "visual design, and promotion, or programming and bug triaging.<nl/><nl/"
-#~ ">By contributing to KDE, you can become part of something special, meet "
-#~ "new friends, learn new skills, and make a difference to millions while "
-#~ "working with people from around the globe to deliver a stunning free "
-#~ "software computing experience."
-#~ msgstr ""
-#~ "KDE ist kein Großunternehmen sondern eine internationale Gemeinschaft von "
-#~ "Freiwilligen. Die Software wird von Menschen wie Ihnen gemacht, die dem "
-#~ "Projekt ihre Freizeit und Leidenschaft widmen. Auch Sie können helfen die "
-#~ "Dinge noch besser zu machen, sei es durch Übersetzungen, Beiträge zum "
-#~ "Design, Werbung, Programmierung oder bei der Fehlerbehebung.<nl/><nl/"
-#~ ">Durch Ihren Beitrag zu KDE können Sie Teil von etwas Besonderem werden, "
-#~ "neue Freunde kennenlernen, Fähigkeiten erlernen und das Leben von "
-#~ "Millionen verändern, indem Sie mit Menschen aus der ganzen Welt "
-#~ "zusammenarbeiten, um ein großartiges freies Software-Erlebnis zu "
-#~ "ermöglichen."
+#~ msgid "KDE is not a big company; it's an international volunteer community, and its software is made by people like you donating their time and passion. You too can help make things better, whether it's through translation, visual design, and promotion, or programming and bug triaging.<nl/><nl/>By contributing to KDE, you can become part of something special, meet new friends, learn new skills, and make a difference to millions while working with people from around the globe to deliver a stunning free software computing experience."
+#~ msgstr "KDE ist kein Großunternehmen sondern eine internationale Gemeinschaft von Freiwilligen. Die Software wird von Menschen wie Ihnen gemacht, die dem Projekt ihre Freizeit und Leidenschaft widmen. Auch Sie können helfen die Dinge noch besser zu machen, sei es durch Übersetzungen, Beiträge zum Design, Werbung, Programmierung oder bei der Fehlerbehebung.<nl/><nl/>Durch Ihren Beitrag zu KDE können Sie Teil von etwas Besonderem werden, neue Freunde kennenlernen, Fähigkeiten erlernen und das Leben von Millionen verändern, indem Sie mit Menschen aus der ganzen Welt zusammenarbeiten, um ein großartiges freies Software-Erlebnis zu ermöglichen."
 
 #~ msgctxt "@title:window"
 #~ msgid "Support Your Freedom"
 #~ msgstr "Unterstützen Sie Ihre Freiheit"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The KDE community relies on donations of expertise and funds, and is "
-#~ "supported by KDE e.V.--a German nonprofit that manages legal matters, "
-#~ "funds development sprints and server resources, and offers employment "
-#~ "opportunities for KDE developers. Donations to KDE e.V. support the wider "
-#~ "KDE community, and you can make a difference by donating today!<nl/><nl/"
-#~ ">Donations are tax-deductible in Germany."
-#~ msgstr ""
-#~ "Die KDE-Gemeinschaft stützt sich auf Spenden von Fachwissen und Geldern "
-#~ "und wird vom gemeinnützigen Verein KDE e. V. unterstützt, der sich um "
-#~ "rechtliche Fragen, Entwicklungssprints und Serverressourcen kümmert sowie "
-#~ "Beschäftigungsmöglichkeiten für KDE-Entwickler bietet. Spenden an den KDE "
-#~ "e. V. unterstützen die breitere KDE-Gemeinschaft und mit Ihrer heutigen "
-#~ "Spende können Sie einen Unterschied machen.<nl/><nl/>Spenden sind in "
-#~ "Deutschland in der Regel steuerlich absetzbar."
+#~ msgid "The KDE community relies on donations of expertise and funds, and is supported by KDE e.V.--a German nonprofit that manages legal matters, funds development sprints and server resources, and offers employment opportunities for KDE developers. Donations to KDE e.V. support the wider KDE community, and you can make a difference by donating today!<nl/><nl/>Donations are tax-deductible in Germany."
+#~ msgstr "Die KDE-Gemeinschaft stützt sich auf Spenden von Fachwissen und Geldern und wird vom gemeinnützigen Verein KDE e. V. unterstützt, der sich um rechtliche Fragen, Entwicklungssprints und Serverressourcen kümmert sowie Beschäftigungsmöglichkeiten für KDE-Entwickler bietet. Spenden an den KDE e. V. unterstützen die breitere KDE-Gemeinschaft und mit Ihrer heutigen Spende können Sie einen Unterschied machen.<nl/><nl/>Spenden sind in Deutschland in der Regel steuerlich absetzbar."
 
 #~ msgctxt "@action:button"
 #~ msgid "Plasma 6 Supporters"
@@ -1534,23 +1358,8 @@ msgstr "%1 Beta %2"
 #~ msgstr "Neue Erweiterungen herunterladen"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "Throughout Plasma, System Settings, and KDE apps, you'll find buttons "
-#~ "marked \"Get New <emphasis>thing</emphasis>…\". Clicking on them will "
-#~ "show you 3rd-party content to extend the system, made by other people "
-#~ "like you! In this way, it is often possible to add functionality you want "
-#~ "without having to ask KDE developers to implement it themselves.<nl/><nl/"
-#~ ">Note that content acquired this way has not been reviewed by your "
-#~ "distributor for functionality or stability."
-#~ msgstr ""
-#~ "Überall in Plasma, z. B. in den Systemeinstellungen oder in KDE-"
-#~ "Anwendungen, finden Sie Knöpfe mit der Aufschrift „Neue <emphasis>Dinge</"
-#~ "emphasis> holen“. Wenn Sie darauf klicken, werden Ihnen Erweiterungen für "
-#~ "Ihr System angezeigt, die von Menschen wie Ihnen gemacht wurden. Auf "
-#~ "diese Weise ist es oft möglich, Funktionen nachzurüsten, ohne KDE-"
-#~ "Entwickler darum bitten zu müssen.<nl/><nl/>Beachten Sie, dass auf diesem "
-#~ "Wege bezogene Inhalte von Ihrer Distribution nicht auf Funktion oder "
-#~ "Stabilität geprüft wurden."
+#~ msgid "Throughout Plasma, System Settings, and KDE apps, you'll find buttons marked \"Get New <emphasis>thing</emphasis>…\". Clicking on them will show you 3rd-party content to extend the system, made by other people like you! In this way, it is often possible to add functionality you want without having to ask KDE developers to implement it themselves.<nl/><nl/>Note that content acquired this way has not been reviewed by your distributor for functionality or stability."
+#~ msgstr "Überall in Plasma, z. B. in den Systemeinstellungen oder in KDE-Anwendungen, finden Sie Knöpfe mit der Aufschrift „Neue <emphasis>Dinge</emphasis> holen“. Wenn Sie darauf klicken, werden Ihnen Erweiterungen für Ihr System angezeigt, die von Menschen wie Ihnen gemacht wurden. Auf diese Weise ist es oft möglich, Funktionen nachzurüsten, ohne KDE-Entwickler darum bitten zu müssen.<nl/><nl/>Beachten Sie, dass auf diesem Wege bezogene Inhalte von Ihrer Distribution nicht auf Funktion oder Stabilität geprüft wurden."
 
 #~ msgctxt "@action:button"
 #~ msgid "See 3rd-Party Content…"
@@ -1565,28 +1374,12 @@ msgstr "%1 Beta %2"
 #~ msgstr "Online-Konten verbinden"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "This will let you access their content in KDE apps. You can set it up in "
-#~ "System Settings, and here too."
-#~ msgstr ""
-#~ "Dies ermöglicht es Ihnen, auf die jeweiligen Inhalte in KDE-Anwendungen "
-#~ "zuzugreifen. Sie können die Einrichtung in den Systemeinstellungen und "
-#~ "auch hier durchführen."
+#~ msgid "This will let you access their content in KDE apps. You can set it up in System Settings, and here too."
+#~ msgstr "Dies ermöglicht es Ihnen, auf die jeweiligen Inhalte in KDE-Anwendungen zuzugreifen. Sie können die Einrichtung in den Systemeinstellungen und auch hier durchführen."
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "Miraculously, KDE operates on a shoestring budget, relying largely on "
-#~ "donations of labor and resources. You can help change that!<nl/><nl/"
-#~ ">Financial donations help KDE pay for development sprints, hardware and "
-#~ "server resources, and expanded employment. Donations are tax-deductible "
-#~ "in Germany."
-#~ msgstr ""
-#~ "Auf wundersame Weise schafft es KDE mit einem sehr knappen Budget "
-#~ "auszukommen, größtenteils angewiesen auf Spenden von Ressourcen und "
-#~ "Arbeitskraft. Auch Sie können Ihren Beitrag leisten!<nl/><nl/"
-#~ ">Finanzspenden helfen KDE, Entwicklerkonferenzen, Hardware und Server "
-#~ "sowie feste Mitarbeiter zu bezahlen. In Deutschland sind Zuwendungen "
-#~ "zudem steuerlich absetzbar."
+#~ msgid "Miraculously, KDE operates on a shoestring budget, relying largely on donations of labor and resources. You can help change that!<nl/><nl/>Financial donations help KDE pay for development sprints, hardware and server resources, and expanded employment. Donations are tax-deductible in Germany."
+#~ msgstr "Auf wundersame Weise schafft es KDE mit einem sehr knappen Budget auszukommen, größtenteils angewiesen auf Spenden von Ressourcen und Arbeitskraft. Auch Sie können Ihren Beitrag leisten!<nl/><nl/>Finanzspenden helfen KDE, Entwicklerkonferenzen, Hardware und Server sowie feste Mitarbeiter zu bezahlen. In Deutschland sind Zuwendungen zudem steuerlich absetzbar."
 
 #~ msgctxt "@title"
 #~ msgid "Welcome to KDE Plasma!"
@@ -1622,9 +1415,5 @@ msgstr "%1 Beta %2"
 #~ msgid "Welcome to KDE Plasma"
 #~ msgstr "Willkommen zu KDE Plasma"
 
-#~ msgid ""
-#~ "Version number of the Plasma release to display release notes for, e.g. "
-#~ "5.25"
-#~ msgstr ""
-#~ "In den Hinweisen zur Veröffentlichung anzuzeigende Versionsnummer der "
-#~ "Plasma-Veröffentlichung, z. B. 5.25"
+#~ msgid "Version number of the Plasma release to display release notes for, e.g. 5.25"
+#~ msgstr "In den Hinweisen zur Veröffentlichung anzuzeigende Versionsnummer der Plasma-Veröffentlichung, z. B. 5.25"

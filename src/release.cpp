@@ -55,19 +55,8 @@ Release::Release(QObject *parent)
         m_friendlyVersion = QStringLiteral("%1.%2").arg(QString::number(m_version.majorVersion()), QString::number(m_version.minorVersion()));
     }
 
-    // Announcement URL
-    if constexpr (PLASMA_WELCOME_VERSION_PATCH == 80) {
-        // Development version
-        m_announcementUrl = QStringLiteral("https://invent.kde.org/groups/plasma/-/activity/");
-    } else if constexpr (PLASMA_WELCOME_VERSION_PATCH >= 90) {
-        // Beta version
-        m_announcementUrl = QStringLiteral("https://kde.org/announcements/plasma/%1/%1.%2.90/")
-                                .arg(QString::number(m_version.majorVersion()), QString::number(m_version.minorVersion()));
-    } else {
-        // Release version
-        m_announcementUrl = QStringLiteral("https://kde.org/announcements/plasma/%1/%1.%2.0/")
-                                .arg(QString::number(m_version.majorVersion()), QString::number(m_version.minorVersion()));
-    }
+    // Use the project website until SonicDE has version-specific announcement URLs.
+    m_announcementUrl = QStringLiteral("https://sonicde.org");
 
     // Setup for fetching preview
     if (!QNetworkInformation::loadDefaultBackend()) {
@@ -95,7 +84,7 @@ bool Release::isDevelopment() const
 
 QString Release::announcementUrl() const
 {
-    return m_announcementUrl + "?source=plasma-welcome";
+    return m_announcementUrl;
 }
 
 void Release::tryAutomaticPreview()
@@ -139,18 +128,8 @@ void Release::getPreview()
         });
     }
 
-    // Try getting the announcement for the current language
-    QString announcementUrl = m_announcementUrl;
-
-    const QString kdeSite = QStringLiteral("https://kde.org/");
-    if (announcementUrl.startsWith(kdeSite)) {
-        // It's ours, we know how to localise it: Hugo uses
-        // lowercase BCP 47 tags, as defined in RFC 5646
-        QString languageTag = QLocale().bcp47Name().toLower();
-        if (languageTag != "en-POSIX") {
-            announcementUrl.insert(kdeSite.length(), languageTag + "/");
-        }
-    }
+    // Do not assume that the SonicDE website uses upstream's language URL layout.
+    const QString announcementUrl = m_announcementUrl;
 
     qCInfo(WELCOME_LOG) << "Fetching announcement for preview with URL" << announcementUrl;
 

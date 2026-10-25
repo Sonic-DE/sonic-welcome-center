@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-13 00:45+0000\n"
+"Report-Msgid-Bugs-To: https://sonicde.org\n"
+"POT-Creation-Date: 2026-10-25 21:33+1000\n"
 "PO-Revision-Date: 2026-04-26 20:43+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -17,21 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 25.12.3\n"
 
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "박신조"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde@peremen.name"
-
 #: src/main.cpp:43
 #, kde-format
 msgctxt "@info:usagetip"
-msgid "Friendly onboarding wizard for Plasma"
-msgstr "친근한 Plasma 환영 마법사"
+msgid "Friendly onboarding wizard for SonicDE"
+msgstr "친근한 SonicDE 환영 마법사"
 
 #: src/main.cpp:48
 #, kde-format
@@ -69,10 +59,15 @@ msgctxt "@info:credit"
 msgid "Oliver Beard"
 msgstr "Oliver Beard"
 
+#: src/main.cpp:67
+msgctxt "@info:credit"
+msgid "Joseph Crowell"
+msgstr ""
+
 #: src/main.cpp:77
 #, kde-format
-msgid "Display release notes for the current Plasma release."
-msgstr "현재 Plasma 릴리스의 릴리스 노트를 표시합니다."
+msgid "Display release notes for the current SonicDE release."
+msgstr "현재 SonicDE 릴리스의 릴리스 노트를 표시합니다."
 
 #: src/main.cpp:78
 #, kde-format
@@ -129,28 +124,51 @@ msgid "Unassigned"
 msgstr "할당되지 않음"
 
 #: src/qml/ContributionCard.qml:18
-#, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"If you find Plasma to be useful, consider getting involved or donating. KDE "
-"is an international volunteer community, not a big company; your "
-"contributions make a real difference!"
+msgid "If you find SonicDE useful, consider getting involved. Your contributions to the SonicDE community make a real difference!"
 msgstr ""
-"Plasma를 유용하게 사용하셨다면 KDE에 참여하거나 기부하는 것을 고려해 보십시"
-"오. KDE는 국제적인 자원 봉사 커뮤니티이며 큰 회사가 아닙니다. 작은 기여가 큰 "
-"차이를 만들 수 있습니다!"
-
-#: src/qml/ContributionCard.qml:29
-#, kde-format
-msgctxt "@action:button"
-msgid "Make a donation"
-msgstr "기부하기"
 
 #: src/qml/ContributionCard.qml:36
 #, kde-format
 msgctxt "@action:button"
 msgid "Get involved"
 msgstr "참여하기"
+
+#: src/qml/PageError.qml:22
+#, kde-format
+msgctxt "@info:window"
+msgid "Error loading page"
+msgstr "페이지를 불러오는 중 오류 발생"
+
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
+#, kde-format
+msgctxt "@action:button"
+msgid "Report Bug…"
+msgstr "버그 보고…"
+
+#: src/qml/PageError.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "자세한 정보 복사"
+
+#: src/qml/PageError.qml:46
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page could not be loaded"
+msgstr "이 설정 모듈을 불러올 수 없음"
+
+#: src/qml/PageError.qml:49
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by your distribution could not be loaded"
+msgstr "배포판에서 제공하는 페이지를 불러올 수 없음"
+
+#: src/qml/PageError.qml:51
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by Welcome Center could not be loaded"
+msgstr "환영 센터에서 제공하는 페이지를 불러올 수 없음"
 
 #: src/qml/footers/FooterDefault.qml:28
 #, kde-format
@@ -179,8 +197,8 @@ msgstr "다음(&N)"
 #: src/qml/footers/FooterUpdate.qml:21
 #, kde-format
 msgctxt "@option:check"
-msgid "Show after Plasma is updated"
-msgstr "Plasma를 업데이트한 후 표시"
+msgid "Show after SonicDE is updated"
+msgstr "SonicDE를 업데이트한 후 표시"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -230,11 +248,6 @@ msgctxt "@action:button Button in the Plasma activities sidebar"
 msgid "Create activity…"
 msgstr "활동 만들기…"
 
-#: src/qml/mock/MockKRunner.qml:81
-#, kde-format
-msgid "Search…"
-msgstr "검색…"
-
 #: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
@@ -247,69 +260,6 @@ msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "창 확장"
 
-#: src/qml/PageError.qml:22
-#, kde-format
-msgctxt "@info:window"
-msgid "Error loading page"
-msgstr "페이지를 불러오는 중 오류 발생"
-
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
-#, kde-format
-msgctxt "@action:button"
-msgid "Report Bug…"
-msgstr "버그 보고…"
-
-#: src/qml/PageError.qml:33
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy Details"
-msgstr "자세한 정보 복사"
-
-#: src/qml/PageError.qml:46
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page could not be loaded"
-msgstr "이 설정 모듈을 불러올 수 없음"
-
-#: src/qml/PageError.qml:49
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by your distribution could not be loaded"
-msgstr "배포판에서 제공하는 페이지를 불러올 수 없음"
-
-#: src/qml/PageError.qml:51
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by Welcome Center could not be loaded"
-msgstr "환영 센터에서 제공하는 페이지를 불러올 수 없음"
-
-#: src/qml/pages/Discover.qml:20
-#, kde-format
-msgctxt "@title:window"
-msgid "Find Great Apps"
-msgstr "방대한 앱 검색"
-
-#: src/qml/pages/Discover.qml:21
-#, kde-kuit-format
-msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
-"%2 is the distro name."
-msgid ""
-"There’s no need to search the web to download app installers or use a "
-"command-line package manager; KDE’s app store <application>%1</application> "
-"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
-"try!"
-msgstr ""
-"앱 인스톨러나 명령행 패키지 관리자를 사용할 필요가 없습니다. KDE의 앱 스토어"
-"인 <application>%1</application>에서 수행할 수 있습니다!<nl/><nl/>아래 아이콘"
-"을 클릭해서 사용해 보세요!"
-
-#: src/qml/pages/Discover.qml:103
-#, kde-format
-msgctxt "@action:button %1 is the name of an app"
-msgid "Show %1 in Discover"
-msgstr "Discover에 %1 표시"
-
 #: src/qml/pages/Enjoy.qml:20
 #, kde-format
 msgctxt "@title:window"
@@ -319,84 +269,19 @@ msgstr "즐겁게 사용하세요!"
 #: src/qml/pages/Enjoy.qml:21
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"We hope you love Plasma as much as we loved making it for you! Now it’s time "
-"to jump right in. Explore its features, install your favorite apps and "
-"games, and get busy doing what makes you you!"
-msgstr ""
-"Plasma를 만드는 과정이 즐거웠던 만큼 여러분도 Plasma를 즐겁게 사용하시기를 바"
-"랍니다! 이제 시작할 시간입니다. 기능을 탐색하고, 좋아하는 앱과 게임을 설치하"
-"고, 일상 생활을 즐기세요!"
+msgid "We hope you love SonicDE as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!"
+msgstr "SonicDE를 만드는 과정이 즐거웠던 만큼 여러분도 SonicDE를 즐겁게 사용하시기를 바랍니다! 이제 시작할 시간입니다. 기능을 탐색하고, 좋아하는 앱과 게임을 설치하고, 일상 생활을 즐기세요!"
 
 #: src/qml/pages/Enjoy.qml:26
 #, kde-format
 msgctxt "@label:URL"
-msgid "Learn more about the KDE community"
-msgstr "KDE 커뮤니티에 대해서 더 알아보기"
+msgid "Learn more about the SonicDE community"
+msgstr "SonicDE 커뮤니티에 대해서 더 알아보기"
 
 #: src/qml/pages/Enjoy.qml:31
-#, kde-format
 msgctxt "@label:URL"
-msgid "Get help at KDE’s discussion forums"
-msgstr "KDE 토론 포럼에서 도움 받기"
-
-#: src/qml/pages/Enjoy.qml:39
-#, kde-format
-msgctxt "@action:button"
-msgid "Supporting Members"
-msgstr "후원 회원"
-
-#: src/qml/pages/enjoy/Supporters.qml:18
-#, kde-format
-msgctxt "@title:window"
-msgid "Supporting Members"
-msgstr "후원 회원"
-
-#: src/qml/pages/enjoy/Supporters.qml:19
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"We thank the following supporting members for their recurring donation to "
-"KDE:"
-msgstr "KDE에 정기적으로 기부한 다음 후원 회원들에게 감사의 인사를 전합니다:"
-
-#: src/qml/pages/enjoy/Supporters.qml:39
-#, kde-format
-msgctxt "@action:button %1 is the selected sort order, e.g. Random"
-msgid "Sort: %1"
-msgstr "정렬: %1"
-
-#: src/qml/pages/enjoy/Supporters.qml:45
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Random"
-msgstr "무작위"
-
-#: src/qml/pages/enjoy/Supporters.qml:56
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Last Name"
-msgstr "성"
-
-#: src/qml/pages/enjoy/Supporters.qml:67
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "First Name"
-msgstr "이름"
-
-#: src/qml/pages/enjoy/Supporters.qml:78
-#, kde-format
-msgctxt ""
-"@action:inmenu An order to sort a list, referring to the date a user has "
-"first made a donation"
-msgid "Contribution Date"
-msgstr "기여한 날짜"
-
-#: src/qml/pages/enjoy/Supporters.qml:91
-#, kde-format
-msgctxt "@action:inmenu An option to sort a list in reverse order"
-msgid "Reverse"
-msgstr "반전"
+msgid "Find help with SonicDE"
+msgstr ""
 
 #: src/qml/pages/Feedback.qml:16
 #, kde-format
@@ -405,14 +290,9 @@ msgid "Share Anonymous Usage Information"
 msgstr "익명으로 사용 정보 공유"
 
 #: src/qml/pages/Feedback.qml:17
-#, kde-format
 msgctxt "@info:usagetip"
-msgid ""
-"Our developers will use this anonymous data to improve KDE software. You can "
-"choose how much to share in System Settings, and here too."
+msgid "You can choose how much anonymous usage information to share in System Settings, and here too."
 msgstr ""
-"수집한 익명 데이터는 KDE 소프트웨어를 개선하는 데 사용됩니다. 시스템 설정 및 "
-"여기에서 공유할 데이터 수준을 변경할 수 있습니다."
 
 #: src/qml/pages/Live.qml:21
 #, kde-format
@@ -423,23 +303,14 @@ msgstr "%1에 오신 것을 환영합니다!"
 #: src/qml/pages/Live.qml:24
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Pressing the icon below will begin installing %1. Alternatively, you can "
-"close the window to explore the live environment or continue here to find "
-"out about KDE Plasma."
-msgstr ""
-"아래 아이콘을 누르면 %1 설치를 시작합니다. 이 창에서는 계속해서 KDE Plasma에 "
-"대해서 소개하며, 창을 닫으면 라이브 환경을 사용할 수 있습니다."
+msgid "Pressing the icon below will begin installing %1. Alternatively, you can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "아래 아이콘을 누르면 %1 설치를 시작합니다. 이 창에서는 계속해서 SonicDE에 대해서 소개하며, 창을 닫으면 라이브 환경을 사용할 수 있습니다."
 
 #: src/qml/pages/Live.qml:26
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"You can close the window to explore the live environment or continue here to "
-"find out about KDE Plasma."
-msgstr ""
-"이 창에서는 계속해서 KDE Plasma에 대해서 소개하며, 창을 닫으면 라이브 환경을 "
-"사용할 수 있습니다."
+msgid "You can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "이 창에서는 계속해서 SonicDE에 대해서 소개하며, 창을 닫으면 라이브 환경을 사용할 수 있습니다."
 
 #: src/qml/pages/Live.qml:32
 #, kde-format
@@ -470,18 +341,14 @@ msgstr ""
 #: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Networking support for Plasma is not currently installed"
-msgstr "Plasma의 네트워크 지원이 설치되어 있지 않음"
+msgid "Networking support for SonicDE is not currently installed"
+msgstr "SonicDE의 네트워크 지원이 설치되어 있지 않음"
 
 #: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"To manage network connections, Plasma requires <icode>plasma-nm</icode> to "
-"be installed. Please report this omission to %1."
-msgstr ""
-"Plasma에서 네트워크 연결을 관리하려면 <icode>plasma-nm</icode> 패키지가 설치"
-"되어 있어야 합니다. %1에 문제를 보고해 주십시오."
+msgid "To manage network connections, SonicDE requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1."
+msgstr "SonicDE에서 네트워크 연결을 관리하려면 <icode>plasma-nm</icode> 패키지가 설치되어 있어야 합니다. %1에 문제를 보고해 주십시오."
 
 #: src/qml/pages/Network.qml:211
 #, kde-format
@@ -515,30 +382,20 @@ msgstr "상태 변경"
 #: src/qml/pages/PlasmaUpdate.qml:21
 #, kde-format
 msgctxt "@title:window"
-msgid "Plasma has been updated to %1"
-msgstr "Plasma가 %1(으)로 업데이트됨"
+msgid "SonicDE has been updated to %1"
+msgstr "SonicDE가 %1(으)로 업데이트됨"
 
 #: src/qml/pages/PlasmaUpdate.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Thank you for testing this beta release of Plasma — your feedback is "
-"fundamental to helping us improve it! Please report any and all bugs you "
-"find so that we can fix them."
-msgstr ""
-"Plasma 베타 릴리스를 시험 사용해 주셔서 감사합니다. 소프트웨어를 개선하는 데"
-"에는 피드백이 중요합니다! 발견할 수 있는 모든 버그를 보고해 주시면 수정하겠습"
-"니다."
+msgid "Thank you for testing this beta release of SonicDE — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them."
+msgstr "SonicDE 베타 릴리스를 시험 사용해 주셔서 감사합니다. 소프트웨어를 개선하는 데에는 피드백이 중요합니다! 발견할 수 있는 모든 버그를 보고해 주시면 수정하겠습니다."
 
 #: src/qml/pages/PlasmaUpdate.qml:22
-#, kde-kuit-format
+#, kde-kuit-format, fuzzy
 msgctxt "@info:usagetip"
-msgid ""
-"KDE contributors have spent the last four months hard at work on this "
-"release. We hope you enjoy using Plasma as much as we enjoyed making it!"
-msgstr ""
-"KDE 기여자 일동은 지난 4개월간 이 릴리스 작업을 진행했습니다. 만드는 과정만"
-"큼 Plasma를 재미있게 즐기시길 바랍니다!"
+msgid "SonicDE contributors have been hard at work on this release. We hope you enjoy using SonicDE as much as we enjoyed making it!"
+msgstr "SonicDE 기여자 일동은 지난 4개월간 이 릴리스 작업을 진행했습니다. 만드는 과정만큼 SonicDE를 재미있게 즐기시길 바랍니다!"
 
 #: src/qml/pages/PlasmaUpdate.qml:29
 #, kde-format
@@ -607,12 +464,8 @@ msgstr "자동으로 미리 보기 불러오기"
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
 msgctxt "@info:tooltip"
-msgid ""
-"The preview will be loaded automatically when this page is shown for future "
-"Plasma updates, except when using a metered network connection."
-msgstr ""
-"다음 Plasma 업데이트 시 이 페이지를 표시할 때 자동으로 미리 보기를 불러옵니"
-"다. 종량제 네트워크 연결에서는 생략합니다."
+msgid "The preview will be loaded automatically when this page is shown for future SonicDE updates, except when using a metered network connection."
+msgstr "다음 SonicDE 업데이트 시 이 페이지를 표시할 때 자동으로 미리 보기를 불러옵니다. 종량제 네트워크 연결에서는 생략합니다."
 
 #: src/qml/pages/PlasmaUpdate.qml:422
 #, kde-format
@@ -629,13 +482,8 @@ msgstr "필요할 때 강력하게"
 #: src/qml/pages/PowerfulWhenNeeded.qml:20
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma is a feature-rich environment, designed to super-charge your "
-"productivity!<nl/><nl/>Click the cards below to see just a smattering of "
-"what it can do for you:"
-msgstr ""
-"Plasma에는 생산성을 강화할 수 있는 다양한 강력한 기능이 있습니다!<nl/><nl/>아"
-"래 카드를 클릭하여 Plasma의 주요 기능을 탐색할 수 있습니다."
+msgid "SonicDE is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>Click the cards below to see just a smattering of what it can do for you:"
+msgstr "SonicDE에는 생산성을 강화할 수 있는 다양한 강력한 기능이 있습니다!<nl/><nl/>아래 카드를 클릭하여 SonicDE의 주요 기능을 탐색할 수 있습니다."
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:44
 #, kde-format
@@ -714,8 +562,179 @@ msgstr "민감한 파일을 안전하게 저장하기"
 #: src/qml/pages/PowerfulWhenNeeded.qml:124
 #, kde-format
 msgctxt "@action:button"
-msgid "Learn about more Plasma features"
-msgstr "Plasma 기능 더 알아보기"
+msgid "Learn about more SonicDE features"
+msgstr "SonicDE 기능 더 알아보기"
+
+#: src/qml/pages/SimpleByDefault.qml:21
+#, kde-format
+msgctxt "@info:window"
+msgid "Simple by Default"
+msgstr "기본적으로 간단하게"
+
+#: src/qml/pages/SimpleByDefault.qml:22
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "SonicDE is designed to be simple and usable out of the box. Things are where you would expect, and there is generally no need to configure anything before you can be comfortable and productive.<nl/><nl/>Below is a visual representation of a typical SonicDE desktop; move the pointer over or click on something to learn about it!"
+msgstr "SonicDE는 초기 상태에서 간단하면서 사용하기 편리한 것을 목표로 합니다. 예상하는 곳에 기능이 배치되어 있으며, 기본적인 상태에서 별개의 설정 없이 편안하고 생산적으로 사용할 수 있습니다.<nl/><nl/>아래는 일반적인 SonicDE 데스크톱의 모습입니다. 마우스 포인터를 갖다 두거나 클릭하면 정보를 알아볼 수 있습니다!"
+
+#: src/qml/pages/SimpleByDefault.qml:33
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is the “Desktop”. It shows files and folders that are contained in your "
+"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
+"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
+"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
+"interface> to add, remove or modify widgets."
+msgstr ""
+"이것은 \"바탕 화면\"입니다. 내 홈 폴더의 <filename>바탕화면</filename> 폴더 "
+"아래에 있는 파일과 폴더를 표시하며, 위젯을 표시할 수도 있습니다. 오른쪽 단추"
+"로 클릭한 다음 <interface>바탕 화면과 배경 그림…</interface>을 선택하여 바탕 "
+"화면의 모양을 설정할 수 있습니다. <interface>편집 모드 들어가기</interface>"
+"를 통해서 위젯을 추가, 삭제, 수정할 수 있습니다."
+
+#: src/qml/pages/SimpleByDefault.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is a “Panel” — a container to hold widgets. Right-click on it and "
+"choose <interface>Show Panel Configuration</interface> to change how it "
+"behaves, which screen edge it lives on, and to add, remove or modify widgets."
+msgstr ""
+"이것은 \"패널\"입니다. 패널은 위젯을 포함하는 컨테이너입니다. 오른쪽 단추로 "
+"클릭하여 <interface>패널 설정 표시</interface>를 선택하면 패널의 행동 조정, "
+"패널이 표시될 화면 경계, 위젯 추가, 삭제, 수정을 할 수 있습니다."
+
+#: src/qml/pages/SimpleByDefault.qml:39
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
+msgstr ""
+"이것은 다기능 실행기인 \"프로그램 실행기\" 위젯입니다. 앱 실행, 시스템 종료 "
+"및 다시 시작, 최근 파일 접근 등을 할 수 있습니다. 시작하려면 클릭하세요!"
+
+#: src/qml/pages/SimpleByDefault.qml:42
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Task Manager” widget, where you can switch between open apps "
+"and also launch new ones. Drag app icons to re-arrange them."
+msgstr ""
+"이것은 \"작업 관리자\" 위젯입니다. 열린 앱을 전환하고 새 앱을 실행할 수 있습"
+"니다. 앱 아이콘을 드래그하여 순서를 변경할 수 있습니다."
+
+#: src/qml/pages/SimpleByDefault.qml:45
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “System Tray” widget, which lets you control system functions "
+"like changing the volume and connecting to networks. Items will become "
+"visible here only when relevant. To see all available items, click the ⌃ "
+"arrow next to the clock."
+msgstr ""
+"이것은 \"시스템 트레이\" 위젯입니다. 음량 조절, 네트워크 연결 등 시스템 기능"
+"을 제어할 수 있습니다. 항목을 사용해야 할 때에만 표시됩니다. 모든 항목을 표시"
+"하려면 시계 옆에 있는  ⌃ 화살표를 클릭하십시오."
+
+#: src/qml/pages/SimpleByDefault.qml:48
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
+"be also configured to show other timezones and events from your digital "
+"calendars."
+msgstr ""
+"이것은 \"디지털 시계\" 위젯입니다. 클릭하면 달력을 표시합니다. 다른 시간대나 "
+"내 디지털 캘린더의 이벤트를 표시할 수도 있습니다."
+
+#: src/qml/pages/SimpleByDefault.qml:51
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
+"open windows so you can access the desktop. Click on it again to bring them "
+"back."
+msgstr ""
+"이것은 \"바탕 화면 엿보기\" 위젯입니다. 클릭하면 모든 열린 창을 임시로 숨겨"
+"서 바탕 화면을 볼 수 있습니다. 다시 클릭하면 창이 복원됩니다."
+
+#: src/qml/pages/Welcome.qml:21
+#, kde-format
+msgctxt "@title"
+msgid "Welcome"
+msgstr "환영합니다"
+
+#: src/qml/pages/Welcome.qml:23
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is custom text supplied by the distro"
+msgid "%1<nl/><nl/>This operating system is running SonicDE, a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "%1<nl/><nl/>이 운영 체제에서는 SonicDE를 실행합니다. SonicDE는 전 세계적인 자원 봉사자로 구성된 소프트웨어 커뮤니티 SonicDE에서 제작한 자유 오픈 소스 데스크톱 환경입니다. SonicDE 데스크톱 환경은 기본값으로 간단하고 부드러운 사용자 경험을 제공하며, 필요할 때에는 작업을 빠르게 수행할 수 있도록 강력해집니다. 즐겁게 사용하세요!"
+
+#: src/qml/pages/Welcome.qml:24
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is the name of the user's distro"
+msgid "Welcome to the %1 operating system running SonicDE!<nl/><nl/>SonicDE is a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "SonicDE를 실행하는 %1 운영 체제에 오신 것을 환영합니다!<nl/><nl/>SonicDE는 전 세계적인 자원 봉사자로 구성된 소프트웨어 커뮤니티 SonicDE에서 제작한 자유 오픈 소스 데스크톱 환경입니다. SonicDE 데스크톱 환경은 기본값으로 간단하고 부드러운 사용자 경험을 제공하며, 필요할 때에는 작업을 빠르게 수행할 수 있도록 강력해집니다. 즐겁게 사용하세요!"
+
+#: src/qml/pages/Welcome.qml:28
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Welcome Center"
+msgstr "환영 센터 정보"
+
+#: src/qml/pages/Welcome.qml:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About SonicDE"
+msgstr "SonicDE 정보"
+
+#: src/qml/pages/Welcome.qml:45
+msgctxt "@title:window"
+msgid "About SonicDE"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:46
+msgctxt "@info:usagetip"
+msgid "SonicDE is a free and open-source desktop project. SonicDE builds on KDE Plasma to provide a desktop experience with continued X11 support."
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:49
+msgctxt "@action:button"
+msgid "Visit the SonicDE website"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Learn more about the SonicDE community"
+msgstr "SonicDE 커뮤니티에 대해서 더 알아보기"
+
+#: src/qml/pages/Welcome.qml:62
+#, kde-format
+msgctxt "@action:button %1 is the name of the user's distro"
+msgid "Learn more about %1"
+msgstr "%1에 대해서 더 알아보기"
+
+#: src/qml/pages/Welcome.qml:99
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "그림을 불러올 수 없음"
+
+#: src/qml/pages/Welcome.qml:100
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr ""
+"<filename>%1</filename>을(를) 불러올 수 없습니다. 존재 여부를 확인하십시오."
+
+#: src/qml/pages/Welcome.qml:130
+msgctxt "@info"
+msgid "The SonicDE mascot Sonron welcomes you to the SonicDE community!"
+msgstr "SonicDE 마스코트 Sonron이 SonicDE 커뮤니티로 초대합니다!"
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:22
 #, kde-format
@@ -819,18 +838,8 @@ msgstr "KRunner"
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"KRunner is Plasma’s exceptionally powerful and versatile search system. It "
-"powers the search functionality in the Application Launcher menu and the "
-"Overview screen, and it can be accessed as a standalone search bar using the "
-"<shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding "
-"your files and folders, KRunner can launch apps, search the web, convert "
-"between currencies, calculate math problems, and a lot more."
-msgstr ""
-"KRunner는 Plasma의 강력한 검색 시스템입니다. 프로그램 실행기 메뉴와 한눈에 보"
-"기 화면에서 검색 기능을 제공하며, <shortcut>%1</shortcut> 단축키로 검색 표시"
-"줄처럼 사용할 수 있습니다.<nl/><nl/>KRunner는 파일이나 폴더를 검색하는 것 외"
-"에도 앱 실행, 웹 검색, 통화간 환전, 수식 계산 등을 수행할 수 있습니다."
+msgid "KRunner is SonicDE’s exceptionally powerful and versatile search system. It powers the search functionality in the Application Launcher menu and the Overview screen, and it can be accessed as a standalone search bar using the <shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding your files and folders, KRunner can launch apps, search the web, convert between currencies, calculate math problems, and a lot more."
+msgstr "KRunner는 SonicDE의 강력한 검색 시스템입니다. 프로그램 실행기 메뉴와 한눈에 보기 화면에서 검색 기능을 제공하며, <shortcut>%1</shortcut> 단축키로 검색 표시줄처럼 사용할 수 있습니다.<nl/><nl/>KRunner는 파일이나 폴더를 검색하는 것 외에도 앱 실행, 웹 검색, 통화간 환전, 수식 계산 등을 수행할 수 있습니다."
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:58
 #, kde-kuit-format
@@ -901,28 +910,14 @@ msgstr "단축키 설정…"
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
-"keyboard, this is the “Command” key:"
-msgstr ""
-"Plasma의 거의 모든 것은 <shortcut>Meta</shortcut> 키를 사용한 키보드 단축키로"
-"도 실행할 수 있습니다.<nl/><nl/>Mac에서는 \"Command\" 키입니다."
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac keyboard, this is the “Command” key:"
+msgstr "SonicDE의 거의 모든 것은 <shortcut>Meta</shortcut> 키를 사용한 키보드 단축키로도 실행할 수 있습니다.<nl/><nl/>Mac에서는 \"Command\" 키입니다."
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
-"usually located between the left <shortcut>Ctrl</shortcut> and "
-"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
-"the word “Super”:"
-msgstr ""
-"Plasma의 거의 모든 것은 <shortcut>Meta</shortcut> 키를 사용한 키보드 단축키로"
-"도 실행할 수 있습니다.<nl/><nl/>이 키는 대부분 왼쪽 <shortcut>Ctrl</shortcut>"
-"과 <shortcut>Alt</shortcut> 키 사이에 있으며, \"Super\" 키 또는 그림이 그려"
-"져 있는 키입니다."
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is usually located between the left <shortcut>Ctrl</shortcut> and <shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or the word “Super”:"
+msgstr "SonicDE의 거의 모든 것은 <shortcut>Meta</shortcut> 키를 사용한 키보드 단축키로도 실행할 수 있습니다.<nl/><nl/>이 키는 대부분 왼쪽 <shortcut>Ctrl</shortcut>과 <shortcut>Alt</shortcut> 키 사이에 있으며, \"Super\" 키 또는 그림이 그려져 있는 키입니다."
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
 #, kde-format
@@ -1047,23 +1042,14 @@ msgstr ""
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
 msgctxt "@info:window"
-msgid "Plasma Vaults"
-msgstr "Plasma 비밀 공간"
+msgid "SonicDE Vaults"
+msgstr "SonicDE 비밀 공간"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma Vaults allows you to create encrypted folders, called "
-"<interface>Vaults.</interface> Inside each Vault, you can securely store "
-"your passwords, files, pictures, and documents, safe from prying eyes. "
-"Vaults can live inside folders that are synced to cloud storage services "
-"too, providing extra privacy for that content."
-msgstr ""
-"Plasma 비밀 공간은 암호화된 비밀 폴더(<interface>비밀 공간</interface>)를 생"
-"성할 수 있습니다. 각각의 비밀 공간에는 암호 목록, 파일, 사진, 문서 등을 외부"
-"의 침입 시도로부터 안전하게 저장할 수 있습니다. 비밀 공간은 클라우드 저장소 "
-"서비스와 동기화되는 폴더에도 저장할 수 있습니다."
+msgid "SonicDE Vaults allows you to create encrypted folders, called <interface>Vaults.</interface> Inside each Vault, you can securely store your passwords, files, pictures, and documents, safe from prying eyes. Vaults can live inside folders that are synced to cloud storage services too, providing extra privacy for that content."
+msgstr "SonicDE 비밀 공간은 암호화된 비밀 폴더(<interface>비밀 공간</interface>)를 생성할 수 있습니다. 각각의 비밀 공간에는 암호 목록, 파일, 사진, 문서 등을 외부의 침입 시도로부터 안전하게 저장할 수 있습니다. 비밀 공간은 클라우드 저장소 서비스와 동기화되는 폴더에도 저장할 수 있습니다."
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
@@ -1083,11 +1069,6 @@ msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "내 사진"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
-#, kde-format
-msgid "Unlock and Open"
-msgstr "잠금 해제하고 열기"
-
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
@@ -1097,192 +1078,6 @@ msgid ""
 msgstr ""
 "시작하려면 <interface>시스템 트레이</interface>의 화살표를 클릭하여 숨겨진 항"
 "목을 표시한 다음 <interface>비밀 공간</interface> 아이콘을 클릭하십시오."
-
-#: src/qml/pages/SimpleByDefault.qml:21
-#, kde-format
-msgctxt "@info:window"
-msgid "Simple by Default"
-msgstr "기본적으로 간단하게"
-
-#: src/qml/pages/SimpleByDefault.qml:22
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"Plasma is designed to be simple and usable out of the box. Things are where "
-"you would expect, and there is generally no need to configure anything "
-"before you can be comfortable and productive.<nl/><nl/>Below is a visual "
-"representation of a typical Plasma Desktop; move the pointer over or click "
-"on something to learn about it!"
-msgstr ""
-"Plasma는 초기 상태에서 간단하면서 사용하기 편리한 것을 목표로 합니다. 예상하"
-"는 곳에 기능이 배치되어 있으며, 기본적인 상태에서 별개의 설정 없이 편안하고 "
-"생산적으로 사용할 수 있습니다.<nl/><nl/>아래는 일반적인 Plasma 데스크톱의 모"
-"습입니다. 마우스 포인터를 갖다 두거나 클릭하면 정보를 알아볼 수 있습니다!"
-
-#: src/qml/pages/SimpleByDefault.qml:33
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is the “Desktop”. It shows files and folders that are contained in your "
-"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
-"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
-"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
-"interface> to add, remove or modify widgets."
-msgstr ""
-"이것은 \"바탕 화면\"입니다. 내 홈 폴더의 <filename>바탕화면</filename> 폴더 "
-"아래에 있는 파일과 폴더를 표시하며, 위젯을 표시할 수도 있습니다. 오른쪽 단추"
-"로 클릭한 다음 <interface>바탕 화면과 배경 그림…</interface>을 선택하여 바탕 "
-"화면의 모양을 설정할 수 있습니다. <interface>편집 모드 들어가기</interface>"
-"를 통해서 위젯을 추가, 삭제, 수정할 수 있습니다."
-
-#: src/qml/pages/SimpleByDefault.qml:36
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is a “Panel” — a container to hold widgets. Right-click on it and "
-"choose <interface>Show Panel Configuration</interface> to change how it "
-"behaves, which screen edge it lives on, and to add, remove or modify widgets."
-msgstr ""
-"이것은 \"패널\"입니다. 패널은 위젯을 포함하는 컨테이너입니다. 오른쪽 단추로 "
-"클릭하여 <interface>패널 설정 표시</interface>를 선택하면 패널의 행동 조정, "
-"패널이 표시될 화면 경계, 위젯 추가, 삭제, 수정을 할 수 있습니다."
-
-#: src/qml/pages/SimpleByDefault.qml:39
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
-"can launch apps, shut down or restart the system, access recent files, and "
-"more. Click on it to get started!"
-msgstr ""
-"이것은 다기능 실행기인 \"프로그램 실행기\" 위젯입니다. 앱 실행, 시스템 종료 "
-"및 다시 시작, 최근 파일 접근 등을 할 수 있습니다. 시작하려면 클릭하세요!"
-
-#: src/qml/pages/SimpleByDefault.qml:42
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Task Manager” widget, where you can switch between open apps "
-"and also launch new ones. Drag app icons to re-arrange them."
-msgstr ""
-"이것은 \"작업 관리자\" 위젯입니다. 열린 앱을 전환하고 새 앱을 실행할 수 있습"
-"니다. 앱 아이콘을 드래그하여 순서를 변경할 수 있습니다."
-
-#: src/qml/pages/SimpleByDefault.qml:45
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “System Tray” widget, which lets you control system functions "
-"like changing the volume and connecting to networks. Items will become "
-"visible here only when relevant. To see all available items, click the ⌃ "
-"arrow next to the clock."
-msgstr ""
-"이것은 \"시스템 트레이\" 위젯입니다. 음량 조절, 네트워크 연결 등 시스템 기능"
-"을 제어할 수 있습니다. 항목을 사용해야 할 때에만 표시됩니다. 모든 항목을 표시"
-"하려면 시계 옆에 있는  ⌃ 화살표를 클릭하십시오."
-
-#: src/qml/pages/SimpleByDefault.qml:48
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
-"be also configured to show other timezones and events from your digital "
-"calendars."
-msgstr ""
-"이것은 \"디지털 시계\" 위젯입니다. 클릭하면 달력을 표시합니다. 다른 시간대나 "
-"내 디지털 캘린더의 이벤트를 표시할 수도 있습니다."
-
-#: src/qml/pages/SimpleByDefault.qml:51
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
-"open windows so you can access the desktop. Click on it again to bring them "
-"back."
-msgstr ""
-"이것은 \"바탕 화면 엿보기\" 위젯입니다. 클릭하면 모든 열린 창을 임시로 숨겨"
-"서 바탕 화면을 볼 수 있습니다. 다시 클릭하면 창이 복원됩니다."
-
-#: src/qml/pages/Welcome.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome"
-msgstr "환영합니다"
-
-#: src/qml/pages/Welcome.qml:23
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is custom text supplied by the distro"
-msgid ""
-"%1<nl/><nl/>This operating system is running Plasma, a free and open-source "
-"desktop environment created by KDE, an international software community of "
-"volunteers. It is designed to be simple by default for a smooth experience, "
-"but powerful when needed to help you really get things done. We hope you "
-"love it!"
-msgstr ""
-"%1<nl/><nl/>이 운영 체제에서는 KDE Plasma를 실행합니다. Plasma는 전 세계적인 "
-"자원 봉사자로 구성된 소프트웨어 커뮤니티 KDE에서 제작한 자유 오픈 소스 데스크"
-"톱 환경입니다. Plasma 데스크톱 환경은 기본값으로 간단하고 부드러운 사용자 경"
-"험을 제공하며, 필요할 때에는 작업을 빠르게 수행할 수 있도록 강력해집니다. 즐"
-"겁게 사용하세요!"
-
-#: src/qml/pages/Welcome.qml:24
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a "
-"free and open-source desktop environment created by KDE, an international "
-"software community of volunteers. It is designed to be simple by default for "
-"a smooth experience, but powerful when needed to help you really get things "
-"done. We hope you love it!"
-msgstr ""
-"KDE Plasma를 실행하는 %1 운영 체제에 오신 것을 환영합니다!<nl/><nl/>Plasma는 "
-"전 세계적인 자원 봉사자로 구성된 소프트웨어 커뮤니티 KDE에서 제작한 자유 오"
-"픈 소스 데스크톱 환경입니다. Plasma 데스크톱 환경은 기본값으로 간단하고 부드"
-"러운 사용자 경험을 제공하며, 필요할 때에는 작업을 빠르게 수행할 수 있도록 강"
-"력해집니다. 즐겁게 사용하세요!"
-
-#: src/qml/pages/Welcome.qml:28
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About Welcome Center"
-msgstr "환영 센터 정보"
-
-#: src/qml/pages/Welcome.qml:34
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About KDE"
-msgstr "KDE 정보"
-
-#: src/qml/pages/Welcome.qml:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Learn more about the KDE community"
-msgstr "KDE 커뮤니티에 대해서 더 알아보기"
-
-#: src/qml/pages/Welcome.qml:62
-#, kde-format
-msgctxt "@action:button %1 is the name of the user's distro"
-msgid "Learn more about %1"
-msgstr "%1에 대해서 더 알아보기"
-
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "그림을 불러올 수 없음"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr ""
-"<filename>%1</filename>을(를) 불러올 수 없습니다. 존재 여부를 확인하십시오."
-
-#: src/qml/pages/Welcome.qml:120
-#, kde-format
-msgctxt "@info"
-msgid "The KDE mascot Konqi welcomes you to the KDE community!"
-msgstr "KDE 마스코트 Konqi가 KDE 커뮤니티로 초대합니다!"
 
 #: src/release.cpp:42
 #, kde-format
@@ -1302,6 +1097,109 @@ msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 베타 %2"
 
+#, kde-format
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "박신조"
+
+#, kde-format
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde@peremen.name"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "If you find Plasma to be useful, consider getting involved or donating. KDE is an international volunteer community, not a big company; your contributions make a real difference!"
+#~ msgstr "Plasma를 유용하게 사용하셨다면 KDE에 참여하거나 기부하는 것을 고려해 보십시오. KDE는 국제적인 자원 봉사 커뮤니티이며 큰 회사가 아닙니다. 작은 기여가 큰 차이를 만들 수 있습니다!"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Make a donation"
+#~ msgstr "기부하기"
+
+#, kde-format
+#~ msgid "Search…"
+#~ msgstr "검색…"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Find Great Apps"
+#~ msgstr "방대한 앱 검색"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app, and %2 is the distro name."
+#~ msgid "There’s no need to search the web to download app installers or use a command-line package manager; KDE’s app store <application>%1</application> does it all for you!<nl/><nl/>Click on any of the icons below to give it a try!"
+#~ msgstr "앱 인스톨러나 명령행 패키지 관리자를 사용할 필요가 없습니다. KDE의 앱 스토어인 <application>%1</application>에서 수행할 수 있습니다!<nl/><nl/>아래 아이콘을 클릭해서 사용해 보세요!"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the name of an app"
+#~ msgid "Show %1 in Discover"
+#~ msgstr "Discover에 %1 표시"
+
+#, kde-format
+#~ msgctxt "@label:URL"
+#~ msgid "Get help at KDE’s discussion forums"
+#~ msgstr "KDE 토론 포럼에서 도움 받기"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Supporting Members"
+#~ msgstr "후원 회원"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Supporting Members"
+#~ msgstr "후원 회원"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "We thank the following supporting members for their recurring donation to KDE:"
+#~ msgstr "KDE에 정기적으로 기부한 다음 후원 회원들에게 감사의 인사를 전합니다:"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the selected sort order, e.g. Random"
+#~ msgid "Sort: %1"
+#~ msgstr "정렬: %1"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Random"
+#~ msgstr "무작위"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Last Name"
+#~ msgstr "성"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "First Name"
+#~ msgstr "이름"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list, referring to the date a user has first made a donation"
+#~ msgid "Contribution Date"
+#~ msgstr "기여한 날짜"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An option to sort a list in reverse order"
+#~ msgid "Reverse"
+#~ msgstr "반전"
+
+#, kde-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "Our developers will use this anonymous data to improve KDE software. You can choose how much to share in System Settings, and here too."
+#~ msgstr "수집한 익명 데이터는 KDE 소프트웨어를 개선하는 데 사용됩니다. 시스템 설정 및 여기에서 공유할 데이터 수준을 변경할 수 있습니다."
+
+#, kde-format
+#~ msgid "Unlock and Open"
+#~ msgstr "잠금 해제하고 열기"
+
+#, kde-format
+#~ msgctxt "@info"
+#~ msgid "The KDE mascot Konqi welcomes you to the KDE community!"
+#~ msgstr "KDE 마스코트 Konqi가 KDE 커뮤니티로 초대합니다!"
+
 #~ msgctxt "@action:button clicking on this takes the user to a web page"
 #~ msgid "Visit %1"
 #~ msgstr "%1 방문"
@@ -1319,30 +1217,16 @@ msgstr "%1 베타 %2"
 #~ msgstr "시스템 설정"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The System Settings app lets you extensively customize the system to suit "
-#~ "your tastes and preferences. Default apps, wallpapers, visual styles and "
-#~ "icons, virtual desktops, power management, 3rd-party add-ons — you’ll "
-#~ "find it all there!"
-#~ msgstr ""
-#~ "시스템 설정 앱에서는 사용자의 기호와 설정에 맞게 시스템을 사용자 정의할 "
-#~ "수 있습니다. 기본 앱, 바탕 화면 배경 그림, 시각 스타일, 아이콘, 가상 데스"
-#~ "크톱, 전원 관리, 제3자 추가 기능 등 모든 기능을 찾을 수 있습니다!"
+#~ msgid "The System Settings app lets you extensively customize the system to suit your tastes and preferences. Default apps, wallpapers, visual styles and icons, virtual desktops, power management, 3rd-party add-ons — you’ll find it all there!"
+#~ msgstr "시스템 설정 앱에서는 사용자의 기호와 설정에 맞게 시스템을 사용자 정의할 수 있습니다. 기본 앱, 바탕 화면 배경 그림, 시각 스타일, 아이콘, 가상 데스크톱, 전원 관리, 제3자 추가 기능 등 모든 기능을 찾을 수 있습니다!"
 
 #~ msgctxt "@title:window"
 #~ msgid "Manage Software"
 #~ msgstr "소프트웨어 관리"
 
-#~ msgctxt ""
-#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
-#~ msgid ""
-#~ "The <application>%1</application> app helps you find and install "
-#~ "applications, games, and tools. You can search or browse by category, "
-#~ "look at screenshots, and read reviews to help you find the perfect app."
-#~ msgstr ""
-#~ "<application>%1</application> 앱에서는 앱, 게임, 도구 등을 검색하고 설치"
-#~ "할 수 있습니다. 앱을 찾아볼 수 있도록 분류별로 탐색, 스크린샷 보기, 리뷰 "
-#~ "읽기를 할 수 있습니다."
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid "The <application>%1</application> app helps you find and install applications, games, and tools. You can search or browse by category, look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr "<application>%1</application> 앱에서는 앱, 게임, 도구 등을 검색하고 설치할 수 있습니다. 앱을 찾아볼 수 있도록 분류별로 탐색, 스크린샷 보기, 리뷰 읽기를 할 수 있습니다."
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"
@@ -1352,8 +1236,7 @@ msgstr "%1 베타 %2"
 #~ msgid "Filter…"
 #~ msgstr "필터…"
 
-#~ msgid ""
-#~ "Display release notes for the current Plasma release, for beta versions."
+#~ msgid "Display release notes for the current Plasma release, for beta versions."
 #~ msgstr "현재 Plasma 릴리스(베타 버전)의 릴리스 노트를 표시합니다."
 
 #~ msgctxt "@label:URL"
@@ -1373,14 +1256,8 @@ msgstr "%1 베타 %2"
 #~ msgstr "다음 릴리스 돕기"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The KDE community relies on donations of expertise and funds, and is "
-#~ "supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support "
-#~ "the wider KDE community, and you can make a difference by donating today."
-#~ msgstr ""
-#~ "KDE 커뮤니티는 재능과 자금의 기부에 의존하며, 독일의 비영리 단체인 KDE e."
-#~ "V.에서 지원을 지원을 총괄합니다. KDE e.V.에 지원하여 KDE 커뮤니티를 지원"
-#~ "할 수 있습니다. 오늘의 기부가 더 나은 내일을 만들 수 있습니다."
+#~ msgid "The KDE community relies on donations of expertise and funds, and is supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support the wider KDE community, and you can make a difference by donating today."
+#~ msgstr "KDE 커뮤니티는 재능과 자금의 기부에 의존하며, 독일의 비영리 단체인 KDE e.V.에서 지원을 지원을 총괄합니다. KDE e.V.에 지원하여 KDE 커뮤니티를 지원할 수 있습니다. 오늘의 기부가 더 나은 내일을 만들 수 있습니다."
 
 #~ msgid "6.0 Dev"
 #~ msgstr "6.0 개발"
@@ -1407,41 +1284,16 @@ msgstr "%1 베타 %2"
 #~ msgstr "(c) 2021"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "KDE is not a big company; it's an international volunteer community, and "
-#~ "its software is made by people like you donating their time and passion. "
-#~ "You too can help make things better, whether it's through translation, "
-#~ "visual design, and promotion, or programming and bug triaging.<nl/><nl/"
-#~ ">By contributing to KDE, you can become part of something special, meet "
-#~ "new friends, learn new skills, and make a difference to millions while "
-#~ "working with people from around the globe to deliver a stunning free "
-#~ "software computing experience."
-#~ msgstr ""
-#~ "KDE는 큰 회사가 아닌 국제적인 자원 봉사 커뮤니티에서 관리하며, 여러분과 같"
-#~ "은 사람의 시간과 열정을 기부하여 소프트웨어가 만들어집니다. 번역, 시각 디"
-#~ "자인, 홍보, 프로그래밍, 버그 분류 등의 작업으로 기여할 수 있습니다.<nl/"
-#~ "><nl/>KDE에 기여하는 것으로 특별한 모임의 일부로 참여할 수 있으며, 새로운 "
-#~ "사람을 만나고 기술을 익히며, 전 세계의 사람들과 일하면서 수백만이 사용하"
-#~ "는 자유 소프트웨어 컴퓨팅 경험에 기여할 수 있습니다."
+#~ msgid "KDE is not a big company; it's an international volunteer community, and its software is made by people like you donating their time and passion. You too can help make things better, whether it's through translation, visual design, and promotion, or programming and bug triaging.<nl/><nl/>By contributing to KDE, you can become part of something special, meet new friends, learn new skills, and make a difference to millions while working with people from around the globe to deliver a stunning free software computing experience."
+#~ msgstr "KDE는 큰 회사가 아닌 국제적인 자원 봉사 커뮤니티에서 관리하며, 여러분과 같은 사람의 시간과 열정을 기부하여 소프트웨어가 만들어집니다. 번역, 시각 디자인, 홍보, 프로그래밍, 버그 분류 등의 작업으로 기여할 수 있습니다.<nl/><nl/>KDE에 기여하는 것으로 특별한 모임의 일부로 참여할 수 있으며, 새로운 사람을 만나고 기술을 익히며, 전 세계의 사람들과 일하면서 수백만이 사용하는 자유 소프트웨어 컴퓨팅 경험에 기여할 수 있습니다."
 
 #~ msgctxt "@title:window"
 #~ msgid "Support Your Freedom"
 #~ msgstr "내 자유를 지원하기"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The KDE community relies on donations of expertise and funds, and is "
-#~ "supported by KDE e.V.--a German nonprofit that manages legal matters, "
-#~ "funds development sprints and server resources, and offers employment "
-#~ "opportunities for KDE developers. Donations to KDE e.V. support the wider "
-#~ "KDE community, and you can make a difference by donating today!<nl/><nl/"
-#~ ">Donations are tax-deductible in Germany."
-#~ msgstr ""
-#~ "KDE 커뮤니티는 재능과 자금의 기부에 의존하며, 독일의 비영리 단체인 KDE e."
-#~ "V.를 통하여 법전 문제, 재정, 개발 스프린트, 서버 자원, KDE 개발자의 고용"
-#~ "을 관리합니다. KDE e.V.에 지원하여 KDE 커뮤니티를 지원할 수 있습니다. 오늘"
-#~ "의 기부가 더 나은 내일을 만들 수 있습니다!<nl/><nl/>독일에 거주 중인 경우 "
-#~ "세액 공제를 받을 수 있습니다."
+#~ msgid "The KDE community relies on donations of expertise and funds, and is supported by KDE e.V.--a German nonprofit that manages legal matters, funds development sprints and server resources, and offers employment opportunities for KDE developers. Donations to KDE e.V. support the wider KDE community, and you can make a difference by donating today!<nl/><nl/>Donations are tax-deductible in Germany."
+#~ msgstr "KDE 커뮤니티는 재능과 자금의 기부에 의존하며, 독일의 비영리 단체인 KDE e.V.를 통하여 법전 문제, 재정, 개발 스프린트, 서버 자원, KDE 개발자의 고용을 관리합니다. KDE e.V.에 지원하여 KDE 커뮤니티를 지원할 수 있습니다. 오늘의 기부가 더 나은 내일을 만들 수 있습니다!<nl/><nl/>독일에 거주 중인 경우 세액 공제를 받을 수 있습니다."
 
 #~ msgctxt "@action:button"
 #~ msgid "Plasma 6 Supporters"
@@ -1464,21 +1316,8 @@ msgstr "%1 베타 %2"
 #~ msgstr "새로운 항목 다운로드"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "Throughout Plasma, System Settings, and KDE apps, you'll find buttons "
-#~ "marked \"Get New <emphasis>thing</emphasis>…\". Clicking on them will "
-#~ "show you 3rd-party content to extend the system, made by other people "
-#~ "like you! In this way, it is often possible to add functionality you want "
-#~ "without having to ask KDE developers to implement it themselves.<nl/><nl/"
-#~ ">Note that content acquired this way has not been reviewed by your "
-#~ "distributor for functionality or stability."
-#~ msgstr ""
-#~ "Plasma, 시스템 설정, KDE 앱에서 \"새로운 <emphasis>항목</emphasis> 가져오"
-#~ "기…\" 단추를 볼 수 있습니다. 이를 클릭하면 시스템을 확장할 수 있는 여러분"
-#~ "과 같은 사람들이 만든 제3자 콘텐츠를 볼 수 있습니다! 이러한 콘텐츠를 사용"
-#~ "하여 KDE 개발자에게 요청하지 않더라도 기능을 추가할 수 있습니다.<nl/><nl/>"
-#~ "이 방식으로 설치한 콘텐츠는 배포판에서 기능이나 안정성 검사를 거치지 않았"
-#~ "습니다."
+#~ msgid "Throughout Plasma, System Settings, and KDE apps, you'll find buttons marked \"Get New <emphasis>thing</emphasis>…\". Clicking on them will show you 3rd-party content to extend the system, made by other people like you! In this way, it is often possible to add functionality you want without having to ask KDE developers to implement it themselves.<nl/><nl/>Note that content acquired this way has not been reviewed by your distributor for functionality or stability."
+#~ msgstr "Plasma, 시스템 설정, KDE 앱에서 \"새로운 <emphasis>항목</emphasis> 가져오기…\" 단추를 볼 수 있습니다. 이를 클릭하면 시스템을 확장할 수 있는 여러분과 같은 사람들이 만든 제3자 콘텐츠를 볼 수 있습니다! 이러한 콘텐츠를 사용하여 KDE 개발자에게 요청하지 않더라도 기능을 추가할 수 있습니다.<nl/><nl/>이 방식으로 설치한 콘텐츠는 배포판에서 기능이나 안정성 검사를 거치지 않았습니다."
 
 #~ msgctxt "@action:button"
 #~ msgid "See 3rd-Party Content…"
@@ -1493,25 +1332,12 @@ msgstr "%1 베타 %2"
 #~ msgstr "온라인 계정 연결"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "This will let you access their content in KDE apps. You can set it up in "
-#~ "System Settings, and here too."
-#~ msgstr ""
-#~ "온라인 계정과 연결하고 KDE 앱에서 콘텐츠에 접근할 수 있습니다. 시스템 설"
-#~ "정 및 여기에서 설정할 수 있습니다."
+#~ msgid "This will let you access their content in KDE apps. You can set it up in System Settings, and here too."
+#~ msgstr "온라인 계정과 연결하고 KDE 앱에서 콘텐츠에 접근할 수 있습니다. 시스템 설정 및 여기에서 설정할 수 있습니다."
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "Miraculously, KDE operates on a shoestring budget, relying largely on "
-#~ "donations of labor and resources. You can help change that!<nl/><nl/"
-#~ ">Financial donations help KDE pay for development sprints, hardware and "
-#~ "server resources, and expanded employment. Donations are tax-deductible "
-#~ "in Germany."
-#~ msgstr ""
-#~ "KDE는 중소규모의 예산으로 운영되며 대부분 자원과 인력의 기부로 운영됩니"
-#~ "다. 여러분도 운영에 기여할 수 있습니다!<nl/><nl/>KDE에 금전적으로 기부하"
-#~ "면 개발 스프린트, 하드웨어와 서버 자원, 금전적 지원에 사용됩니다. 독일에 "
-#~ "거주 중인 경우 세액 공제를 받을 수 있습니다."
+#~ msgid "Miraculously, KDE operates on a shoestring budget, relying largely on donations of labor and resources. You can help change that!<nl/><nl/>Financial donations help KDE pay for development sprints, hardware and server resources, and expanded employment. Donations are tax-deductible in Germany."
+#~ msgstr "KDE는 중소규모의 예산으로 운영되며 대부분 자원과 인력의 기부로 운영됩니다. 여러분도 운영에 기여할 수 있습니다!<nl/><nl/>KDE에 금전적으로 기부하면 개발 스프린트, 하드웨어와 서버 자원, 금전적 지원에 사용됩니다. 독일에 거주 중인 경우 세액 공제를 받을 수 있습니다."
 
 #~ msgctxt "@title"
 #~ msgid "Welcome to KDE Plasma!"
@@ -1539,9 +1365,5 @@ msgstr "%1 베타 %2"
 #~ msgstr[0] "%2쪽 중 %1쪽"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "In System Settings, you can choose to share anonymous usage information "
-#~ "with KDE. You can make that choice here, too."
-#~ msgstr ""
-#~ "시스템 설정에서 KDE와 익명화된 사용 정보를 공유할지 여부를 선택할 수 있습"
-#~ "니다. 여기에서도 옵션을 선택할 수 있습니다."
+#~ msgid "In System Settings, you can choose to share anonymous usage information with KDE. You can make that choice here, too."
+#~ msgstr "시스템 설정에서 KDE와 익명화된 사용 정보를 공유할지 여부를 선택할 수 있습니다. 여기에서도 옵션을 선택할 수 있습니다."

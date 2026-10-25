@@ -24,7 +24,7 @@ Private.MockAppletBase {
         spacing: 0
 
         Repeater {
-            model: ["org.kde.dolphin", "systemsettings", "plasmadiscover"]
+            model: ["org.kde.dolphin", "systemsettings"]
             delegate: Kirigami.Icon {
                 Layout.leftMargin: 10 // Hardcoded from original
                 Layout.rightMargin: 10 // Hardcoded from original

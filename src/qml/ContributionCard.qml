@@ -15,7 +15,7 @@ Kirigami.AbstractCard {
     contentItem: QQC2.Label {
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.Wrap
-        text: xi18nc("@info:usagetip", "If you find Plasma to be useful, consider getting involved or donating. KDE is an international volunteer community, not a big company; your contributions make a real difference!")
+        text: xi18nc("@info:usagetip", "If you find SonicDE useful, consider getting involved. Your contributions to the SonicDE community make a real difference!")
     }
 
     footer: RowLayout {
@@ -25,16 +25,17 @@ Kirigami.AbstractCard {
             Layout.fillWidth: true
         }
 
+        // TODO: Donations are disabled until SonicDE has a donation destination.
+        /*
         Kirigami.UrlButton {
             text: i18nc("@action:button", "Make a donation")
-            url: "https://kde.org/community/donations?source=plasma-welcome"
+            url: "https://sonicde.org"
         }
+        */
 
         Kirigami.UrlButton {
-            Layout.leftMargin: Kirigami.Units.largeSpacing
-
             text: i18nc("@action:button", "Get involved")
-            url: "https://community.kde.org/Get_Involved?source=plasma-welcome"
+            url: "https://sonicde.org"
         }
 
         Item {

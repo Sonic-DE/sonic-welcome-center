@@ -20,8 +20,8 @@ Welcome.Page {
 
     heading: i18nc("@title", "Welcome")
     description: Private.App.customIntroText.length > 0
-            ? xi18nc("@info:usagetip %1 is custom text supplied by the distro", "%1<nl/><nl/>This operating system is running Plasma, a free and open-source desktop environment created by KDE, an international software community of volunteers. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!", Private.App.customIntroText)
-            : xi18nc("@info:usagetip %1 is the name of the user's distro", "Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a free and open-source desktop environment created by KDE, an international software community of volunteers. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!", Welcome.Distro.name)
+            ? xi18nc("@info:usagetip %1 is custom text supplied by the distro", "%1<nl/><nl/>This operating system is running SonicDE, a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!", Private.App.customIntroText)
+            : xi18nc("@info:usagetip %1 is the name of the user's distro", "Welcome to the %1 operating system running SonicDE!<nl/><nl/>SonicDE is a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!", Welcome.Distro.name)
 
     actions: [
         Kirigami.Action {
@@ -31,17 +31,26 @@ Welcome.Page {
             displayHint: Kirigami.DisplayHint.AlwaysHide
         },
         Kirigami.Action {
-            text: i18nc("@action:inmenu", "About KDE")
-            icon.name: "kde"
-            onTriggered: pageStack.layers.push(aboutKDEPage)
+            text: i18nc("@action:inmenu", "About SonicDE")
+            icon.name: "start-here-sonicde-plasma"
+            onTriggered: pageStack.layers.push(aboutSonicDEPage)
             displayHint: Kirigami.DisplayHint.AlwaysHide
         }
     ]
 
     Component {
-        id: aboutKDEPage
+        id: aboutSonicDEPage
 
-        FormCard.AboutKDEPage {}
+        Welcome.Page {
+            heading: i18nc("@title:window", "About SonicDE")
+            description: xi18nc("@info:usagetip", "SonicDE is a free and open-source desktop project. SonicDE builds on KDE Plasma to provide a desktop experience with continued X11 support.")
+            topContent: [
+                Kirigami.UrlButton {
+                    text: i18nc("@action:button", "Visit the SonicDE website")
+                    url: "https://sonicde.org"
+                }
+            ]
+        }
     }
 
     Component {
@@ -54,8 +63,8 @@ Welcome.Page {
         Kirigami.UrlButton {
             id: plasmaLink
             Layout.topMargin: Kirigami.Units.largeSpacing
-            text: i18nc("@action:button", "Learn more about the KDE community")
-            url: "https://community.kde.org/Welcome_to_KDE?source=plasma-welcome"
+            text: i18nc("@action:button", "Learn more about the SonicDE community")
+            url: "https://sonicde.org"
         },
         Kirigami.UrlButton {
             Layout.topMargin: Kirigami.Units.largeSpacing
@@ -118,7 +127,7 @@ Welcome.Page {
             Layout.alignment: Qt.AlignHCenter
             Layout.maximumWidth: Math.round(Math.max(root.width / 2, imageContainer.width / 2))
             Layout.fillWidth: true
-            text: Private.App.customIntroIconCaption || i18nc("@info", "The KDE mascot Konqi welcomes you to the KDE community!")
+            text: Private.App.customIntroIconCaption || i18nc("@info", "The SonicDE mascot Sonron welcomes you to the SonicDE community!")
             wrapMode: Text.Wrap
             horizontalAlignment: Text.AlignHCenter
         }

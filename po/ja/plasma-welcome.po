@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: welcome-app\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-13 00:45+0000\n"
+"Report-Msgid-Bugs-To: https://sonicde.org\n"
+"POT-Creation-Date: 2026-10-25 21:33+1000\n"
 "PO-Revision-Date: 2026-05-17 18:10+0900\n"
 "Last-Translator: Mint <5602mint@gmail.com>\n"
 "Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
@@ -18,21 +18,11 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Generator: Lokalize 26.04.2\n"
 
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Ryuichi Yamada,Mint"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "ryuichi_ya220@outlook.jp,5602mint@gmail.com"
-
 #: src/main.cpp:43
 #, kde-format
 msgctxt "@info:usagetip"
-msgid "Friendly onboarding wizard for Plasma"
-msgstr "フレンドリーな Plasma 初期設定ウィザード"
+msgid "Friendly onboarding wizard for SonicDE"
+msgstr "フレンドリーな SonicDE 初期設定ウィザード"
 
 #: src/main.cpp:48
 #, kde-format
@@ -70,10 +60,15 @@ msgctxt "@info:credit"
 msgid "Oliver Beard"
 msgstr "Oliver Beard"
 
+#: src/main.cpp:67
+msgctxt "@info:credit"
+msgid "Joseph Crowell"
+msgstr ""
+
 #: src/main.cpp:77
 #, kde-format
-msgid "Display release notes for the current Plasma release."
-msgstr "現在の Plasma リリースのリリースノートを表示します。"
+msgid "Display release notes for the current SonicDE release."
+msgstr "現在の SonicDE リリースのリリースノートを表示します。"
 
 #: src/main.cpp:78
 #, kde-format
@@ -130,28 +125,53 @@ msgid "Unassigned"
 msgstr "(未割り当て)"
 
 #: src/qml/ContributionCard.qml:18
-#, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"If you find Plasma to be useful, consider getting involved or donating. KDE "
-"is an international volunteer community, not a big company; your "
-"contributions make a real difference!"
+msgid "If you find SonicDE useful, consider getting involved. Your contributions to the SonicDE community make a real difference!"
 msgstr ""
-"Plasma に満足していただけたのであれば、ぜひ KDE への参加や寄付をご検討くださ"
-"い。KDE は大企業ではなく、国際的なボランティアのコミュニティです。あなたの協"
-"力が大きな意味を持ちます！"
-
-#: src/qml/ContributionCard.qml:29
-#, kde-format
-msgctxt "@action:button"
-msgid "Make a donation"
-msgstr "寄付する"
 
 #: src/qml/ContributionCard.qml:36
 #, kde-format
 msgctxt "@action:button"
 msgid "Get involved"
 msgstr "参加する"
+
+#: src/qml/PageError.qml:22
+#, kde-format
+msgctxt "@info:window"
+msgid "Error loading page"
+msgstr "ページ読み込みエラー"
+
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
+#, kde-format
+msgctxt "@action:button"
+msgid "Report Bug…"
+msgstr "バグを報告…"
+
+#: src/qml/PageError.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "詳細をコピー"
+
+#: src/qml/PageError.qml:46
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page could not be loaded"
+msgstr "このページの読み込みに失敗しました"
+
+#: src/qml/PageError.qml:49
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by your distribution could not be loaded"
+msgstr ""
+"お使いのディストリビューションによって提供されたこのページを読み込めませんで"
+"した"
+
+#: src/qml/PageError.qml:51
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by Welcome Center could not be loaded"
+msgstr "ようこそセンターによって提供されたこのページを読み込めませんでした"
 
 #: src/qml/footers/FooterDefault.qml:28
 #, kde-format
@@ -180,8 +200,8 @@ msgstr "次へ(&N)"
 #: src/qml/footers/FooterUpdate.qml:21
 #, kde-format
 msgctxt "@option:check"
-msgid "Show after Plasma is updated"
-msgstr "Plasma の更新後に表示"
+msgid "Show after SonicDE is updated"
+msgstr "SonicDE の更新後に表示"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -231,11 +251,6 @@ msgctxt "@action:button Button in the Plasma activities sidebar"
 msgid "Create activity…"
 msgstr "アクティビティを作成..."
 
-#: src/qml/mock/MockKRunner.qml:81
-#, kde-format
-msgid "Search…"
-msgstr "検索..."
-
 #: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
@@ -248,72 +263,6 @@ msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "ウィンドウを広げてください"
 
-#: src/qml/PageError.qml:22
-#, kde-format
-msgctxt "@info:window"
-msgid "Error loading page"
-msgstr "ページ読み込みエラー"
-
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
-#, kde-format
-msgctxt "@action:button"
-msgid "Report Bug…"
-msgstr "バグを報告…"
-
-#: src/qml/PageError.qml:33
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy Details"
-msgstr "詳細をコピー"
-
-#: src/qml/PageError.qml:46
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page could not be loaded"
-msgstr "このページの読み込みに失敗しました"
-
-#: src/qml/PageError.qml:49
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by your distribution could not be loaded"
-msgstr ""
-"お使いのディストリビューションによって提供されたこのページを読み込めませんで"
-"した"
-
-#: src/qml/PageError.qml:51
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by Welcome Center could not be loaded"
-msgstr "ようこそセンターによって提供されたこのページを読み込めませんでした"
-
-#: src/qml/pages/Discover.qml:20
-#, kde-format
-msgctxt "@title:window"
-msgid "Find Great Apps"
-msgstr "便利なアプリを見つける"
-
-#: src/qml/pages/Discover.qml:21
-#, kde-kuit-format
-msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
-"%2 is the distro name."
-msgid ""
-"There’s no need to search the web to download app installers or use a "
-"command-line package manager; KDE’s app store <application>%1</application> "
-"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
-"try!"
-msgstr ""
-"アプリを入れるためにブラウザで検索する必要も、コマンドを入力する必要もありま"
-"せん。KDE のアプリストア「<application>%1</application>」が、面倒なインストー"
-"ル作業をすべてこなしてくれます。<nl/><nl/>下のアイコンをクリックして、さっそ"
-"く使ってみましょう。"
-
-#: src/qml/pages/Discover.qml:103
-#, kde-format
-msgctxt "@action:button %1 is the name of an app"
-msgid "Show %1 in Discover"
-msgstr "Discover で %1 を表示"
-
 #: src/qml/pages/Enjoy.qml:20
 #, kde-format
 msgctxt "@title:window"
@@ -323,85 +272,19 @@ msgstr "楽しんで！"
 #: src/qml/pages/Enjoy.qml:21
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"We hope you love Plasma as much as we loved making it for you! Now it’s time "
-"to jump right in. Explore its features, install your favorite apps and "
-"games, and get busy doing what makes you you!"
-msgstr ""
-"私たちが楽しみながら作り上げた Plasma を、あなたにも楽しんでいただけたら幸い"
-"です！さっそく様々な機能をためしたり、お気に入りのアプリやゲームをインストー"
-"ルしたりしてみてください。自分らしさを思う存分発揮して、やりたいことに没頭し"
-"ましょう！"
+msgid "We hope you love SonicDE as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!"
+msgstr "私たちが楽しみながら作り上げた SonicDE を、あなたにも楽しんでいただけたら幸いです！さっそく様々な機能をためしたり、お気に入りのアプリやゲームをインストールしたりしてみてください。自分らしさを思う存分発揮して、やりたいことに没頭しましょう！"
 
 #: src/qml/pages/Enjoy.qml:26
 #, kde-format
 msgctxt "@label:URL"
-msgid "Learn more about the KDE community"
-msgstr "KDE コミュニティについて詳しく知る"
+msgid "Learn more about the SonicDE community"
+msgstr "SonicDE コミュニティについて詳しく知る"
 
 #: src/qml/pages/Enjoy.qml:31
-#, kde-format
 msgctxt "@label:URL"
-msgid "Get help at KDE’s discussion forums"
-msgstr "KDE のフォーラムでサポートを受ける"
-
-#: src/qml/pages/Enjoy.qml:39
-#, kde-format
-msgctxt "@action:button"
-msgid "Supporting Members"
-msgstr "支援者"
-
-#: src/qml/pages/enjoy/Supporters.qml:18
-#, kde-format
-msgctxt "@title:window"
-msgid "Supporting Members"
-msgstr "支援者"
-
-#: src/qml/pages/enjoy/Supporters.qml:19
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"We thank the following supporting members for their recurring donation to "
-"KDE:"
-msgstr "KDE に繰り返し寄付してくださった以下の支援者の方々に感謝します:"
-
-#: src/qml/pages/enjoy/Supporters.qml:39
-#, kde-format
-msgctxt "@action:button %1 is the selected sort order, e.g. Random"
-msgid "Sort: %1"
-msgstr "ソート: %1"
-
-#: src/qml/pages/enjoy/Supporters.qml:45
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Random"
-msgstr "ランダム"
-
-#: src/qml/pages/enjoy/Supporters.qml:56
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Last Name"
-msgstr "姓"
-
-#: src/qml/pages/enjoy/Supporters.qml:67
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "First Name"
-msgstr "名"
-
-#: src/qml/pages/enjoy/Supporters.qml:78
-#, kde-format
-msgctxt ""
-"@action:inmenu An order to sort a list, referring to the date a user has "
-"first made a donation"
-msgid "Contribution Date"
-msgstr "貢献日"
-
-#: src/qml/pages/enjoy/Supporters.qml:91
-#, kde-format
-msgctxt "@action:inmenu An option to sort a list in reverse order"
-msgid "Reverse"
-msgstr "逆順"
+msgid "Find help with SonicDE"
+msgstr ""
 
 #: src/qml/pages/Feedback.qml:16
 #, kde-format
@@ -410,15 +293,9 @@ msgid "Share Anonymous Usage Information"
 msgstr "匿名の使用統計情報を送信する"
 
 #: src/qml/pages/Feedback.qml:17
-#, kde-format
 msgctxt "@info:usagetip"
-msgid ""
-"Our developers will use this anonymous data to improve KDE software. You can "
-"choose how much to share in System Settings, and here too."
+msgid "You can choose how much anonymous usage information to share in System Settings, and here too."
 msgstr ""
-"送信された匿名のデータは、KDE のソフトウェアを改善するために開発者によって活"
-"用されます。このページやシステム設定でどの程度の情報を送信するか設定できま"
-"す。"
 
 #: src/qml/pages/Live.qml:21
 #, kde-format
@@ -429,24 +306,14 @@ msgstr "%1 へようこそ！"
 #: src/qml/pages/Live.qml:24
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Pressing the icon below will begin installing %1. Alternatively, you can "
-"close the window to explore the live environment or continue here to find "
-"out about KDE Plasma."
-msgstr ""
-"下のアイコンを押すと、%1 のインストールが開始されます。ウィンドウを閉じて "
-"Live 環境を探索することも、このまま続行して KDE Plasma について学ぶこともでき"
-"ます。"
+msgid "Pressing the icon below will begin installing %1. Alternatively, you can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "下のアイコンを押すと、%1 のインストールが開始されます。ウィンドウを閉じて Live 環境を探索することも、このまま続行して SonicDE について学ぶこともできます。"
 
 #: src/qml/pages/Live.qml:26
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"You can close the window to explore the live environment or continue here to "
-"find out about KDE Plasma."
-msgstr ""
-"ウィンドウを閉じてこの Live 環境を探索することも、このまま続行して KDE "
-"Plasma について学ぶこともできます。"
+msgid "You can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "ウィンドウを閉じてこの Live 環境を探索することも、このまま続行して SonicDE について学ぶこともできます。"
 
 #: src/qml/pages/Live.qml:32
 #, kde-format
@@ -477,18 +344,14 @@ msgstr ""
 #: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Networking support for Plasma is not currently installed"
-msgstr "現在、Plasma のネットワークサポートはインストールされていません。"
+msgid "Networking support for SonicDE is not currently installed"
+msgstr "現在、SonicDE のネットワークサポートはインストールされていません。"
 
 #: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"To manage network connections, Plasma requires <icode>plasma-nm</icode> to "
-"be installed. Please report this omission to %1."
-msgstr ""
-"Plasma 上でネットワーク接続を管理するには、<icode>plasma-nm</icode> が必要で"
-"す。%1 にこの問題を報告してください。"
+msgid "To manage network connections, SonicDE requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1."
+msgstr "SonicDE 上でネットワーク接続を管理するには、<icode>plasma-nm</icode> が必要です。%1 にこの問題を報告してください。"
 
 #: src/qml/pages/Network.qml:211
 #, kde-format
@@ -522,31 +385,20 @@ msgstr "ページを変更"
 #: src/qml/pages/PlasmaUpdate.qml:21
 #, kde-format
 msgctxt "@title:window"
-msgid "Plasma has been updated to %1"
-msgstr "Plasma は %1 に更新されました"
+msgid "SonicDE has been updated to %1"
+msgstr "SonicDE は %1 に更新されました"
 
 #: src/qml/pages/PlasmaUpdate.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Thank you for testing this beta release of Plasma — your feedback is "
-"fundamental to helping us improve it! Please report any and all bugs you "
-"find so that we can fix them."
-msgstr ""
-"Plasma のベータ版をテストしていただき、ありがとうございます。あなたのフィード"
-"バックは Plasma の改善に欠かせません！どんなバグでも、修正につなげるためぜひ"
-"報告をお願いします。"
+msgid "Thank you for testing this beta release of SonicDE — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them."
+msgstr "SonicDE のベータ版をテストしていただき、ありがとうございます。あなたのフィードバックは SonicDE の改善に欠かせません！どんなバグでも、修正につなげるためぜひ報告をお願いします。"
 
 #: src/qml/pages/PlasmaUpdate.qml:22
-#, kde-kuit-format
+#, kde-kuit-format, fuzzy
 msgctxt "@info:usagetip"
-msgid ""
-"KDE contributors have spent the last four months hard at work on this "
-"release. We hope you enjoy using Plasma as much as we enjoyed making it!"
-msgstr ""
-"KDE の貢献者は、このリリースのための作業に4カ月を費やしました。私たちがその作"
-"業を楽しんだのと同じくらい、あなたに Plasma を楽しく使っていただけたら幸いで"
-"す！"
+msgid "SonicDE contributors have been hard at work on this release. We hope you enjoy using SonicDE as much as we enjoyed making it!"
+msgstr "SonicDE の貢献者は、このリリースのための作業に4カ月を費やしました。私たちがその作業を楽しんだのと同じくらい、あなたに SonicDE を楽しく使っていただけたら幸いです！"
 
 #: src/qml/pages/PlasmaUpdate.qml:29
 #, kde-format
@@ -617,12 +469,8 @@ msgstr "プレビューを自動的に読み込む"
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
 msgctxt "@info:tooltip"
-msgid ""
-"The preview will be loaded automatically when this page is shown for future "
-"Plasma updates, except when using a metered network connection."
-msgstr ""
-"従量課金制ネットワークを使用しているとき以外は、Plasma の更新時にこのページが"
-"表示された際にプレビューが自動的に読み込まれます。"
+msgid "The preview will be loaded automatically when this page is shown for future SonicDE updates, except when using a metered network connection."
+msgstr "従量課金制ネットワークを使用しているとき以外は、SonicDE の更新時にこのページが表示された際にプレビューが自動的に読み込まれます。"
 
 #: src/qml/pages/PlasmaUpdate.qml:422
 #, kde-format
@@ -639,14 +487,8 @@ msgstr "必要なときパワフル"
 #: src/qml/pages/PowerfulWhenNeeded.qml:20
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma is a feature-rich environment, designed to super-charge your "
-"productivity!<nl/><nl/>Click the cards below to see just a smattering of "
-"what it can do for you:"
-msgstr ""
-"Plasma は、生産性を高めることを考えてデザインされた多機能なデスクトップ環境で"
-"す！<nl/><nl/>下のボタンをクリックして、多彩な機能のごく一部を見てみましょ"
-"う。"
+msgid "SonicDE is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>Click the cards below to see just a smattering of what it can do for you:"
+msgstr "SonicDE は、生産性を高めることを考えてデザインされた多機能なデスクトップ環境です！<nl/><nl/>下のボタンをクリックして、多彩な機能のごく一部を見てみましょう。"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:44
 #, kde-format
@@ -714,7 +556,7 @@ msgstr "場面に応じて作業環境を切り替える"
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
-msgstr "Plasma Vaults"
+msgstr "SonicDE Vaults"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:75
 #, kde-format
@@ -725,8 +567,184 @@ msgstr "機密性の高いファイルを安全に保管"
 #: src/qml/pages/PowerfulWhenNeeded.qml:124
 #, kde-format
 msgctxt "@action:button"
-msgid "Learn about more Plasma features"
-msgstr "Plasma の機能についてさらに知る"
+msgid "Learn about more SonicDE features"
+msgstr "SonicDE の機能についてさらに知る"
+
+#: src/qml/pages/SimpleByDefault.qml:21
+#, kde-format
+msgctxt "@info:window"
+msgid "Simple by Default"
+msgstr "デフォルトではシンプル"
+
+#: src/qml/pages/SimpleByDefault.qml:22
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "SonicDE is designed to be simple and usable out of the box. Things are where you would expect, and there is generally no need to configure anything before you can be comfortable and productive.<nl/><nl/>Below is a visual representation of a typical SonicDE desktop; move the pointer over or click on something to learn about it!"
+msgstr "SonicDE はインストールしたその瞬間から使いやすくデザインされています。期待どおりの場所に機能が揃っているので、カスタマイズなしでも快適に作業に集中できます。<nl/><nl/>下は典型的な SonicDE デスクトップの例です。カーソルを合わせてみたりクリックしたりしてみてください。"
+
+#: src/qml/pages/SimpleByDefault.qml:33
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is the “Desktop”. It shows files and folders that are contained in your "
+"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
+"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
+"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
+"interface> to add, remove or modify widgets."
+msgstr ""
+"これは「デスクトップ」です。<filename>デスクトップ</filename> フォルダの中に"
+"あるファイルやフォルダを表示するほか、ウィジェットの表示もできます。その上で"
+"右クリックして<interface>デスクトップと壁紙を設定...</interface>を選択する"
+"と、デスクトップの見た目を設定できます。ウィジェットを追加、削除、あるいは変"
+"更するには、<interface>編集モードに入る</interface>を選択してください。"
+
+#: src/qml/pages/SimpleByDefault.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is a “Panel” — a container to hold widgets. Right-click on it and "
+"choose <interface>Show Panel Configuration</interface> to change how it "
+"behaves, which screen edge it lives on, and to add, remove or modify widgets."
+msgstr ""
+"これは「パネル」です。ウィジェットを格納することができます。右クリックして"
+"<interface>パネル設定を表示</interface>を選択すると、挙動や位置、格納されてい"
+"るウィジェットの追加や削除、設定の変更ができます。"
+
+#: src/qml/pages/SimpleByDefault.qml:39
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
+msgstr ""
+"これは「アプリケーションランチャー」ウィジェットです。アプリケーションを起動"
+"するだけでなく、システムのシャットダウンや再起動、最近使用したファイルへのア"
+"クセスなど、様々なことをこなせます。まずはクリックしてみてください！"
+
+#: src/qml/pages/SimpleByDefault.qml:42
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Task Manager” widget, where you can switch between open apps "
+"and also launch new ones. Drag app icons to re-arrange them."
+msgstr ""
+"これは「タスクマネージャ」ウィジェットです。このウィジェットでアプリケーショ"
+"ンを切り替えたり、起動したりできます。アイコンをドラッグすると、アイテムの並"
+"び替えができます。"
+
+#: src/qml/pages/SimpleByDefault.qml:45
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “System Tray” widget, which lets you control system functions "
+"like changing the volume and connecting to networks. Items will become "
+"visible here only when relevant. To see all available items, click the ⌃ "
+"arrow next to the clock."
+msgstr ""
+"これは「システムトレイ」ウィジェットです。ここで音量やネットワーク接続などを"
+"制御できます。必要に応じて表示されるアイコンが変わります。すべての利用可能な"
+"アイコンを表示するには、時計の横の矢印アイコンをクリックしてください。"
+
+#: src/qml/pages/SimpleByDefault.qml:48
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
+"be also configured to show other timezones and events from your digital "
+"calendars."
+msgstr ""
+"これは「デジタル時計」ウィジェットです。クリックするとカレンダーが表示されま"
+"す。他のタイムゾーンや、カレンダーアプリに登録したイベントを表示することもで"
+"きます。"
+
+#: src/qml/pages/SimpleByDefault.qml:51
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
+"open windows so you can access the desktop. Click on it again to bring them "
+"back."
+msgstr ""
+"これは「ウィンドウを隠す」ウィジェットです。クリックすると、開かれているすべ"
+"てのウィンドウが一時的に隠され、デスクトップにアクセスできるようになります。"
+"再度表示するには、もう一度クリックしてください。"
+
+#: src/qml/pages/Welcome.qml:21
+#, kde-format
+msgctxt "@title"
+msgid "Welcome"
+msgstr "ようこそ"
+
+#: src/qml/pages/Welcome.qml:23
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is custom text supplied by the distro"
+msgid "%1<nl/><nl/>This operating system is running SonicDE, a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "%1<nl/><nl/>この OS は、ボランティアによる国際的なソフトウェアコミュニティである SonicDE によって作成された、フリーでオープンソースなデスクトップ環境 SonicDE を実行しています。SonicDE デスクトップ環境は、デフォルトではシンプルで簡単な操作感を提供します。しかし、必要なときにはパワフルな機能であなたの作業をお手伝いします。ぜひお楽しみください！"
+
+#: src/qml/pages/Welcome.qml:24
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is the name of the user's distro"
+msgid "Welcome to the %1 operating system running SonicDE!<nl/><nl/>SonicDE is a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "SonicDE を実行する %1 へようこそ！<nl/><nl/>SonicDE は、ボランティアによる国際的なソフトウェアコミュニティの SonicDE によって作成された、フリーでオープンソースなデスクトップ環境です。普段はシンプルで使いやすく、必要なときにはパワフルな機能であなたの作業をお手伝いします。ぜひお楽しみください！"
+
+#: src/qml/pages/Welcome.qml:28
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Welcome Center"
+msgstr "ようこそセンターについて"
+
+#: src/qml/pages/Welcome.qml:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About SonicDE"
+msgstr "SonicDE について"
+
+#: src/qml/pages/Welcome.qml:45
+msgctxt "@title:window"
+msgid "About SonicDE"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:46
+msgctxt "@info:usagetip"
+msgid "SonicDE is a free and open-source desktop project. SonicDE builds on KDE Plasma to provide a desktop experience with continued X11 support."
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:49
+msgctxt "@action:button"
+msgid "Visit the SonicDE website"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Learn more about the SonicDE community"
+msgstr "SonicDE コミュニティについて知る"
+
+#: src/qml/pages/Welcome.qml:62
+#, kde-format
+msgctxt "@action:button %1 is the name of the user's distro"
+msgid "Learn more about %1"
+msgstr "%1 について知る"
+
+#: src/qml/pages/Welcome.qml:99
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "画像の読み込みに失敗しました"
+
+#: src/qml/pages/Welcome.qml:100
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr ""
+"<filename>%1</filename> を読み込めませんでした。ファイルが存在しているか確認"
+"してください。"
+
+#: src/qml/pages/Welcome.qml:130
+msgctxt "@info"
+msgid "The SonicDE mascot Sonron welcomes you to the SonicDE community!"
+msgstr "SonicDE のマスコット Sonron が SonicDE コミュニティへ皆さんを歓迎します！"
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:22
 #, kde-format
@@ -830,19 +848,8 @@ msgstr "KRunner"
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"KRunner is Plasma’s exceptionally powerful and versatile search system. It "
-"powers the search functionality in the Application Launcher menu and the "
-"Overview screen, and it can be accessed as a standalone search bar using the "
-"<shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding "
-"your files and folders, KRunner can launch apps, search the web, convert "
-"between currencies, calculate math problems, and a lot more."
-msgstr ""
-"KRunner は Plasma のパワフルで多機能な検索システムです。アプリケーションラン"
-"チャーやオーバービューの検索機能を担っているほか、<shortcut>%1</shortcut> を"
-"押すと現れるスタンドアロンの検索バーとして使用できます。<nl/><nl/>ファイルや"
-"フォルダの検索に加えて、アプリケーションの起動やウェブ検索、通貨換算、計算な"
-"ど、様々な機能を搭載しています。"
+msgid "KRunner is SonicDE’s exceptionally powerful and versatile search system. It powers the search functionality in the Application Launcher menu and the Overview screen, and it can be accessed as a standalone search bar using the <shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding your files and folders, KRunner can launch apps, search the web, convert between currencies, calculate math problems, and a lot more."
+msgstr "KRunner は SonicDE のパワフルで多機能な検索システムです。アプリケーションランチャーやオーバービューの検索機能を担っているほか、<shortcut>%1</shortcut> を押すと現れるスタンドアロンの検索バーとして使用できます。<nl/><nl/>ファイルやフォルダの検索に加えて、アプリケーションの起動やウェブ検索、通貨換算、計算など、様々な機能を搭載しています。"
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:58
 #, kde-kuit-format
@@ -913,30 +920,14 @@ msgstr "ショートカットを設定…"
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
-"keyboard, this is the “Command” key:"
-msgstr ""
-"Plasma では、ショートカットを使用すればほとんどのことはキーボードで行えます。"
-"多くのショートカットは <shortcut>Meta</shortcut> キーを使用して入力します。"
-"<nl/><nl/>Mac のキーボードでは \"Command\" キーです。"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac keyboard, this is the “Command” key:"
+msgstr "SonicDE では、ショートカットを使用すればほとんどのことはキーボードで行えます。多くのショートカットは <shortcut>Meta</shortcut> キーを使用して入力します。<nl/><nl/>Mac のキーボードでは \"Command\" キーです。"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
-"usually located between the left <shortcut>Ctrl</shortcut> and "
-"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
-"the word “Super”:"
-msgstr ""
-"Plasma では、ショートカットを使用すればほとんどのことはキーボードで行えます。"
-"多くのショートカットは <shortcut>Meta</shortcut> キーを使用して入力します。"
-"<nl/><nl/>通常、このキーは左側の <shortcut>Ctrl</shortcut> キーと "
-"<shortcut>Alt</shortcut> キーの間にあり、なにかアイコンが描かれているか "
-"\"Super\" と書かれています。"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is usually located between the left <shortcut>Ctrl</shortcut> and <shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or the word “Super”:"
+msgstr "SonicDE では、ショートカットを使用すればほとんどのことはキーボードで行えます。多くのショートカットは <shortcut>Meta</shortcut> キーを使用して入力します。<nl/><nl/>通常、このキーは左側の <shortcut>Ctrl</shortcut> キーと <shortcut>Alt</shortcut> キーの間にあり、なにかアイコンが描かれているか \"Super\" と書かれています。"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
 #, kde-format
@@ -1061,29 +1052,20 @@ msgstr ""
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
 msgctxt "@info:window"
-msgid "Plasma Vaults"
-msgstr "Plasma Vaults"
+msgid "SonicDE Vaults"
+msgstr "SonicDE Vaults"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma Vaults allows you to create encrypted folders, called "
-"<interface>Vaults.</interface> Inside each Vault, you can securely store "
-"your passwords, files, pictures, and documents, safe from prying eyes. "
-"Vaults can live inside folders that are synced to cloud storage services "
-"too, providing extra privacy for that content."
-msgstr ""
-"Plasma Vaults で、<interface>Vaults</interface>と呼ばれる暗号化されたフォルダ"
-"を作成できます。パスワード、ファイル、画像や文書を Vaults の中で安全に保管で"
-"きます。Vaults はクラウドストレージサービスと同期されたフォルダの中にも作成で"
-"きます。"
+msgid "SonicDE Vaults allows you to create encrypted folders, called <interface>Vaults.</interface> Inside each Vault, you can securely store your passwords, files, pictures, and documents, safe from prying eyes. Vaults can live inside folders that are synced to cloud storage services too, providing extra privacy for that content."
+msgstr "SonicDE Vaults で、<interface>Vaults</interface>と呼ばれる暗号化されたフォルダを作成できます。パスワード、ファイル、画像や文書を Vaults の中で安全に保管できます。Vaults はクラウドストレージサービスと同期されたフォルダの中にも作成できます。"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
 msgctxt "@title:window Title of the Plasma Vaults popup"
 msgid "Vaults"
-msgstr "Plasma Vaults"
+msgstr "SonicDE Vaults"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:112
 #, kde-format
@@ -1097,11 +1079,6 @@ msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "写真"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
-#, kde-format
-msgid "Unlock and Open"
-msgstr "アンロックして開く"
-
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
@@ -1111,196 +1088,6 @@ msgid ""
 msgstr ""
 "<interface>システムトレイ</interface>の矢印をクリックして非表示のアイテムを表"
 "示し、<interface>Vaults</interface>アイコンをクリックしてください。"
-
-#: src/qml/pages/SimpleByDefault.qml:21
-#, kde-format
-msgctxt "@info:window"
-msgid "Simple by Default"
-msgstr "デフォルトではシンプル"
-
-#: src/qml/pages/SimpleByDefault.qml:22
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"Plasma is designed to be simple and usable out of the box. Things are where "
-"you would expect, and there is generally no need to configure anything "
-"before you can be comfortable and productive.<nl/><nl/>Below is a visual "
-"representation of a typical Plasma Desktop; move the pointer over or click "
-"on something to learn about it!"
-msgstr ""
-"Plasma はインストールしたその瞬間から使いやすくデザインされています。期待どお"
-"りの場所に機能が揃っているので、カスタマイズなしでも快適に作業に集中できま"
-"す。<nl/><nl/>下は典型的な Plasma デスクトップの例です。カーソルを合わせてみ"
-"たりクリックしたりしてみてください。"
-
-#: src/qml/pages/SimpleByDefault.qml:33
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is the “Desktop”. It shows files and folders that are contained in your "
-"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
-"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
-"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
-"interface> to add, remove or modify widgets."
-msgstr ""
-"これは「デスクトップ」です。<filename>デスクトップ</filename> フォルダの中に"
-"あるファイルやフォルダを表示するほか、ウィジェットの表示もできます。その上で"
-"右クリックして<interface>デスクトップと壁紙を設定...</interface>を選択する"
-"と、デスクトップの見た目を設定できます。ウィジェットを追加、削除、あるいは変"
-"更するには、<interface>編集モードに入る</interface>を選択してください。"
-
-#: src/qml/pages/SimpleByDefault.qml:36
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is a “Panel” — a container to hold widgets. Right-click on it and "
-"choose <interface>Show Panel Configuration</interface> to change how it "
-"behaves, which screen edge it lives on, and to add, remove or modify widgets."
-msgstr ""
-"これは「パネル」です。ウィジェットを格納することができます。右クリックして"
-"<interface>パネル設定を表示</interface>を選択すると、挙動や位置、格納されてい"
-"るウィジェットの追加や削除、設定の変更ができます。"
-
-#: src/qml/pages/SimpleByDefault.qml:39
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
-"can launch apps, shut down or restart the system, access recent files, and "
-"more. Click on it to get started!"
-msgstr ""
-"これは「アプリケーションランチャー」ウィジェットです。アプリケーションを起動"
-"するだけでなく、システムのシャットダウンや再起動、最近使用したファイルへのア"
-"クセスなど、様々なことをこなせます。まずはクリックしてみてください！"
-
-#: src/qml/pages/SimpleByDefault.qml:42
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Task Manager” widget, where you can switch between open apps "
-"and also launch new ones. Drag app icons to re-arrange them."
-msgstr ""
-"これは「タスクマネージャ」ウィジェットです。このウィジェットでアプリケーショ"
-"ンを切り替えたり、起動したりできます。アイコンをドラッグすると、アイテムの並"
-"び替えができます。"
-
-#: src/qml/pages/SimpleByDefault.qml:45
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “System Tray” widget, which lets you control system functions "
-"like changing the volume and connecting to networks. Items will become "
-"visible here only when relevant. To see all available items, click the ⌃ "
-"arrow next to the clock."
-msgstr ""
-"これは「システムトレイ」ウィジェットです。ここで音量やネットワーク接続などを"
-"制御できます。必要に応じて表示されるアイコンが変わります。すべての利用可能な"
-"アイコンを表示するには、時計の横の矢印アイコンをクリックしてください。"
-
-#: src/qml/pages/SimpleByDefault.qml:48
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
-"be also configured to show other timezones and events from your digital "
-"calendars."
-msgstr ""
-"これは「デジタル時計」ウィジェットです。クリックするとカレンダーが表示されま"
-"す。他のタイムゾーンや、カレンダーアプリに登録したイベントを表示することもで"
-"きます。"
-
-#: src/qml/pages/SimpleByDefault.qml:51
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
-"open windows so you can access the desktop. Click on it again to bring them "
-"back."
-msgstr ""
-"これは「ウィンドウを隠す」ウィジェットです。クリックすると、開かれているすべ"
-"てのウィンドウが一時的に隠され、デスクトップにアクセスできるようになります。"
-"再度表示するには、もう一度クリックしてください。"
-
-#: src/qml/pages/Welcome.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome"
-msgstr "ようこそ"
-
-#: src/qml/pages/Welcome.qml:23
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is custom text supplied by the distro"
-msgid ""
-"%1<nl/><nl/>This operating system is running Plasma, a free and open-source "
-"desktop environment created by KDE, an international software community of "
-"volunteers. It is designed to be simple by default for a smooth experience, "
-"but powerful when needed to help you really get things done. We hope you "
-"love it!"
-msgstr ""
-"%1<nl/><nl/>この OS は、ボランティアによる国際的なソフトウェアコミュニティで"
-"ある KDE によって作成された、フリーでオープンソースなデスクトップ環境 Plasma "
-"を実行しています。Plasma デスクトップ環境は、デフォルトではシンプルで簡単な操"
-"作感を提供します。しかし、必要なときにはパワフルな機能であなたの作業をお手伝"
-"いします。ぜひお楽しみください！"
-
-#: src/qml/pages/Welcome.qml:24
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a "
-"free and open-source desktop environment created by KDE, an international "
-"software community of volunteers. It is designed to be simple by default for "
-"a smooth experience, but powerful when needed to help you really get things "
-"done. We hope you love it!"
-msgstr ""
-"KDE Plasma を実行する %1 へようこそ！<nl/><nl/>Plasma は、ボランティアによる"
-"国際的なソフトウェアコミュニティの KDE によって作成された、フリーでオープン"
-"ソースなデスクトップ環境です。普段はシンプルで使いやすく、必要なときにはパワ"
-"フルな機能であなたの作業をお手伝いします。ぜひお楽しみください！"
-
-#: src/qml/pages/Welcome.qml:28
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About Welcome Center"
-msgstr "ようこそセンターについて"
-
-#: src/qml/pages/Welcome.qml:34
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About KDE"
-msgstr "KDE について"
-
-#: src/qml/pages/Welcome.qml:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Learn more about the KDE community"
-msgstr "KDE コミュニティについて知る"
-
-#: src/qml/pages/Welcome.qml:62
-#, kde-format
-msgctxt "@action:button %1 is the name of the user's distro"
-msgid "Learn more about %1"
-msgstr "%1 について知る"
-
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "画像の読み込みに失敗しました"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr ""
-"<filename>%1</filename> を読み込めませんでした。ファイルが存在しているか確認"
-"してください。"
-
-#: src/qml/pages/Welcome.qml:120
-#, kde-format
-msgctxt "@info"
-msgid "The KDE mascot Konqi welcomes you to the KDE community!"
-msgstr "KDE のマスコット「Konqi (コンキー)」がごあいさつ"
 
 #: src/release.cpp:42
 #, kde-format
@@ -1319,3 +1106,107 @@ msgstr "%1 Beta"
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
+
+
+#, kde-format
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Ryuichi Yamada,Mint"
+
+#, kde-format
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "ryuichi_ya220@outlook.jp,5602mint@gmail.com"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "If you find Plasma to be useful, consider getting involved or donating. KDE is an international volunteer community, not a big company; your contributions make a real difference!"
+#~ msgstr "Plasma に満足していただけたのであれば、ぜひ KDE への参加や寄付をご検討ください。KDE は大企業ではなく、国際的なボランティアのコミュニティです。あなたの協力が大きな意味を持ちます！"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Make a donation"
+#~ msgstr "寄付する"
+
+#, kde-format
+#~ msgid "Search…"
+#~ msgstr "検索..."
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Find Great Apps"
+#~ msgstr "便利なアプリを見つける"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app, and %2 is the distro name."
+#~ msgid "There’s no need to search the web to download app installers or use a command-line package manager; KDE’s app store <application>%1</application> does it all for you!<nl/><nl/>Click on any of the icons below to give it a try!"
+#~ msgstr "アプリを入れるためにブラウザで検索する必要も、コマンドを入力する必要もありません。KDE のアプリストア「<application>%1</application>」が、面倒なインストール作業をすべてこなしてくれます。<nl/><nl/>下のアイコンをクリックして、さっそく使ってみましょう。"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the name of an app"
+#~ msgid "Show %1 in Discover"
+#~ msgstr "Discover で %1 を表示"
+
+#, kde-format
+#~ msgctxt "@label:URL"
+#~ msgid "Get help at KDE’s discussion forums"
+#~ msgstr "KDE のフォーラムでサポートを受ける"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Supporting Members"
+#~ msgstr "支援者"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Supporting Members"
+#~ msgstr "支援者"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "We thank the following supporting members for their recurring donation to KDE:"
+#~ msgstr "KDE に繰り返し寄付してくださった以下の支援者の方々に感謝します:"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the selected sort order, e.g. Random"
+#~ msgid "Sort: %1"
+#~ msgstr "ソート: %1"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Random"
+#~ msgstr "ランダム"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Last Name"
+#~ msgstr "姓"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "First Name"
+#~ msgstr "名"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list, referring to the date a user has first made a donation"
+#~ msgid "Contribution Date"
+#~ msgstr "貢献日"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An option to sort a list in reverse order"
+#~ msgid "Reverse"
+#~ msgstr "逆順"
+
+#, kde-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "Our developers will use this anonymous data to improve KDE software. You can choose how much to share in System Settings, and here too."
+#~ msgstr "送信された匿名のデータは、KDE のソフトウェアを改善するために開発者によって活用されます。このページやシステム設定でどの程度の情報を送信するか設定できます。"
+
+#, kde-format
+#~ msgid "Unlock and Open"
+#~ msgstr "アンロックして開く"
+
+#, kde-format
+#~ msgctxt "@info"
+#~ msgid "The KDE mascot Konqi welcomes you to the KDE community!"
+#~ msgstr "KDE のマスコット「Konqi (コンキー)」がごあいさつ"

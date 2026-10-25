@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-13 00:45+0000\n"
+"Report-Msgid-Bugs-To: https://sonicde.org\n"
+"POT-Creation-Date: 2026-10-25 21:33+1000\n"
 "PO-Revision-Date: 2026-04-13 13:15+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -14,25 +14,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
 "X-Generator: Lokalize 25.12.3\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Sergiu Bivol"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "sergiu@cip.md"
 
 #: src/main.cpp:43
 #, kde-format
 msgctxt "@info:usagetip"
-msgid "Friendly onboarding wizard for Plasma"
-msgstr "Asistent prietenos pentru inițiere în Plasma"
+msgid "Friendly onboarding wizard for SonicDE"
+msgstr "Asistent prietenos pentru inițiere în SonicDE"
 
 #: src/main.cpp:48
 #, kde-format
@@ -70,10 +59,15 @@ msgctxt "@info:credit"
 msgid "Oliver Beard"
 msgstr "Oliver Beard"
 
+#: src/main.cpp:67
+msgctxt "@info:credit"
+msgid "Joseph Crowell"
+msgstr ""
+
 #: src/main.cpp:77
 #, kde-format
-msgid "Display release notes for the current Plasma release."
-msgstr "Afișează notele de lansare pentru ediția actuală Plasma."
+msgid "Display release notes for the current SonicDE release."
+msgstr "Afișează notele de lansare pentru ediția actuală SonicDE."
 
 #: src/main.cpp:78
 #, kde-format
@@ -132,28 +126,53 @@ msgid "Unassigned"
 msgstr "Neatribuit"
 
 #: src/qml/ContributionCard.qml:18
-#, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"If you find Plasma to be useful, consider getting involved or donating. KDE "
-"is an international volunteer community, not a big company; your "
-"contributions make a real difference!"
+msgid "If you find SonicDE useful, consider getting involved. Your contributions to the SonicDE community make a real difference!"
 msgstr ""
-"Dacă mediul Plasma vă e util, luați în considerare implicarea sau donarea de "
-"bani. KDE este o comunitate internațională de voluntari, nu o companie mare. "
-"Contribuțiile dumneavoastră fac o diferență!"
-
-#: src/qml/ContributionCard.qml:29
-#, kde-format
-msgctxt "@action:button"
-msgid "Make a donation"
-msgstr "Donați"
 
 #: src/qml/ContributionCard.qml:36
 #, kde-format
 msgctxt "@action:button"
 msgid "Get involved"
 msgstr "Implicați-vă"
+
+#: src/qml/PageError.qml:22
+#, kde-format
+msgctxt "@info:window"
+msgid "Error loading page"
+msgstr "Eroare la încărcarea paginii"
+
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
+#, kde-format
+msgctxt "@action:button"
+msgid "Report Bug…"
+msgstr "Raportează defect…"
+
+#: src/qml/PageError.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Copiază detaliile"
+
+#: src/qml/PageError.qml:46
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page could not be loaded"
+msgstr "Această pagină nu a putut fi încărcată"
+
+#: src/qml/PageError.qml:49
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by your distribution could not be loaded"
+msgstr "Această pagină furnizată de către distribuție nu a putut fi încărcată"
+
+#: src/qml/PageError.qml:51
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by Welcome Center could not be loaded"
+msgstr ""
+"Această pagină furnizată de către Centrul de întâmpinare nu a putut fi "
+"încărcată"
 
 #: src/qml/footers/FooterDefault.qml:28
 #, kde-format
@@ -182,8 +201,8 @@ msgstr "&Următor"
 #: src/qml/footers/FooterUpdate.qml:21
 #, kde-format
 msgctxt "@option:check"
-msgid "Show after Plasma is updated"
-msgstr "Arată după ce Plasma e actualizată"
+msgid "Show after SonicDE is updated"
+msgstr "Arată după ce SonicDE e actualizată"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -233,11 +252,6 @@ msgctxt "@action:button Button in the Plasma activities sidebar"
 msgid "Create activity…"
 msgstr "Creează activitate…"
 
-#: src/qml/mock/MockKRunner.qml:81
-#, kde-format
-msgid "Search…"
-msgstr "Caută…"
-
 #: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
@@ -250,72 +264,6 @@ msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "Desfășoară fereastra"
 
-#: src/qml/PageError.qml:22
-#, kde-format
-msgctxt "@info:window"
-msgid "Error loading page"
-msgstr "Eroare la încărcarea paginii"
-
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
-#, kde-format
-msgctxt "@action:button"
-msgid "Report Bug…"
-msgstr "Raportează defect…"
-
-#: src/qml/PageError.qml:33
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy Details"
-msgstr "Copiază detaliile"
-
-#: src/qml/PageError.qml:46
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page could not be loaded"
-msgstr "Această pagină nu a putut fi încărcată"
-
-#: src/qml/PageError.qml:49
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by your distribution could not be loaded"
-msgstr "Această pagină furnizată de către distribuție nu a putut fi încărcată"
-
-#: src/qml/PageError.qml:51
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by Welcome Center could not be loaded"
-msgstr ""
-"Această pagină furnizată de către Centrul de întâmpinare nu a putut fi "
-"încărcată"
-
-#: src/qml/pages/Discover.qml:20
-#, kde-format
-msgctxt "@title:window"
-msgid "Find Great Apps"
-msgstr "Găsiți aplicații bune"
-
-#: src/qml/pages/Discover.qml:21
-#, kde-kuit-format
-msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
-"%2 is the distro name."
-msgid ""
-"There’s no need to search the web to download app installers or use a "
-"command-line package manager; KDE’s app store <application>%1</application> "
-"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
-"try!"
-msgstr ""
-"Nu e nevoie să căutați pe Internet pentru a găsi aplicații sau să folosiți "
-"un gestionar de pachete în linia de comandă – magazinul de aplicații KDE "
-"<application>%1</application> face totul pentru dumneavoastră!<nl/><nl/"
-">Apăsați oricare dintre pictogramele de mai jos pentru a-l încerca!"
-
-#: src/qml/pages/Discover.qml:103
-#, kde-format
-msgctxt "@action:button %1 is the name of an app"
-msgid "Show %1 in Discover"
-msgstr "Arată %1 în Discover"
-
 #: src/qml/pages/Enjoy.qml:20
 #, kde-format
 msgctxt "@title:window"
@@ -325,87 +273,19 @@ msgstr "Savurați!"
 #: src/qml/pages/Enjoy.qml:21
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"We hope you love Plasma as much as we loved making it for you! Now it’s time "
-"to jump right in. Explore its features, install your favorite apps and "
-"games, and get busy doing what makes you you!"
-msgstr ""
-"Sperăm că veți îndrăgi Plasma în aceeași măsură în care ne-a plăcut să o "
-"facem pentru dumneavoastră! Acum e timpul pentru acțiune. Explorați-i "
-"funcționalitatea, instalați aplicațiile și jocurile favorite, și faceți ceea "
-"ce vă pasionează!"
+msgid "We hope you love SonicDE as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!"
+msgstr "Sperăm că veți îndrăgi SonicDE în aceeași măsură în care ne-a plăcut să o facem pentru dumneavoastră! Acum e timpul pentru acțiune. Explorați-i funcționalitatea, instalați aplicațiile și jocurile favorite, și faceți ceea ce vă pasionează!"
 
 #: src/qml/pages/Enjoy.qml:26
 #, kde-format
 msgctxt "@label:URL"
-msgid "Learn more about the KDE community"
-msgstr "Aflați mai multe despre comunitatea KDE"
+msgid "Learn more about the SonicDE community"
+msgstr "Aflați mai multe despre comunitatea SonicDE"
 
 #: src/qml/pages/Enjoy.qml:31
-#, kde-format
 msgctxt "@label:URL"
-msgid "Get help at KDE’s discussion forums"
-msgstr "Obțineți ajutor pe forumurile de discuții KDE"
-
-#: src/qml/pages/Enjoy.qml:39
-#, kde-format
-msgctxt "@action:button"
-msgid "Supporting Members"
-msgstr "Membri susținători"
-
-#: src/qml/pages/enjoy/Supporters.qml:18
-#, kde-format
-msgctxt "@title:window"
-msgid "Supporting Members"
-msgstr "Membri susținători"
-
-#: src/qml/pages/enjoy/Supporters.qml:19
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"We thank the following supporting members for their recurring donation to "
-"KDE:"
+msgid "Find help with SonicDE"
 msgstr ""
-"Le mulțumim următorilor membri susținători ce fac donații repetate pentru "
-"KDE:"
-
-#: src/qml/pages/enjoy/Supporters.qml:39
-#, kde-format
-msgctxt "@action:button %1 is the selected sort order, e.g. Random"
-msgid "Sort: %1"
-msgstr "Sortează: %1"
-
-#: src/qml/pages/enjoy/Supporters.qml:45
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Random"
-msgstr "Aleator"
-
-#: src/qml/pages/enjoy/Supporters.qml:56
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Last Name"
-msgstr "Nume"
-
-#: src/qml/pages/enjoy/Supporters.qml:67
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "First Name"
-msgstr "Prenume"
-
-#: src/qml/pages/enjoy/Supporters.qml:78
-#, kde-format
-msgctxt ""
-"@action:inmenu An order to sort a list, referring to the date a user has "
-"first made a donation"
-msgid "Contribution Date"
-msgstr "Data contribuției"
-
-#: src/qml/pages/enjoy/Supporters.qml:91
-#, kde-format
-msgctxt "@action:inmenu An option to sort a list in reverse order"
-msgid "Reverse"
-msgstr "Invers"
 
 #: src/qml/pages/Feedback.qml:16
 #, kde-format
@@ -414,15 +294,9 @@ msgid "Share Anonymous Usage Information"
 msgstr "Partajează informații anonime despre utilizare"
 
 #: src/qml/pages/Feedback.qml:17
-#, kde-format
 msgctxt "@info:usagetip"
-msgid ""
-"Our developers will use this anonymous data to improve KDE software. You can "
-"choose how much to share in System Settings, and here too."
+msgid "You can choose how much anonymous usage information to share in System Settings, and here too."
 msgstr ""
-"Dezvoltatorii noștri vor folosi aceste date anonime pentru a îmbunătăți "
-"programele KDE. Puteți alege cât să partajați în Configurări de sistem, sau "
-"aici."
 
 #: src/qml/pages/Live.qml:21
 #, kde-format
@@ -433,24 +307,14 @@ msgstr "Bun venit în %1!"
 #: src/qml/pages/Live.qml:24
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Pressing the icon below will begin installing %1. Alternatively, you can "
-"close the window to explore the live environment or continue here to find "
-"out about KDE Plasma."
-msgstr ""
-"Apăsând pictograma de mai jos, veți începe instalarea %1. Altfel, puteți "
-"închide fereastra ca să explorați mediul live sau continuați aici pentru a "
-"afla mai multe despre KDE Plasma."
+msgid "Pressing the icon below will begin installing %1. Alternatively, you can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Apăsând pictograma de mai jos, veți începe instalarea %1. Altfel, puteți închide fereastra ca să explorați mediul live sau continuați aici pentru a afla mai multe despre SonicDE."
 
 #: src/qml/pages/Live.qml:26
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"You can close the window to explore the live environment or continue here to "
-"find out about KDE Plasma."
-msgstr ""
-"Puteți închide fereastra ca să explorați mediul live sau continuați aici "
-"pentru a afla mai multe despre KDE Plasma."
+msgid "You can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Puteți închide fereastra ca să explorați mediul live sau continuați aici pentru a afla mai multe despre SonicDE."
 
 #: src/qml/pages/Live.qml:32
 #, kde-format
@@ -481,18 +345,14 @@ msgstr ""
 #: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Networking support for Plasma is not currently installed"
-msgstr "Suportul de rețelistică pentru Plasma nu e instalat momentan"
+msgid "Networking support for SonicDE is not currently installed"
+msgstr "Suportul de rețelistică pentru SonicDE nu e instalat momentan"
 
 #: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"To manage network connections, Plasma requires <icode>plasma-nm</icode> to "
-"be installed. Please report this omission to %1."
-msgstr ""
-"Pentru a gestiona conexiunile de rețea, Plasma necesită instalarea "
-"<icode>plasma-nm</icode>. Raportați această omisiune la %1."
+msgid "To manage network connections, SonicDE requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1."
+msgstr "Pentru a gestiona conexiunile de rețea, SonicDE necesită instalarea <icode>plasma-nm</icode>. Raportați această omisiune la %1."
 
 #: src/qml/pages/Network.qml:211
 #, kde-format
@@ -527,31 +387,20 @@ msgstr "Schimbă starea"
 #: src/qml/pages/PlasmaUpdate.qml:21
 #, kde-format
 msgctxt "@title:window"
-msgid "Plasma has been updated to %1"
-msgstr "Plasma a fost actualizată la %1"
+msgid "SonicDE has been updated to %1"
+msgstr "SonicDE a fost actualizată la %1"
 
 #: src/qml/pages/PlasmaUpdate.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Thank you for testing this beta release of Plasma — your feedback is "
-"fundamental to helping us improve it! Please report any and all bugs you "
-"find so that we can fix them."
-msgstr ""
-"Vă mulțumim că testați această ediție beta a mediului Plasma – părerea "
-"dumneavoastră ne ajută să o îmbunătățim! Raportați orice defect întâlnit "
-"pentru a putea fi remediat."
+msgid "Thank you for testing this beta release of SonicDE — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them."
+msgstr "Vă mulțumim că testați această ediție beta a mediului SonicDE – părerea dumneavoastră ne ajută să o îmbunătățim! Raportați orice defect întâlnit pentru a putea fi remediat."
 
 #: src/qml/pages/PlasmaUpdate.qml:22
-#, kde-kuit-format
+#, kde-kuit-format, fuzzy
 msgctxt "@info:usagetip"
-msgid ""
-"KDE contributors have spent the last four months hard at work on this "
-"release. We hope you enjoy using Plasma as much as we enjoyed making it!"
-msgstr ""
-"Colaboratorii KDE au petrecut ultimele patru luni lucrând din greu la "
-"această ediție. Sperăm să vă placă folosirea Plasma la fel de mult cum ne-a "
-"plăcut s-o facem!"
+msgid "SonicDE contributors have been hard at work on this release. We hope you enjoy using SonicDE as much as we enjoyed making it!"
+msgstr "Colaboratorii SonicDE au petrecut ultimele patru luni lucrând din greu la această ediție. Sperăm să vă placă folosirea SonicDE la fel de mult cum ne-a plăcut s-o facem!"
 
 #: src/qml/pages/PlasmaUpdate.qml:29
 #, kde-format
@@ -623,13 +472,8 @@ msgstr "Încarcă previzualizarea automat"
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
 msgctxt "@info:tooltip"
-msgid ""
-"The preview will be loaded automatically when this page is shown for future "
-"Plasma updates, except when using a metered network connection."
-msgstr ""
-"Previzualizarea va fi încărcată automat la afișarea acestei pagini pentru "
-"următoarele actualizări Plasma, mai puțin atunci când folosiți o conexiune "
-"contorizată."
+msgid "The preview will be loaded automatically when this page is shown for future SonicDE updates, except when using a metered network connection."
+msgstr "Previzualizarea va fi încărcată automat la afișarea acestei pagini pentru următoarele actualizări SonicDE, mai puțin atunci când folosiți o conexiune contorizată."
 
 #: src/qml/pages/PlasmaUpdate.qml:422
 #, kde-format
@@ -646,14 +490,8 @@ msgstr "Puternic când trebuie"
 #: src/qml/pages/PowerfulWhenNeeded.qml:20
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma is a feature-rich environment, designed to super-charge your "
-"productivity!<nl/><nl/>Click the cards below to see just a smattering of "
-"what it can do for you:"
-msgstr ""
-"Plasma e un mediu divers în funcționalități, proiectat să vă amplifice "
-"productivitatea!<nl/><nl/>Apăsați pe fișele de mai jos pentru a vedea un pic "
-"din ceea ce poate face pentru dumneavoastră:"
+msgid "SonicDE is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>Click the cards below to see just a smattering of what it can do for you:"
+msgstr "SonicDE e un mediu divers în funcționalități, proiectat să vă amplifice productivitatea!<nl/><nl/>Apăsați pe fișele de mai jos pentru a vedea un pic din ceea ce poate face pentru dumneavoastră:"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:44
 #, kde-format
@@ -732,8 +570,187 @@ msgstr "Păstrează fișiere sensibile în siguranță"
 #: src/qml/pages/PowerfulWhenNeeded.qml:124
 #, kde-format
 msgctxt "@action:button"
-msgid "Learn about more Plasma features"
-msgstr "Descoperă caracteristici Plasma suplimentare"
+msgid "Learn about more SonicDE features"
+msgstr "Descoperă caracteristici SonicDE suplimentare"
+
+#: src/qml/pages/SimpleByDefault.qml:21
+#, kde-format
+msgctxt "@info:window"
+msgid "Simple by Default"
+msgstr "Simplu din fabrică"
+
+#: src/qml/pages/SimpleByDefault.qml:22
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "SonicDE is designed to be simple and usable out of the box. Things are where you would expect, and there is generally no need to configure anything before you can be comfortable and productive.<nl/><nl/>Below is a visual representation of a typical SonicDE desktop; move the pointer over or click on something to learn about it!"
+msgstr "SonicDE e proiectată să fie simplă și ușor de utilizat. Elementele sunt amplasate intuitiv și nu e necesar să configurați nimic pentru a beneficia de confort și productivitate.<nl/><nl/>Mai jos e o reprezentare vizuală a unui birou SonicDE tipic. Mișcați indicatorul sau apăsați pe ceva pentru a afla detalii!"
+
+#: src/qml/pages/SimpleByDefault.qml:33
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is the “Desktop”. It shows files and folders that are contained in your "
+"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
+"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
+"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
+"interface> to add, remove or modify widgets."
+msgstr ""
+"Acesta e „biroul”. El arată fișiere și dosare ce se conțin în dosarul "
+"<filename>Desktop</filename>. Poate, de asemenea, să arate controale "
+"grafice. Faceți clic drept pe birou și alegeți <interface>Birou și tapet…</"
+"interface> pentru a configura aspectul biroului. Puteți alege "
+"<interface>Intră în regim de modificare</interface> pentru a adăuga, elimina "
+"sau modifica controalele grafice."
+
+#: src/qml/pages/SimpleByDefault.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is a “Panel” — a container to hold widgets. Right-click on it and "
+"choose <interface>Show Panel Configuration</interface> to change how it "
+"behaves, which screen edge it lives on, and to add, remove or modify widgets."
+msgstr ""
+"Acesta e un „panou” – un container pentru controale grafice. Faceți clic "
+"drept pe acesta și alegeți <interface>Arată configurările panoului</"
+"interface> pentru a-i schimba comportamentul, muchia ecranului de care se "
+"lipește, precum și pentru a adăuga, elimina sau modifica controale grafice."
+
+#: src/qml/pages/SimpleByDefault.qml:39
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
+msgstr ""
+"Acesta e controlul grafic „Lansator de aplicații”, un lansator cu destinație "
+"multiplă. De aici puteți lansa aplicații, opri sau reporni sistemul, accesa "
+"fișiere recente, și altele. Apăsați-l pentru a începe!"
+
+#: src/qml/pages/SimpleByDefault.qml:42
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Task Manager” widget, where you can switch between open apps "
+"and also launch new ones. Drag app icons to re-arrange them."
+msgstr ""
+"Acesta e controlul grafic „Gestionar de sarcini”, unde puteți schimba între "
+"aplicațiile deschise și lansa unele noi. Trageți pictogramele aplicațiilor "
+"pentru a le rearanja."
+
+#: src/qml/pages/SimpleByDefault.qml:45
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “System Tray” widget, which lets you control system functions "
+"like changing the volume and connecting to networks. Items will become "
+"visible here only when relevant. To see all available items, click the ⌃ "
+"arrow next to the clock."
+msgstr ""
+"Acesta e controlul grafic „Tavă de sistem”, care vă permite să controlați "
+"funcții de sistem ca schimbarea volumului și conectarea la rețele. "
+"Elementele devin vizibile aici doar când e relevant. Pentru a vedea toate "
+"elementele disponibile, apăsați săgeata ⌃ de lângă ceas."
+
+#: src/qml/pages/SimpleByDefault.qml:48
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
+"be also configured to show other timezones and events from your digital "
+"calendars."
+msgstr ""
+"Acesta e controlul grafic „Ceas digital”. Apăsați-l pentru a afișa un "
+"calendar. Acesta poate fi configurat să arate alte fuse orare și evenimente "
+"din calendarele dumneavoastră digitale."
+
+#: src/qml/pages/SimpleByDefault.qml:51
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
+"open windows so you can access the desktop. Click on it again to bring them "
+"back."
+msgstr ""
+"Acesta e controlul grafic „Trage cu ochiul la birou”. Apăsați-l pentru a "
+"ascunde temporar toate ferestrele deschise, astfel încât să puteți accesa "
+"biroul. Apăsați-l iar pentru a le aduce înapoi."
+
+#: src/qml/pages/Welcome.qml:21
+#, kde-format
+msgctxt "@title"
+msgid "Welcome"
+msgstr "Bun venit"
+
+#: src/qml/pages/Welcome.qml:23
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is custom text supplied by the distro"
+msgid "%1<nl/><nl/>This operating system is running SonicDE, a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "%1<nl/><nl/>Acest sistem de operare rulează SonicDE, un mediu de birou liber cu sursă deschisă creat de SonicDE, o comunitate internațională de voluntari. Acesta e simplu de la început pentru o experiență armonioasă, dar puternic când trebuie să vă îndepliniți sarcinile. Sperăm să vă placă!"
+
+#: src/qml/pages/Welcome.qml:24
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is the name of the user's distro"
+msgid "Welcome to the %1 operating system running SonicDE!<nl/><nl/>SonicDE is a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "Bun venit în sistemul de operare %1 ce rulează SonicDE!<nl/><nl/>SonicDE e un mediu de birou liber cu sursă deschisă creat de SonicDE, o comunitate internațională de voluntari. Acesta e simplu de la început pentru o experiență armonioasă, dar puternic când trebuie să vă îndepliniți sarcinile. Sperăm să vă placă!"
+
+#: src/qml/pages/Welcome.qml:28
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Welcome Center"
+msgstr "Despre Centrul de întâmpinare"
+
+#: src/qml/pages/Welcome.qml:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About SonicDE"
+msgstr "Despre SonicDE"
+
+#: src/qml/pages/Welcome.qml:45
+msgctxt "@title:window"
+msgid "About SonicDE"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:46
+msgctxt "@info:usagetip"
+msgid "SonicDE is a free and open-source desktop project. SonicDE builds on KDE Plasma to provide a desktop experience with continued X11 support."
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:49
+msgctxt "@action:button"
+msgid "Visit the SonicDE website"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Learn more about the SonicDE community"
+msgstr "Aflați mai multe despre comunitatea SonicDE"
+
+#: src/qml/pages/Welcome.qml:62
+#, kde-format
+msgctxt "@action:button %1 is the name of the user's distro"
+msgid "Learn more about %1"
+msgstr "Aflați mai multe despre %1"
+
+#: src/qml/pages/Welcome.qml:99
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "Încărcarea imaginii a eșuat"
+
+#: src/qml/pages/Welcome.qml:100
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr ""
+"Fișierul <filename>%1</filename> nu a putut fi încărcat. Asigurați-vă că "
+"acesta există."
+
+#: src/qml/pages/Welcome.qml:130
+msgctxt "@info"
+msgid "The SonicDE mascot Sonron welcomes you to the SonicDE community!"
+msgstr "Sonron, mascota SonicDE, vă urează bun venit în comunitatea SonicDE!"
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:22
 #, kde-format
@@ -841,21 +858,8 @@ msgstr "KRunner"
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"KRunner is Plasma’s exceptionally powerful and versatile search system. It "
-"powers the search functionality in the Application Launcher menu and the "
-"Overview screen, and it can be accessed as a standalone search bar using the "
-"<shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding "
-"your files and folders, KRunner can launch apps, search the web, convert "
-"between currencies, calculate math problems, and a lot more."
-msgstr ""
-"KRunner e sistemul de căutare foarte puternic și versatil din Plasma. Acesta "
-"propulsează funcționalitatea de căutare din meniul Lansatorului de aplicații "
-"și ecranului de privire generală, și poate fi accesat ca bară de căutare de "
-"sine stătătoare folosind scurtătura de taste <shortcut>%1</shortcut>.<nl/"
-"><nl/>Pe lângă căutarea fișierelor și dosarelor, KRunner poate lansa "
-"aplicații, căuta pe Internet, converti între monede, calcula funcții "
-"matematice, și multe altele."
+msgid "KRunner is SonicDE’s exceptionally powerful and versatile search system. It powers the search functionality in the Application Launcher menu and the Overview screen, and it can be accessed as a standalone search bar using the <shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding your files and folders, KRunner can launch apps, search the web, convert between currencies, calculate math problems, and a lot more."
+msgstr "KRunner e sistemul de căutare foarte puternic și versatil din SonicDE. Acesta propulsează funcționalitatea de căutare din meniul Lansatorului de aplicații și ecranului de privire generală, și poate fi accesat ca bară de căutare de sine stătătoare folosind scurtătura de taste <shortcut>%1</shortcut>.<nl/><nl/>Pe lângă căutarea fișierelor și dosarelor, KRunner poate lansa aplicații, căuta pe Internet, converti între monede, calcula funcții matematice, și multe altele."
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:58
 #, kde-kuit-format
@@ -927,30 +931,14 @@ msgstr "Configurează scurtăturile…"
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
-"keyboard, this is the “Command” key:"
-msgstr ""
-"Aproape totul în Plasma poate fi făcut cu tastatura, folosind scurtături ce "
-"implică în mare parte tasta <shortcut>Meta</shortcut>.<nl/><nl/>Pe tastatura "
-"Mac, aceasta e tasta „Comandă”:"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac keyboard, this is the “Command” key:"
+msgstr "Aproape totul în SonicDE poate fi făcut cu tastatura, folosind scurtături ce implică în mare parte tasta <shortcut>Meta</shortcut>.<nl/><nl/>Pe tastatura Mac, aceasta e tasta „Comandă”:"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
-"usually located between the left <shortcut>Ctrl</shortcut> and "
-"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
-"the word “Super”:"
-msgstr ""
-"Aproape totul în Plasma poate fi făcut cu tastatura, folosind scurtături ce "
-"implică în mare parte tasta <shortcut>Meta</shortcut>.<nl/><nl/>Această "
-"tastă e situată, de obicei, între tastele <shortcut>Ctrl</shortcut> și "
-"<shortcut>Alt</shortcut> din stânga, și conține fie un simbol, fie cuvântul "
-"„Super”:"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is usually located between the left <shortcut>Ctrl</shortcut> and <shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or the word “Super”:"
+msgstr "Aproape totul în SonicDE poate fi făcut cu tastatura, folosind scurtături ce implică în mare parte tasta <shortcut>Meta</shortcut>.<nl/><nl/>Această tastă e situată, de obicei, între tastele <shortcut>Ctrl</shortcut> și <shortcut>Alt</shortcut> din stânga, și conține fie un simbol, fie cuvântul „Super”:"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
 #, kde-format
@@ -1080,24 +1068,14 @@ msgstr ""
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
 msgctxt "@info:window"
-msgid "Plasma Vaults"
-msgstr "Bolți Plasma"
+msgid "SonicDE Vaults"
+msgstr "Bolți SonicDE"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma Vaults allows you to create encrypted folders, called "
-"<interface>Vaults.</interface> Inside each Vault, you can securely store "
-"your passwords, files, pictures, and documents, safe from prying eyes. "
-"Vaults can live inside folders that are synced to cloud storage services "
-"too, providing extra privacy for that content."
-msgstr ""
-"Plasma Vaults vă permite să creați dosare criptate, numite <interface>bolți</"
-"interface>. În fiecare boltă, vă puteți păstra în siguranță parolele, "
-"fișierele, pozele și documentele, la adăpost de cei curioși. Bolțile se pot "
-"afla în interiorul dosarelor sincronizate cu servicii de stocare în nor, "
-"oferind intimitate sporită pentru acel conținut."
+msgid "SonicDE Vaults allows you to create encrypted folders, called <interface>Vaults.</interface> Inside each Vault, you can securely store your passwords, files, pictures, and documents, safe from prying eyes. Vaults can live inside folders that are synced to cloud storage services too, providing extra privacy for that content."
+msgstr "SonicDE Vaults vă permite să creați dosare criptate, numite <interface>bolți</interface>. În fiecare boltă, vă puteți păstra în siguranță parolele, fișierele, pozele și documentele, la adăpost de cei curioși. Bolțile se pot afla în interiorul dosarelor sincronizate cu servicii de stocare în nor, oferind intimitate sporită pentru acel conținut."
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
@@ -1117,11 +1095,6 @@ msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "Pozele mele"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
-#, kde-format
-msgid "Unlock and Open"
-msgstr "Deblochează și deschide"
-
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
@@ -1132,200 +1105,6 @@ msgstr ""
 "Pentru început, apăsați săgeata din <interface>tava de sistem</interface> "
 "pentru a afișa elementele ascunse, apoi apăsați pictograma <interface>Bolți</"
 "interface>."
-
-#: src/qml/pages/SimpleByDefault.qml:21
-#, kde-format
-msgctxt "@info:window"
-msgid "Simple by Default"
-msgstr "Simplu din fabrică"
-
-#: src/qml/pages/SimpleByDefault.qml:22
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"Plasma is designed to be simple and usable out of the box. Things are where "
-"you would expect, and there is generally no need to configure anything "
-"before you can be comfortable and productive.<nl/><nl/>Below is a visual "
-"representation of a typical Plasma Desktop; move the pointer over or click "
-"on something to learn about it!"
-msgstr ""
-"Plasma e proiectată să fie simplă și ușor de utilizat. Elementele sunt "
-"amplasate intuitiv și nu e necesar să configurați nimic pentru a beneficia "
-"de confort și productivitate.<nl/><nl/>Mai jos e o reprezentare vizuală a "
-"unui birou Plasma tipic. Mișcați indicatorul sau apăsați pe ceva pentru a "
-"afla detalii!"
-
-#: src/qml/pages/SimpleByDefault.qml:33
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is the “Desktop”. It shows files and folders that are contained in your "
-"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
-"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
-"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
-"interface> to add, remove or modify widgets."
-msgstr ""
-"Acesta e „biroul”. El arată fișiere și dosare ce se conțin în dosarul "
-"<filename>Desktop</filename>. Poate, de asemenea, să arate controale "
-"grafice. Faceți clic drept pe birou și alegeți <interface>Birou și tapet…</"
-"interface> pentru a configura aspectul biroului. Puteți alege "
-"<interface>Intră în regim de modificare</interface> pentru a adăuga, elimina "
-"sau modifica controalele grafice."
-
-#: src/qml/pages/SimpleByDefault.qml:36
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is a “Panel” — a container to hold widgets. Right-click on it and "
-"choose <interface>Show Panel Configuration</interface> to change how it "
-"behaves, which screen edge it lives on, and to add, remove or modify widgets."
-msgstr ""
-"Acesta e un „panou” – un container pentru controale grafice. Faceți clic "
-"drept pe acesta și alegeți <interface>Arată configurările panoului</"
-"interface> pentru a-i schimba comportamentul, muchia ecranului de care se "
-"lipește, precum și pentru a adăuga, elimina sau modifica controale grafice."
-
-#: src/qml/pages/SimpleByDefault.qml:39
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
-"can launch apps, shut down or restart the system, access recent files, and "
-"more. Click on it to get started!"
-msgstr ""
-"Acesta e controlul grafic „Lansator de aplicații”, un lansator cu destinație "
-"multiplă. De aici puteți lansa aplicații, opri sau reporni sistemul, accesa "
-"fișiere recente, și altele. Apăsați-l pentru a începe!"
-
-#: src/qml/pages/SimpleByDefault.qml:42
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Task Manager” widget, where you can switch between open apps "
-"and also launch new ones. Drag app icons to re-arrange them."
-msgstr ""
-"Acesta e controlul grafic „Gestionar de sarcini”, unde puteți schimba între "
-"aplicațiile deschise și lansa unele noi. Trageți pictogramele aplicațiilor "
-"pentru a le rearanja."
-
-#: src/qml/pages/SimpleByDefault.qml:45
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “System Tray” widget, which lets you control system functions "
-"like changing the volume and connecting to networks. Items will become "
-"visible here only when relevant. To see all available items, click the ⌃ "
-"arrow next to the clock."
-msgstr ""
-"Acesta e controlul grafic „Tavă de sistem”, care vă permite să controlați "
-"funcții de sistem ca schimbarea volumului și conectarea la rețele. "
-"Elementele devin vizibile aici doar când e relevant. Pentru a vedea toate "
-"elementele disponibile, apăsați săgeata ⌃ de lângă ceas."
-
-#: src/qml/pages/SimpleByDefault.qml:48
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
-"be also configured to show other timezones and events from your digital "
-"calendars."
-msgstr ""
-"Acesta e controlul grafic „Ceas digital”. Apăsați-l pentru a afișa un "
-"calendar. Acesta poate fi configurat să arate alte fuse orare și evenimente "
-"din calendarele dumneavoastră digitale."
-
-#: src/qml/pages/SimpleByDefault.qml:51
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
-"open windows so you can access the desktop. Click on it again to bring them "
-"back."
-msgstr ""
-"Acesta e controlul grafic „Trage cu ochiul la birou”. Apăsați-l pentru a "
-"ascunde temporar toate ferestrele deschise, astfel încât să puteți accesa "
-"biroul. Apăsați-l iar pentru a le aduce înapoi."
-
-#: src/qml/pages/Welcome.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome"
-msgstr "Bun venit"
-
-#: src/qml/pages/Welcome.qml:23
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is custom text supplied by the distro"
-msgid ""
-"%1<nl/><nl/>This operating system is running Plasma, a free and open-source "
-"desktop environment created by KDE, an international software community of "
-"volunteers. It is designed to be simple by default for a smooth experience, "
-"but powerful when needed to help you really get things done. We hope you "
-"love it!"
-msgstr ""
-"%1<nl/><nl/>Acest sistem de operare rulează Plasma, un mediu de birou liber "
-"cu sursă deschisă creat de KDE, o comunitate internațională de voluntari. "
-"Acesta e simplu de la început pentru o experiență armonioasă, dar puternic "
-"când trebuie să vă îndepliniți sarcinile. Sperăm să vă placă!"
-
-#: src/qml/pages/Welcome.qml:24
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a "
-"free and open-source desktop environment created by KDE, an international "
-"software community of volunteers. It is designed to be simple by default for "
-"a smooth experience, but powerful when needed to help you really get things "
-"done. We hope you love it!"
-msgstr ""
-"Bun venit în sistemul de operare %1 ce rulează KDE Plasma!<nl/><nl/>Plasma e "
-"un mediu de birou liber cu sursă deschisă creat de KDE, o comunitate "
-"internațională de voluntari. Acesta e simplu de la început pentru o "
-"experiență armonioasă, dar puternic când trebuie să vă îndepliniți "
-"sarcinile. Sperăm să vă placă!"
-
-#: src/qml/pages/Welcome.qml:28
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About Welcome Center"
-msgstr "Despre Centrul de întâmpinare"
-
-#: src/qml/pages/Welcome.qml:34
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About KDE"
-msgstr "Despre KDE"
-
-#: src/qml/pages/Welcome.qml:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Learn more about the KDE community"
-msgstr "Aflați mai multe despre comunitatea KDE"
-
-#: src/qml/pages/Welcome.qml:62
-#, kde-format
-msgctxt "@action:button %1 is the name of the user's distro"
-msgid "Learn more about %1"
-msgstr "Aflați mai multe despre %1"
-
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "Încărcarea imaginii a eșuat"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr ""
-"Fișierul <filename>%1</filename> nu a putut fi încărcat. Asigurați-vă că "
-"acesta există."
-
-#: src/qml/pages/Welcome.qml:120
-#, kde-format
-msgctxt "@info"
-msgid "The KDE mascot Konqi welcomes you to the KDE community!"
-msgstr "Konqi, mascota KDE, vă urează bun venit în comunitatea KDE!"
 
 #: src/release.cpp:42
 #, kde-format
@@ -1344,6 +1123,109 @@ msgstr "%1 Beta"
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
+
+#, kde-format
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Sergiu Bivol"
+
+#, kde-format
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sergiu@cip.md"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "If you find Plasma to be useful, consider getting involved or donating. KDE is an international volunteer community, not a big company; your contributions make a real difference!"
+#~ msgstr "Dacă mediul Plasma vă e util, luați în considerare implicarea sau donarea de bani. KDE este o comunitate internațională de voluntari, nu o companie mare. Contribuțiile dumneavoastră fac o diferență!"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Make a donation"
+#~ msgstr "Donați"
+
+#, kde-format
+#~ msgid "Search…"
+#~ msgstr "Caută…"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Find Great Apps"
+#~ msgstr "Găsiți aplicații bune"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app, and %2 is the distro name."
+#~ msgid "There’s no need to search the web to download app installers or use a command-line package manager; KDE’s app store <application>%1</application> does it all for you!<nl/><nl/>Click on any of the icons below to give it a try!"
+#~ msgstr "Nu e nevoie să căutați pe Internet pentru a găsi aplicații sau să folosiți un gestionar de pachete în linia de comandă – magazinul de aplicații KDE <application>%1</application> face totul pentru dumneavoastră!<nl/><nl/>Apăsați oricare dintre pictogramele de mai jos pentru a-l încerca!"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the name of an app"
+#~ msgid "Show %1 in Discover"
+#~ msgstr "Arată %1 în Discover"
+
+#, kde-format
+#~ msgctxt "@label:URL"
+#~ msgid "Get help at KDE’s discussion forums"
+#~ msgstr "Obțineți ajutor pe forumurile de discuții KDE"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Supporting Members"
+#~ msgstr "Membri susținători"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Supporting Members"
+#~ msgstr "Membri susținători"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "We thank the following supporting members for their recurring donation to KDE:"
+#~ msgstr "Le mulțumim următorilor membri susținători ce fac donații repetate pentru KDE:"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the selected sort order, e.g. Random"
+#~ msgid "Sort: %1"
+#~ msgstr "Sortează: %1"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Random"
+#~ msgstr "Aleator"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Last Name"
+#~ msgstr "Nume"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "First Name"
+#~ msgstr "Prenume"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list, referring to the date a user has first made a donation"
+#~ msgid "Contribution Date"
+#~ msgstr "Data contribuției"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An option to sort a list in reverse order"
+#~ msgid "Reverse"
+#~ msgstr "Invers"
+
+#, kde-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "Our developers will use this anonymous data to improve KDE software. You can choose how much to share in System Settings, and here too."
+#~ msgstr "Dezvoltatorii noștri vor folosi aceste date anonime pentru a îmbunătăți programele KDE. Puteți alege cât să partajați în Configurări de sistem, sau aici."
+
+#, kde-format
+#~ msgid "Unlock and Open"
+#~ msgstr "Deblochează și deschide"
+
+#, kde-format
+#~ msgctxt "@info"
+#~ msgid "The KDE mascot Konqi welcomes you to the KDE community!"
+#~ msgstr "Konqi, mascota KDE, vă urează bun venit în comunitatea KDE!"
 
 #~ msgctxt "@action:button clicking on this takes the user to a web page"
 #~ msgid "Visit %1"
@@ -1367,11 +1249,8 @@ msgstr "%1 Beta %2"
 #~ msgid "Manage Software"
 #~ msgstr "Gestionează programele"
 
-#~ msgid ""
-#~ "Display release notes for the current Plasma release, for beta versions."
-#~ msgstr ""
-#~ "Afișează notele de lansare pentru ediția actuală Plasma, pentru versiuni "
-#~ "beta."
+#~ msgid "Display release notes for the current Plasma release, for beta versions."
+#~ msgstr "Afișează notele de lansare pentru ediția actuală Plasma, pentru versiuni beta."
 
 #, fuzzy
 #~| msgctxt "@action:button"

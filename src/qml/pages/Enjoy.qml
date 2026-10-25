@@ -18,21 +18,23 @@ Welcome.Page {
     id: root
 
     heading: i18nc("@title:window", "Enjoy It!")
-    description: xi18nc("@info:usagetip", "We hope you love Plasma as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!")
+    description: xi18nc("@info:usagetip", "We hope you love SonicDE as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!")
 
     topContent: [
         Kirigami.UrlButton {
             Layout.topMargin: Kirigami.Units.largeSpacing
-            text: i18nc("@label:URL", "Learn more about the KDE community")
-            url: "https://community.kde.org/Welcome_to_KDE?source=plasma-welcome"
+            text: i18nc("@label:URL", "Learn more about the SonicDE community")
+            url: "https://sonicde.org"
         },
         Kirigami.UrlButton {
             Layout.topMargin: Kirigami.Units.largeSpacing
-            text: i18nc("@label:URL", "Get help at KDE’s discussion forums")
-            url: "https://discuss.kde.org/?source=plasma-welcome" // TODO: Discuss probably doesn't consume analytics or atleast in this way?
+            text: i18nc("@label:URL", "Find help with SonicDE")
+            url: "https://sonicde.org"
         }
     ]
 
+    // Donation-related supporting-member UI is disabled for now.
+    /*
     actions: [
         Kirigami.Action {
             icon.name: "favorite-symbolic"
@@ -46,6 +48,7 @@ Welcome.Page {
 
         Supporters {}
     }
+    */
 
     ColumnLayout {
         anchors.fill: parent

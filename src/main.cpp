@@ -29,7 +29,7 @@
 // Ensure the public plugin is linked by referencing exported symbol
 Q_IMPORT_QML_PLUGIN(org_kde_plasma_welcomePlugin);
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
     auto format = QSurfaceFormat::defaultFormat();
     format.setOption(QSurfaceFormat::ResetNotification);
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName(QStringLiteral("plasma-welcome"));
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("plasma-welcome"));
 
-    const QString description = i18nc("@info:usagetip", "Friendly onboarding wizard for Plasma");
+    const QString description = i18nc("@info:usagetip", "Friendly onboarding wizard for SonicDE");
     KAboutData aboutData(
         // The program name used internally.
         QStringLiteral("plasma-welcome"),
@@ -56,14 +56,17 @@ int main(int argc, char *argv[])
         i18nc("@info copyright string", "© 2021–2024, KDE Community"));
     aboutData.setProgramLogo(QIcon::fromTheme(QStringLiteral("start-here-sonicde-plasma")));
     aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"),
-                        i18nc("@info:credit", "Author"),
-                        QStringLiteral("kinofhek@gmail.com"),
-                        QStringLiteral("https://fhek.gitlab.io.com"));
+        i18nc("@info:credit", "Author"),
+        QStringLiteral("kinofhek@gmail.com"),
+        QStringLiteral("https://fhek.gitlab.io.com"));
     aboutData.addAuthor(i18nc("@info:credit", "Nate Graham"),
-                        i18nc("@info:credit", "Author"),
-                        QStringLiteral("nate@kde.org"),
-                        QStringLiteral("https://pointieststick.com"));
+        i18nc("@info:credit", "Author"),
+        QStringLiteral("nate@kde.org"),
+        QStringLiteral("https://pointieststick.com"));
     aboutData.addAuthor(i18nc("@info:credit", "Oliver Beard"), i18nc("@info:credit", "Author"), QStringLiteral("olib141@outlook.com"));
+    aboutData.addAuthor(i18nc("@info:credit", "Joseph Crowell"), i18nc("@info:credit", "Author"), QStringLiteral("joseph.w.crowell@gmail.com"));
+    aboutData.setHomepage(QStringLiteral("https://sonicde.org"));
+    aboutData.setBugAddress(QByteArrayLiteral("https://sonicde.org"));
     KAboutData::setApplicationData(aboutData);
     KCrash::initialize();
 
@@ -74,12 +77,12 @@ int main(int argc, char *argv[])
     parser.setApplicationDescription(description);
     aboutData.setupCommandLine(&parser);
 
-    parser.addOption(QCommandLineOption(QStringLiteral("post-update"), i18n("Display release notes for the current Plasma release.")));
+    parser.addOption(QCommandLineOption(QStringLiteral("post-update"), i18n("Display release notes for the current SonicDE release.")));
     parser.addOption(QCommandLineOption(QStringLiteral("live-environment"), i18n("Display the live page intended for distro live environments.")));
 
     QCommandLineOption pagesOption(QStringLiteral("pages"),
-                                   i18n("Specify comma-delimited list of page(s) (by internal name) to be displayed."),
-                                   QStringLiteral("pages"));
+        i18n("Specify comma-delimited list of page(s) (by internal name) to be displayed."),
+        QStringLiteral("pages"));
     parser.addOption(pagesOption);
 
     parser.process(app);
@@ -90,10 +93,10 @@ int main(int argc, char *argv[])
     // Make it single-instance so it raises e.g. when middle-clicking on taskmanager
     // or accidentally launching it while it's already open
     KDBusService service(KDBusService::Unique);
-    QObject::connect(&service, &KDBusService::activateRequested, &engine, [&engine](const QStringList & /*arguments*/, const QString & /*workingDirectory*/) {
+    QObject::connect(&service, &KDBusService::activateRequested, &engine, [&engine](const QStringList& /*arguments*/, const QString& /*workingDirectory*/) {
         const auto rootObjects = engine.rootObjects();
         for (auto obj : rootObjects) {
-            auto view = qobject_cast<QQuickWindow *>(obj);
+            auto view = qobject_cast<QQuickWindow*>(obj);
             if (view) {
                 KWindowSystem::updateStartupId(view);
                 KWindowSystem::activateWindow(view);
@@ -103,12 +106,12 @@ int main(int argc, char *argv[])
     });
 
     // Tell QML about requested mode/pages
-    auto appSingleton = engine.singletonInstance<App *>("org.kde.plasma.welcome.private", "App");
+    auto appSingleton = engine.singletonInstance<App*>("org.kde.plasma.welcome.private", "App");
     if (parser.isSet(QStringLiteral("pages"))) {
         QStringList pages = parser.value(pagesOption).split(",");
         if (!pages.isEmpty()) {
             // Ensure each page ends with ".qml"
-            for (QString &page : pages) {
+            for (QString& page : pages) {
                 if (!page.endsWith(".qml")) {
                     page.append(".qml");
                 }

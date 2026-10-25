@@ -18,8 +18,8 @@ Welcome.Page {
 
     readonly property bool isPrerelease: Private.Release.isBeta || Private.Release.isDevelopment
 
-    heading: i18nc("@title:window", "Plasma has been updated to %1", Private.Release.friendlyVersion)
-    description: isPrerelease ? xi18nc("@info:usagetip", "Thank you for testing this beta release of Plasma — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them.") : xi18nc("@info:usagetip", "KDE contributors have spent the last four months hard at work on this release. We hope you enjoy using Plasma as much as we enjoyed making it!")
+    heading: i18nc("@title:window", "SonicDE has been updated to %1", Private.Release.friendlyVersion)
+    description: isPrerelease ? xi18nc("@info:usagetip", "Thank you for testing this beta release of SonicDE — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them.") : xi18nc("@info:usagetip", "SonicDE contributors have been hard at work on this release. We hope you enjoy using SonicDE as much as we enjoyed making it!")
 
     topContent: [
         Kirigami.UrlButton {
@@ -27,7 +27,7 @@ Welcome.Page {
 
             visible: root.isPrerelease
             text: i18nc("@label:URL", "Report a bug")
-            url: "https://bugs.kde.org"
+            url: "https://sonicde.org"
         }
     ]
 
@@ -233,7 +233,7 @@ Welcome.Page {
                         Kirigami.ContextualHelpButton {
                             Layout.leftMargin: Kirigami.Units.smallSpacing
 
-                            toolTipText: i18nc("@info:tooltip", "The preview will be loaded automatically when this page is shown for future Plasma updates, except when using a metered network connection.")
+                            toolTipText: i18nc("@info:tooltip", "The preview will be loaded automatically when this page is shown for future SonicDE updates, except when using a metered network connection.")
                         }
 
                         Item {

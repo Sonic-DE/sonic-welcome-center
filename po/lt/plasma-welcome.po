@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-13 00:45+0000\n"
+"Report-Msgid-Bugs-To: https://sonicde.org\n"
+"POT-Creation-Date: 2026-10-25 21:33+1000\n"
 "PO-Revision-Date: 2026-06-19 00:03+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,25 +15,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 "X-Generator: Poedit 3.9\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Moo"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "<>"
 
 #: src/main.cpp:43
 #, kde-format
 msgctxt "@info:usagetip"
-msgid "Friendly onboarding wizard for Plasma"
-msgstr "Plasma draugiškas darbo pradžios vediklis"
+msgid "Friendly onboarding wizard for SonicDE"
+msgstr "SonicDE draugiškas darbo pradžios vediklis"
 
 #: src/main.cpp:48
 #, kde-format
@@ -71,10 +60,15 @@ msgctxt "@info:credit"
 msgid "Oliver Beard"
 msgstr "Oliver Beard"
 
+#: src/main.cpp:67
+msgctxt "@info:credit"
+msgid "Joseph Crowell"
+msgstr ""
+
 #: src/main.cpp:77
 #, kde-format
-msgid "Display release notes for the current Plasma release."
-msgstr "Rodyti dabartinės Plasma versijos laidos informaciją."
+msgid "Display release notes for the current SonicDE release."
+msgstr "Rodyti dabartinės SonicDE versijos laidos informaciją."
 
 #: src/main.cpp:78
 #, kde-format
@@ -135,28 +129,51 @@ msgid "Unassigned"
 msgstr "Nepriskirtas"
 
 #: src/qml/ContributionCard.qml:18
-#, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"If you find Plasma to be useful, consider getting involved or donating. KDE "
-"is an international volunteer community, not a big company; your "
-"contributions make a real difference!"
+msgid "If you find SonicDE useful, consider getting involved. Your contributions to the SonicDE community make a real difference!"
 msgstr ""
-"Jei atrasite, jog Plasma yra jums naudinga, apsvarstykite galimybę "
-"įsitraukti arba paaukoti lėšų. KDE yra tarptautinė savanorių bendruomenė, o "
-"ne didelė kompanija; jūsų įnašai turi didelę reikšmę!"
-
-#: src/qml/ContributionCard.qml:29
-#, kde-format
-msgctxt "@action:button"
-msgid "Make a donation"
-msgstr "Paaukokite"
 
 #: src/qml/ContributionCard.qml:36
 #, kde-format
 msgctxt "@action:button"
 msgid "Get involved"
 msgstr "Įsitraukite"
+
+#: src/qml/PageError.qml:22
+#, kde-format
+msgctxt "@info:window"
+msgid "Error loading page"
+msgstr "Klaida įkeliant puslapį"
+
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
+#, kde-format
+msgctxt "@action:button"
+msgid "Report Bug…"
+msgstr "Praneškite apie klaidą…"
+
+#: src/qml/PageError.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Kopijuoti išsamesnę informaciją"
+
+#: src/qml/PageError.qml:46
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page could not be loaded"
+msgstr "Šio puslapio nepavyko įkelti"
+
+#: src/qml/PageError.qml:49
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by your distribution could not be loaded"
+msgstr "Nepavyko įkelti šio puslapio, kurį pateikė jūsų platinamasis paketas"
+
+#: src/qml/PageError.qml:51
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by Welcome Center could not be loaded"
+msgstr "Nepavyko įkelti šio puslapio, kurį pateikė supažindinimas su sistema"
 
 #: src/qml/footers/FooterDefault.qml:28
 #, kde-format
@@ -185,8 +202,8 @@ msgstr "&Kitas"
 #: src/qml/footers/FooterUpdate.qml:21
 #, kde-format
 msgctxt "@option:check"
-msgid "Show after Plasma is updated"
-msgstr "Rodyti po Plasma atnaujinimo"
+msgid "Show after SonicDE is updated"
+msgstr "Rodyti po SonicDE atnaujinimo"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -236,11 +253,6 @@ msgctxt "@action:button Button in the Plasma activities sidebar"
 msgid "Create activity…"
 msgstr "Sukurti veiklą…"
 
-#: src/qml/mock/MockKRunner.qml:81
-#, kde-format
-msgid "Search…"
-msgstr "Ieškoti…"
-
 #: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
@@ -253,70 +265,6 @@ msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "Išplėsti langą"
 
-#: src/qml/PageError.qml:22
-#, kde-format
-msgctxt "@info:window"
-msgid "Error loading page"
-msgstr "Klaida įkeliant puslapį"
-
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
-#, kde-format
-msgctxt "@action:button"
-msgid "Report Bug…"
-msgstr "Praneškite apie klaidą…"
-
-#: src/qml/PageError.qml:33
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy Details"
-msgstr "Kopijuoti išsamesnę informaciją"
-
-#: src/qml/PageError.qml:46
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page could not be loaded"
-msgstr "Šio puslapio nepavyko įkelti"
-
-#: src/qml/PageError.qml:49
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by your distribution could not be loaded"
-msgstr "Nepavyko įkelti šio puslapio, kurį pateikė jūsų platinamasis paketas"
-
-#: src/qml/PageError.qml:51
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by Welcome Center could not be loaded"
-msgstr "Nepavyko įkelti šio puslapio, kurį pateikė supažindinimas su sistema"
-
-#: src/qml/pages/Discover.qml:20
-#, kde-format
-msgctxt "@title:window"
-msgid "Find Great Apps"
-msgstr "Atraskite nuostabių programų"
-
-#: src/qml/pages/Discover.qml:21
-#, kde-kuit-format
-msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
-"%2 is the distro name."
-msgid ""
-"There’s no need to search the web to download app installers or use a "
-"command-line package manager; KDE’s app store <application>%1</application> "
-"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
-"try!"
-msgstr ""
-"Nėra reikalo ieškoti saityne, kaip atsisiųsti programų diegimo programas ar "
-"naudoti komandų eilutės paketų tvarkytuvę; KDE programų parduotuvė "
-"<application>%1</application> visa tai atlieka už jus!<nl/><nl/>Spustelėkite "
-"ant bet kurios piktogramos žemiau, kad išbandytumėte!"
-
-#: src/qml/pages/Discover.qml:103
-#, kde-format
-msgctxt "@action:button %1 is the name of an app"
-msgid "Show %1 in Discover"
-msgstr "Rodyti %1 programoje Discover"
-
 #: src/qml/pages/Enjoy.qml:20
 #, kde-format
 msgctxt "@title:window"
@@ -326,87 +274,19 @@ msgstr "Mėgaukitės!"
 #: src/qml/pages/Enjoy.qml:21
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"We hope you love Plasma as much as we loved making it for you! Now it’s time "
-"to jump right in. Explore its features, install your favorite apps and "
-"games, and get busy doing what makes you you!"
-msgstr ""
-"Mes tikimės, kad Plasma jums patiks tiek pat, kiek mums patiko jums ją "
-"kurti! Dabar, atėjo laikas pasižvalgyti. Atraskite Plasma aplinkos ypatybes, "
-"įsidiekite mėgstamas programas ir žaidimus bei užsiimkite tuo, kas padeda "
-"jums atrasti save!"
+msgid "We hope you love SonicDE as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!"
+msgstr "Mes tikimės, kad SonicDE jums patiks tiek pat, kiek mums patiko jums ją kurti! Dabar, atėjo laikas pasižvalgyti. Atraskite SonicDE aplinkos ypatybes, įsidiekite mėgstamas programas ir žaidimus bei užsiimkite tuo, kas padeda jums atrasti save!"
 
 #: src/qml/pages/Enjoy.qml:26
 #, kde-format
 msgctxt "@label:URL"
-msgid "Learn more about the KDE community"
-msgstr "Sužinokite daugiau apie KDE bendruomenę"
+msgid "Learn more about the SonicDE community"
+msgstr "Sužinokite daugiau apie SonicDE bendruomenę"
 
 #: src/qml/pages/Enjoy.qml:31
-#, kde-format
 msgctxt "@label:URL"
-msgid "Get help at KDE’s discussion forums"
-msgstr "Gaukite pagalbos KDE diskusijų forumuose"
-
-#: src/qml/pages/Enjoy.qml:39
-#, kde-format
-msgctxt "@action:button"
-msgid "Supporting Members"
-msgstr "Remiantys nariai"
-
-#: src/qml/pages/enjoy/Supporters.qml:18
-#, kde-format
-msgctxt "@title:window"
-msgid "Supporting Members"
-msgstr "Remiantys nariai"
-
-#: src/qml/pages/enjoy/Supporters.qml:19
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"We thank the following supporting members for their recurring donation to "
-"KDE:"
+msgid "Find help with SonicDE"
 msgstr ""
-"Mes esame dėkingi šiems remiantiems nariams už jų pasikartojančias aukas, "
-"skirtas KDE:"
-
-#: src/qml/pages/enjoy/Supporters.qml:39
-#, kde-format
-msgctxt "@action:button %1 is the selected sort order, e.g. Random"
-msgid "Sort: %1"
-msgstr "Rikiuoti pagal: %1"
-
-#: src/qml/pages/enjoy/Supporters.qml:45
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Random"
-msgstr "Atsitiktinai"
-
-#: src/qml/pages/enjoy/Supporters.qml:56
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Last Name"
-msgstr "Pavardė"
-
-#: src/qml/pages/enjoy/Supporters.qml:67
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "First Name"
-msgstr "Vardas"
-
-#: src/qml/pages/enjoy/Supporters.qml:78
-#, kde-format
-msgctxt ""
-"@action:inmenu An order to sort a list, referring to the date a user has "
-"first made a donation"
-msgid "Contribution Date"
-msgstr "Aukojimo data"
-
-#: src/qml/pages/enjoy/Supporters.qml:91
-#, kde-format
-msgctxt "@action:inmenu An option to sort a list in reverse order"
-msgid "Reverse"
-msgstr "Atvirkštinė tvarka"
 
 #: src/qml/pages/Feedback.qml:16
 #, kde-format
@@ -415,15 +295,9 @@ msgid "Share Anonymous Usage Information"
 msgstr "Bendrinkite anoniminę informaciją apie naudojimąsi"
 
 #: src/qml/pages/Feedback.qml:17
-#, kde-format
 msgctxt "@info:usagetip"
-msgid ""
-"Our developers will use this anonymous data to improve KDE software. You can "
-"choose how much to share in System Settings, and here too."
+msgid "You can choose how much anonymous usage information to share in System Settings, and here too."
 msgstr ""
-"Mūsų plėtotojai naudos šiuos anoniminius duomenis, kad tobulintų KDE "
-"programinę įrangą. Sistemos nuostatose, o taip pat ir čia, galite "
-"pasirinkti, kiek duomenų norite bendrinti."
 
 #: src/qml/pages/Live.qml:21
 #, kde-format
@@ -434,24 +308,14 @@ msgstr "Jus sveikina %1!"
 #: src/qml/pages/Live.qml:24
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Pressing the icon below will begin installing %1. Alternatively, you can "
-"close the window to explore the live environment or continue here to find "
-"out about KDE Plasma."
-msgstr ""
-"Spustelėjus žemiau esančią piktogramą, bus pradėtas %1 diegimas. Priešingu "
-"atveju, galite užverti šį langą ir patyrinėti demonstracinę aplinką arba "
-"tęsti čia savo pažintį su KDE Plasma."
+msgid "Pressing the icon below will begin installing %1. Alternatively, you can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Spustelėjus žemiau esančią piktogramą, bus pradėtas %1 diegimas. Priešingu atveju, galite užverti šį langą ir patyrinėti demonstracinę aplinką arba tęsti čia savo pažintį su SonicDE."
 
 #: src/qml/pages/Live.qml:26
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"You can close the window to explore the live environment or continue here to "
-"find out about KDE Plasma."
-msgstr ""
-"Galite užverti šį langą ir patyrinėti demonstracinę aplinką arba tęsti čia "
-"savo pažintį su KDE Plasma."
+msgid "You can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Galite užverti šį langą ir patyrinėti demonstracinę aplinką arba tęsti čia savo pažintį su SonicDE."
 
 #: src/qml/pages/Live.qml:32
 #, kde-format
@@ -483,18 +347,14 @@ msgstr ""
 #: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Networking support for Plasma is not currently installed"
-msgstr "Darbo tinkle palaikymas, skirtas Plasma, šiuo metu nėra įdiegtas"
+msgid "Networking support for SonicDE is not currently installed"
+msgstr "Darbo tinkle palaikymas, skirtas SonicDE, šiuo metu nėra įdiegtas"
 
 #: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"To manage network connections, Plasma requires <icode>plasma-nm</icode> to "
-"be installed. Please report this omission to %1."
-msgstr ""
-"Tam, kad tvarkytų tinklo ryšius, Plasma reikalauja, kad būtų įdiegta "
-"<icode>plasma-nm</icode>. Praneškite apie šį aplaidumą %1."
+msgid "To manage network connections, SonicDE requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1."
+msgstr "Tam, kad tvarkytų tinklo ryšius, SonicDE reikalauja, kad būtų įdiegta <icode>plasma-nm</icode>. Praneškite apie šį aplaidumą %1."
 
 #: src/qml/pages/Network.qml:211
 #, kde-format
@@ -529,31 +389,20 @@ msgstr "Keisti būseną"
 #: src/qml/pages/PlasmaUpdate.qml:21
 #, kde-format
 msgctxt "@title:window"
-msgid "Plasma has been updated to %1"
-msgstr "Plasma atnaujinta į %1"
+msgid "SonicDE has been updated to %1"
+msgstr "SonicDE atnaujinta į %1"
 
 #: src/qml/pages/PlasmaUpdate.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Thank you for testing this beta release of Plasma — your feedback is "
-"fundamental to helping us improve it! Please report any and all bugs you "
-"find so that we can fix them."
-msgstr ""
-"Dėkojame, kad išbandote šią beta versijos Plasma laidą – jūsų atsiliepimai "
-"yra labai svarbūs ir padeda mums ją tobulinti! Praneškite apie bet kokias "
-"pastebėtas klaidas, kad mes galėtume jas ištaisyti."
+msgid "Thank you for testing this beta release of SonicDE — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them."
+msgstr "Dėkojame, kad išbandote šią beta versijos SonicDE laidą – jūsų atsiliepimai yra labai svarbūs ir padeda mums ją tobulinti! Praneškite apie bet kokias pastebėtas klaidas, kad mes galėtume jas ištaisyti."
 
 #: src/qml/pages/PlasmaUpdate.qml:22
-#, kde-kuit-format
+#, kde-kuit-format, fuzzy
 msgctxt "@info:usagetip"
-msgid ""
-"KDE contributors have spent the last four months hard at work on this "
-"release. We hope you enjoy using Plasma as much as we enjoyed making it!"
-msgstr ""
-"Pastaruosius keturis mėnesius KDE talkininkai praleido sunkiai dirbdami "
-"kuriant šią versiją. Tikimės, kad jūs mėgausitės naudodamiesi Plasma tiek "
-"pat, kiek mes mėgavomės ją plėtodami!"
+msgid "SonicDE contributors have been hard at work on this release. We hope you enjoy using SonicDE as much as we enjoyed making it!"
+msgstr "Pastaruosius keturis mėnesius SonicDE talkininkai praleido sunkiai dirbdami kuriant šią versiją. Tikimės, kad jūs mėgausitės naudodamiesi SonicDE tiek pat, kiek mes mėgavomės ją plėtodami!"
 
 #: src/qml/pages/PlasmaUpdate.qml:29
 #, kde-format
@@ -622,13 +471,8 @@ msgstr "Automatiškai įkelti peržiūrą"
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
 msgctxt "@info:tooltip"
-msgid ""
-"The preview will be loaded automatically when this page is shown for future "
-"Plasma updates, except when using a metered network connection."
-msgstr ""
-"Peržiūra bus įkelta automatiškai, kai šis puslapis bus rodomas būsimuose "
-"Plasma atnaujinimuose, išskyrus atvejus, kai bus naudojamas ribotų duomenų "
-"tinklo ryšys."
+msgid "The preview will be loaded automatically when this page is shown for future SonicDE updates, except when using a metered network connection."
+msgstr "Peržiūra bus įkelta automatiškai, kai šis puslapis bus rodomas būsimuose SonicDE atnaujinimuose, išskyrus atvejus, kai bus naudojamas ribotų duomenų tinklo ryšys."
 
 #: src/qml/pages/PlasmaUpdate.qml:422
 #, kde-format
@@ -645,14 +489,8 @@ msgstr "Galinga, kai to reikia"
 #: src/qml/pages/PowerfulWhenNeeded.qml:20
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma is a feature-rich environment, designed to super-charge your "
-"productivity!<nl/><nl/>Click the cards below to see just a smattering of "
-"what it can do for you:"
-msgstr ""
-"Plasma yra daugiafunkcė aplinka, sukurta smarkiai padidinti jūsų "
-"produktyvumą!<nl/><nl/>Spustelėkite ant žemiau esančių kortelių, kad "
-"pamatytumėte kelis iš daugybės dalykų, kaip ji gali jums pasitarnauti:"
+msgid "SonicDE is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>Click the cards below to see just a smattering of what it can do for you:"
+msgstr "SonicDE yra daugiafunkcė aplinka, sukurta smarkiai padidinti jūsų produktyvumą!<nl/><nl/>Spustelėkite ant žemiau esančių kortelių, kad pamatytumėte kelis iš daugybės dalykų, kaip ji gali jums pasitarnauti:"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:44
 #, kde-format
@@ -731,8 +569,188 @@ msgstr "Saugiai saugokite slaptus failus"
 #: src/qml/pages/PowerfulWhenNeeded.qml:124
 #, kde-format
 msgctxt "@action:button"
-msgid "Learn about more Plasma features"
-msgstr "Sužinokite daugiau apie Plasma ypatybes"
+msgid "Learn about more SonicDE features"
+msgstr "Sužinokite daugiau apie SonicDE ypatybes"
+
+#: src/qml/pages/SimpleByDefault.qml:21
+#, kde-format
+msgctxt "@info:window"
+msgid "Simple by Default"
+msgstr "Paprasta pagal numatymą"
+
+#: src/qml/pages/SimpleByDefault.qml:22
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "SonicDE is designed to be simple and usable out of the box. Things are where you would expect, and there is generally no need to configure anything before you can be comfortable and productive.<nl/><nl/>Below is a visual representation of a typical SonicDE desktop; move the pointer over or click on something to learn about it!"
+msgstr "SonicDE yra sukurta, kad pradėjus naudoti būtų paprasta ir praktiška. Visi dalykai yra ten, kur jų galite tikėtis, tad įprastai nėra reikalo kažką konfigūruoti, kad jaustumėtės patogiai ir būtumėte produktyvūs.<nl/><nl/>Žemiau yra pavaizduotas tipinis SonicDE darbalaukis; užveskite pelės rodyklę arba spustelėkite ant elementų norėdami sužinoti apie juos daugiau!"
+
+#: src/qml/pages/SimpleByDefault.qml:33
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is the “Desktop”. It shows files and folders that are contained in your "
+"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
+"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
+"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
+"interface> to add, remove or modify widgets."
+msgstr ""
+"Tai yra „Darbalaukis“. Jame yra rodomi failai ir aplankai, esantys jūsų "
+"<filename>Darbalaukio</filename> aplanke. Darbalaukyje gali būti naudojami "
+"valdikliai. Norėdami konfigūruoti darbalaukio išvaizdą, spustelėkite ant jo "
+"dešiniuoju pelės mygtuku ir pasirinkite <interface>Darbalaukis ir "
+"darbalaukio fonas…</interface> Be to, galite pasirinkti <interface>Įjungti "
+"taisymo veikseną</interface>, kad pridėtumėte, pašalintumėte ar "
+"modifikuotumėte valdiklius."
+
+#: src/qml/pages/SimpleByDefault.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is a “Panel” — a container to hold widgets. Right-click on it and "
+"choose <interface>Show Panel Configuration</interface> to change how it "
+"behaves, which screen edge it lives on, and to add, remove or modify widgets."
+msgstr ""
+"Tai yra „Skydelis“ – erdvė, kurioje laikomi valdikliai. Spustelėkite ant jo "
+"dešiniuoju pelės mygtuku ir pasirinkite <interface>Rodyti skydelio "
+"konfigūraciją</interface>, kad pakeistumėte jo elgseną, perkeltumėte į kitą "
+"ekraną ir pridėtumėte, pašalintumėte ar modifikuotumėte valdiklius."
+
+#: src/qml/pages/SimpleByDefault.qml:39
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
+msgstr ""
+"Tai yra „Programų paleidyklės“ valdiklis, universali paleidyklė. Čia galite "
+"paleisti programas, išjungti sistemą arba paleisti ją iš naujo, pasiekti "
+"paskiausiai naudotus failus ir kt. Spustelėkite ant jo norėdami pradėti!"
+
+#: src/qml/pages/SimpleByDefault.qml:42
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Task Manager” widget, where you can switch between open apps "
+"and also launch new ones. Drag app icons to re-arrange them."
+msgstr ""
+"Tai – „Užduočių tvarkytuvės“ valdiklis, kuriame galite perjunginėti atvertas "
+"programas ir paleisti naujas programas. Vilkite programų piktogramas "
+"norėdami jas pertvarkyti."
+
+#: src/qml/pages/SimpleByDefault.qml:45
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “System Tray” widget, which lets you control system functions "
+"like changing the volume and connecting to networks. Items will become "
+"visible here only when relevant. To see all available items, click the ⌃ "
+"arrow next to the clock."
+msgstr ""
+"Šis yra „Sistemos dėklo“ valdiklis, leidžiantis jums valdyti tokias sistemos "
+"funkcijas, kaip garsumo keitimas ar jungimasis prie interneto tinklo. Jame "
+"esantys elementai taps matomi tik tuomet, kai bus aktualūs. Norėdami "
+"pamatyti visus prieinamus elementus, spustelėkite šalia laikrodžio ant ⌃ "
+"rodyklės."
+
+#: src/qml/pages/SimpleByDefault.qml:48
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
+"be also configured to show other timezones and events from your digital "
+"calendars."
+msgstr ""
+"Tai yra „Skaitmeninio laikrodžio“ valdiklis. Spustelėkite ant jo norėdami "
+"pamatyti kalendorių. Skaitmeninis laikrodis taip pat gali būti "
+"sukonfigūruotas, kad rodytų kitas laiko juostas ir įvykius iš skaitmeninių "
+"kalendorių."
+
+#: src/qml/pages/SimpleByDefault.qml:51
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
+"open windows so you can access the desktop. Click on it again to bring them "
+"back."
+msgstr ""
+"Tai – „Žvilgsnio į darbalaukį“ valdiklis. Spustelėkite ant jo norėdami "
+"laikinai paslėpti visus atvertus langus ir pasiekti darbalaukį. Spustelėkite "
+"dar kartą, kad juos sugrąžintumėte."
+
+#: src/qml/pages/Welcome.qml:21
+#, kde-format
+msgctxt "@title"
+msgid "Welcome"
+msgstr "Sveiki!"
+
+#: src/qml/pages/Welcome.qml:23
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is custom text supplied by the distro"
+msgid "%1<nl/><nl/>This operating system is running SonicDE, a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "%1<nl/><nl/>Ši operacinė sistema naudoja SonicDE – laisvą, atvirojo kodo darbalaukio aplinką, kurią plėtoja SonicDE. SonicDE – tai tarptautinė programinės įrangos savanorių bendruomenė. SonicDE yra sukurta taip, kad pagal numatymą būtų paprasta naudoti ir užtikrintų sklandų patyrimą, bet tuo pačiu būtų galinga, kai to prireikia, ir padėtų jums atlikti darbus. Tikimės, ši aplinka jums patiks!"
+
+#: src/qml/pages/Welcome.qml:24
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is the name of the user's distro"
+msgid "Welcome to the %1 operating system running SonicDE!<nl/><nl/>SonicDE is a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "Jus sveikina %1 – SonicDE naudojanti operacinė sistema!<nl/><nl/>SonicDE yra laisva, atvirojo kodo darbalaukio aplinka, kurią plėtoja SonicDE – tarptautinė programinės įrangos savanorių bendruomenė. SonicDE yra sukurta taip, kad pagal numatymą būtų paprasta naudoti ir užtikrintų sklandų patyrimą, bet tuo pačiu būtų galinga, kai to prireikia, ir padėtų jums atlikti darbus. Tikimės, ši aplinka jums patiks!"
+
+#: src/qml/pages/Welcome.qml:28
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Welcome Center"
+msgstr "Apie supažindinimą su sistema"
+
+#: src/qml/pages/Welcome.qml:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About SonicDE"
+msgstr "Apie SonicDE"
+
+#: src/qml/pages/Welcome.qml:45
+msgctxt "@title:window"
+msgid "About SonicDE"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:46
+msgctxt "@info:usagetip"
+msgid "SonicDE is a free and open-source desktop project. SonicDE builds on KDE Plasma to provide a desktop experience with continued X11 support."
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:49
+msgctxt "@action:button"
+msgid "Visit the SonicDE website"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Learn more about the SonicDE community"
+msgstr "Sužinokite daugiau apie SonicDE bendruomenę"
+
+#: src/qml/pages/Welcome.qml:62
+#, kde-format
+msgctxt "@action:button %1 is the name of the user's distro"
+msgid "Learn more about %1"
+msgstr "Sužinokite daugiau apie %1"
+
+#: src/qml/pages/Welcome.qml:99
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "Nepavyko įkelti paveikslo"
+
+#: src/qml/pages/Welcome.qml:100
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr "Nepavyko įkelti <filename>%1</filename>. Įsitikinkite, kad jis yra."
+
+#: src/qml/pages/Welcome.qml:130
+msgctxt "@info"
+msgid "The SonicDE mascot Sonron welcomes you to the SonicDE community!"
+msgstr "SonicDE talismanas Sonron sveikina jus SonicDE bendruomenėje!"
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:22
 #, kde-format
@@ -840,20 +858,8 @@ msgstr "KRunner"
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"KRunner is Plasma’s exceptionally powerful and versatile search system. It "
-"powers the search functionality in the Application Launcher menu and the "
-"Overview screen, and it can be accessed as a standalone search bar using the "
-"<shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding "
-"your files and folders, KRunner can launch apps, search the web, convert "
-"between currencies, calculate math problems, and a lot more."
-msgstr ""
-"KRunner yra išskirtinė, galinga, visapusiška Plasma paieškos sistema. Ji "
-"užtikrina paieškos funkcionalumą programų paleidyklės meniu ir apžvalgos "
-"lange. KRunner galima atverti kaip atskirą paieškos juostą naudojant "
-"<shortcut>%1</shortcut> spartųjį klavišą.<nl/><nl/>Be failų ir aplankų "
-"paieškos KRunner gali paleisti programas, atlikti paiešką saityne, "
-"konvertuoti valiutas, skaičiuoti matematinius uždavinius ir žymiai daugiau."
+msgid "KRunner is SonicDE’s exceptionally powerful and versatile search system. It powers the search functionality in the Application Launcher menu and the Overview screen, and it can be accessed as a standalone search bar using the <shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding your files and folders, KRunner can launch apps, search the web, convert between currencies, calculate math problems, and a lot more."
+msgstr "KRunner yra išskirtinė, galinga, visapusiška SonicDE paieškos sistema. Ji užtikrina paieškos funkcionalumą programų paleidyklės meniu ir apžvalgos lange. KRunner galima atverti kaip atskirą paieškos juostą naudojant <shortcut>%1</shortcut> spartųjį klavišą.<nl/><nl/>Be failų ir aplankų paieškos KRunner gali paleisti programas, atlikti paiešką saityne, konvertuoti valiutas, skaičiuoti matematinius uždavinius ir žymiai daugiau."
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:58
 #, kde-kuit-format
@@ -925,30 +931,14 @@ msgstr "Konfigūruoti sparčiuosius klavišus…"
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
-"keyboard, this is the “Command” key:"
-msgstr ""
-"Plasma aplinkoje beveik viską galima atlikti klaviatūra, naudojant "
-"sparčiuosius klavišus, kuriuose didžiąją dalį sudaro <shortcut>Meta</"
-"shortcut> klavišas.<nl/><nl/>„Mac“ klaviatūrose tai yra „Command“ klavišas:"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac keyboard, this is the “Command” key:"
+msgstr "SonicDE aplinkoje beveik viską galima atlikti klaviatūra, naudojant sparčiuosius klavišus, kuriuose didžiąją dalį sudaro <shortcut>Meta</shortcut> klavišas.<nl/><nl/>„Mac“ klaviatūrose tai yra „Command“ klavišas:"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
-"usually located between the left <shortcut>Ctrl</shortcut> and "
-"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
-"the word “Super”:"
-msgstr ""
-"Plasma aplinkoje beveik viską galima atlikti klaviatūra, naudojant "
-"sparčiuosius klavišus, kuriuose didžiąją dalį sudaro <shortcut>Meta</"
-"shortcut> klavišas.<nl/><nl/>Šio klavišo vieta, įprastai, yra tarp kairiųjų "
-"<shortcut>Vald</shortcut> ir <shortcut>Alt</shortcut> klavišų, o ant jo būna "
-"nupieštas koks nors simbolis arba užrašytas žodis „Super“:"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is usually located between the left <shortcut>Ctrl</shortcut> and <shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or the word “Super”:"
+msgstr "SonicDE aplinkoje beveik viską galima atlikti klaviatūra, naudojant sparčiuosius klavišus, kuriuose didžiąją dalį sudaro <shortcut>Meta</shortcut> klavišas.<nl/><nl/>Šio klavišo vieta, įprastai, yra tarp kairiųjų <shortcut>Vald</shortcut> ir <shortcut>Alt</shortcut> klavišų, o ant jo būna nupieštas koks nors simbolis arba užrašytas žodis „Super“:"
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
 #, kde-format
@@ -1078,25 +1068,14 @@ msgstr ""
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
 msgctxt "@info:window"
-msgid "Plasma Vaults"
-msgstr "Plasma slėptuvės"
+msgid "SonicDE Vaults"
+msgstr "SonicDE slėptuvės"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma Vaults allows you to create encrypted folders, called "
-"<interface>Vaults.</interface> Inside each Vault, you can securely store "
-"your passwords, files, pictures, and documents, safe from prying eyes. "
-"Vaults can live inside folders that are synced to cloud storage services "
-"too, providing extra privacy for that content."
-msgstr ""
-"Plasma slėptuvės jums leidžia kurti šifruotus aplankus, vadinamus "
-"<interface>Slėptuvėmis.</interface> Kiekvienos slėptuvės viduje galite "
-"saugiai laikyti slaptažodžius, failus, nuotraukas, dokumentus atokiai nuo "
-"smalsaujančių akių. Be to, slėptuvės gali būti talpinamos aplankuose, kurie "
-"sinchronizuojami į debesijos paslaugas, tokiu būdu suteikdamos tam turiniui "
-"papildomo privatumo."
+msgid "SonicDE Vaults allows you to create encrypted folders, called <interface>Vaults.</interface> Inside each Vault, you can securely store your passwords, files, pictures, and documents, safe from prying eyes. Vaults can live inside folders that are synced to cloud storage services too, providing extra privacy for that content."
+msgstr "SonicDE slėptuvės jums leidžia kurti šifruotus aplankus, vadinamus <interface>Slėptuvėmis.</interface> Kiekvienos slėptuvės viduje galite saugiai laikyti slaptažodžius, failus, nuotraukas, dokumentus atokiai nuo smalsaujančių akių. Be to, slėptuvės gali būti talpinamos aplankuose, kurie sinchronizuojami į debesijos paslaugas, tokiu būdu suteikdamos tam turiniui papildomo privatumo."
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
@@ -1116,11 +1095,6 @@ msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "Mano nuotraukos"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
-#, kde-format
-msgid "Unlock and Open"
-msgstr "Atrakinti ir atidaryti"
-
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
@@ -1131,204 +1105,6 @@ msgstr ""
 "Norėdami pradėti, spustelėkite ant rodyklės <interface>Sistemos dėkle</"
 "interface>, kad būtų rodomo paslėpti elementai, o tuomet spustelėkite ant "
 "<interface>Slėptuvių</interface> piktogramos."
-
-#: src/qml/pages/SimpleByDefault.qml:21
-#, kde-format
-msgctxt "@info:window"
-msgid "Simple by Default"
-msgstr "Paprasta pagal numatymą"
-
-#: src/qml/pages/SimpleByDefault.qml:22
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"Plasma is designed to be simple and usable out of the box. Things are where "
-"you would expect, and there is generally no need to configure anything "
-"before you can be comfortable and productive.<nl/><nl/>Below is a visual "
-"representation of a typical Plasma Desktop; move the pointer over or click "
-"on something to learn about it!"
-msgstr ""
-"Plasma yra sukurta, kad pradėjus naudoti būtų paprasta ir praktiška. Visi "
-"dalykai yra ten, kur jų galite tikėtis, tad įprastai nėra reikalo kažką "
-"konfigūruoti, kad jaustumėtės patogiai ir būtumėte produktyvūs.<nl/><nl/"
-">Žemiau yra pavaizduotas tipinis Plasma darbalaukis; užveskite pelės rodyklę "
-"arba spustelėkite ant elementų norėdami sužinoti apie juos daugiau!"
-
-#: src/qml/pages/SimpleByDefault.qml:33
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is the “Desktop”. It shows files and folders that are contained in your "
-"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
-"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
-"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
-"interface> to add, remove or modify widgets."
-msgstr ""
-"Tai yra „Darbalaukis“. Jame yra rodomi failai ir aplankai, esantys jūsų "
-"<filename>Darbalaukio</filename> aplanke. Darbalaukyje gali būti naudojami "
-"valdikliai. Norėdami konfigūruoti darbalaukio išvaizdą, spustelėkite ant jo "
-"dešiniuoju pelės mygtuku ir pasirinkite <interface>Darbalaukis ir "
-"darbalaukio fonas…</interface> Be to, galite pasirinkti <interface>Įjungti "
-"taisymo veikseną</interface>, kad pridėtumėte, pašalintumėte ar "
-"modifikuotumėte valdiklius."
-
-#: src/qml/pages/SimpleByDefault.qml:36
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is a “Panel” — a container to hold widgets. Right-click on it and "
-"choose <interface>Show Panel Configuration</interface> to change how it "
-"behaves, which screen edge it lives on, and to add, remove or modify widgets."
-msgstr ""
-"Tai yra „Skydelis“ – erdvė, kurioje laikomi valdikliai. Spustelėkite ant jo "
-"dešiniuoju pelės mygtuku ir pasirinkite <interface>Rodyti skydelio "
-"konfigūraciją</interface>, kad pakeistumėte jo elgseną, perkeltumėte į kitą "
-"ekraną ir pridėtumėte, pašalintumėte ar modifikuotumėte valdiklius."
-
-#: src/qml/pages/SimpleByDefault.qml:39
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
-"can launch apps, shut down or restart the system, access recent files, and "
-"more. Click on it to get started!"
-msgstr ""
-"Tai yra „Programų paleidyklės“ valdiklis, universali paleidyklė. Čia galite "
-"paleisti programas, išjungti sistemą arba paleisti ją iš naujo, pasiekti "
-"paskiausiai naudotus failus ir kt. Spustelėkite ant jo norėdami pradėti!"
-
-#: src/qml/pages/SimpleByDefault.qml:42
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Task Manager” widget, where you can switch between open apps "
-"and also launch new ones. Drag app icons to re-arrange them."
-msgstr ""
-"Tai – „Užduočių tvarkytuvės“ valdiklis, kuriame galite perjunginėti atvertas "
-"programas ir paleisti naujas programas. Vilkite programų piktogramas "
-"norėdami jas pertvarkyti."
-
-#: src/qml/pages/SimpleByDefault.qml:45
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “System Tray” widget, which lets you control system functions "
-"like changing the volume and connecting to networks. Items will become "
-"visible here only when relevant. To see all available items, click the ⌃ "
-"arrow next to the clock."
-msgstr ""
-"Šis yra „Sistemos dėklo“ valdiklis, leidžiantis jums valdyti tokias sistemos "
-"funkcijas, kaip garsumo keitimas ar jungimasis prie interneto tinklo. Jame "
-"esantys elementai taps matomi tik tuomet, kai bus aktualūs. Norėdami "
-"pamatyti visus prieinamus elementus, spustelėkite šalia laikrodžio ant ⌃ "
-"rodyklės."
-
-#: src/qml/pages/SimpleByDefault.qml:48
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
-"be also configured to show other timezones and events from your digital "
-"calendars."
-msgstr ""
-"Tai yra „Skaitmeninio laikrodžio“ valdiklis. Spustelėkite ant jo norėdami "
-"pamatyti kalendorių. Skaitmeninis laikrodis taip pat gali būti "
-"sukonfigūruotas, kad rodytų kitas laiko juostas ir įvykius iš skaitmeninių "
-"kalendorių."
-
-#: src/qml/pages/SimpleByDefault.qml:51
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
-"open windows so you can access the desktop. Click on it again to bring them "
-"back."
-msgstr ""
-"Tai – „Žvilgsnio į darbalaukį“ valdiklis. Spustelėkite ant jo norėdami "
-"laikinai paslėpti visus atvertus langus ir pasiekti darbalaukį. Spustelėkite "
-"dar kartą, kad juos sugrąžintumėte."
-
-#: src/qml/pages/Welcome.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome"
-msgstr "Sveiki!"
-
-#: src/qml/pages/Welcome.qml:23
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is custom text supplied by the distro"
-msgid ""
-"%1<nl/><nl/>This operating system is running Plasma, a free and open-source "
-"desktop environment created by KDE, an international software community of "
-"volunteers. It is designed to be simple by default for a smooth experience, "
-"but powerful when needed to help you really get things done. We hope you "
-"love it!"
-msgstr ""
-"%1<nl/><nl/>Ši operacinė sistema naudoja Plasma – laisvą, atvirojo kodo "
-"darbalaukio aplinką, kurią plėtoja KDE. KDE – tai tarptautinė programinės "
-"įrangos savanorių bendruomenė. KDE Plasma yra sukurta taip, kad pagal "
-"numatymą būtų paprasta naudoti ir užtikrintų sklandų patyrimą, bet tuo pačiu "
-"būtų galinga, kai to prireikia, ir padėtų jums atlikti darbus. Tikimės, ši "
-"aplinka jums patiks!"
-
-#: src/qml/pages/Welcome.qml:24
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a "
-"free and open-source desktop environment created by KDE, an international "
-"software community of volunteers. It is designed to be simple by default for "
-"a smooth experience, but powerful when needed to help you really get things "
-"done. We hope you love it!"
-msgstr ""
-"Jus sveikina %1 – KDE Plasma naudojanti operacinė sistema!<nl/><nl/>Plasma "
-"yra laisva, atvirojo kodo darbalaukio aplinka, kurią plėtoja KDE – "
-"tarptautinė programinės įrangos savanorių bendruomenė. KDE Plasma yra "
-"sukurta taip, kad pagal numatymą būtų paprasta naudoti ir užtikrintų sklandų "
-"patyrimą, bet tuo pačiu būtų galinga, kai to prireikia, ir padėtų jums "
-"atlikti darbus. Tikimės, ši aplinka jums patiks!"
-
-#: src/qml/pages/Welcome.qml:28
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About Welcome Center"
-msgstr "Apie supažindinimą su sistema"
-
-#: src/qml/pages/Welcome.qml:34
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About KDE"
-msgstr "Apie KDE"
-
-#: src/qml/pages/Welcome.qml:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Learn more about the KDE community"
-msgstr "Sužinokite daugiau apie KDE bendruomenę"
-
-#: src/qml/pages/Welcome.qml:62
-#, kde-format
-msgctxt "@action:button %1 is the name of the user's distro"
-msgid "Learn more about %1"
-msgstr "Sužinokite daugiau apie %1"
-
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "Nepavyko įkelti paveikslo"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr "Nepavyko įkelti <filename>%1</filename>. Įsitikinkite, kad jis yra."
-
-#: src/qml/pages/Welcome.qml:120
-#, kde-format
-msgctxt "@info"
-msgid "The KDE mascot Konqi welcomes you to the KDE community!"
-msgstr "KDE talismanas Konqi sveikina jus KDE bendruomenėje!"
 
 #: src/release.cpp:42
 #, kde-format
@@ -1348,6 +1124,109 @@ msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
 
+#, kde-format
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Moo"
+
+#, kde-format
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "<>"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "If you find Plasma to be useful, consider getting involved or donating. KDE is an international volunteer community, not a big company; your contributions make a real difference!"
+#~ msgstr "Jei atrasite, jog Plasma yra jums naudinga, apsvarstykite galimybę įsitraukti arba paaukoti lėšų. KDE yra tarptautinė savanorių bendruomenė, o ne didelė kompanija; jūsų įnašai turi didelę reikšmę!"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Make a donation"
+#~ msgstr "Paaukokite"
+
+#, kde-format
+#~ msgid "Search…"
+#~ msgstr "Ieškoti…"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Find Great Apps"
+#~ msgstr "Atraskite nuostabių programų"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app, and %2 is the distro name."
+#~ msgid "There’s no need to search the web to download app installers or use a command-line package manager; KDE’s app store <application>%1</application> does it all for you!<nl/><nl/>Click on any of the icons below to give it a try!"
+#~ msgstr "Nėra reikalo ieškoti saityne, kaip atsisiųsti programų diegimo programas ar naudoti komandų eilutės paketų tvarkytuvę; KDE programų parduotuvė <application>%1</application> visa tai atlieka už jus!<nl/><nl/>Spustelėkite ant bet kurios piktogramos žemiau, kad išbandytumėte!"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the name of an app"
+#~ msgid "Show %1 in Discover"
+#~ msgstr "Rodyti %1 programoje Discover"
+
+#, kde-format
+#~ msgctxt "@label:URL"
+#~ msgid "Get help at KDE’s discussion forums"
+#~ msgstr "Gaukite pagalbos KDE diskusijų forumuose"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Supporting Members"
+#~ msgstr "Remiantys nariai"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Supporting Members"
+#~ msgstr "Remiantys nariai"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "We thank the following supporting members for their recurring donation to KDE:"
+#~ msgstr "Mes esame dėkingi šiems remiantiems nariams už jų pasikartojančias aukas, skirtas KDE:"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the selected sort order, e.g. Random"
+#~ msgid "Sort: %1"
+#~ msgstr "Rikiuoti pagal: %1"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Random"
+#~ msgstr "Atsitiktinai"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Last Name"
+#~ msgstr "Pavardė"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "First Name"
+#~ msgstr "Vardas"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list, referring to the date a user has first made a donation"
+#~ msgid "Contribution Date"
+#~ msgstr "Aukojimo data"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An option to sort a list in reverse order"
+#~ msgid "Reverse"
+#~ msgstr "Atvirkštinė tvarka"
+
+#, kde-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "Our developers will use this anonymous data to improve KDE software. You can choose how much to share in System Settings, and here too."
+#~ msgstr "Mūsų plėtotojai naudos šiuos anoniminius duomenis, kad tobulintų KDE programinę įrangą. Sistemos nuostatose, o taip pat ir čia, galite pasirinkti, kiek duomenų norite bendrinti."
+
+#, kde-format
+#~ msgid "Unlock and Open"
+#~ msgstr "Atrakinti ir atidaryti"
+
+#, kde-format
+#~ msgctxt "@info"
+#~ msgid "The KDE mascot Konqi welcomes you to the KDE community!"
+#~ msgstr "KDE talismanas Konqi sveikina jus KDE bendruomenėje!"
+
 #~ msgctxt "@action:button clicking on this takes the user to a web page"
 #~ msgid "Visit %1"
 #~ msgstr "Apsilankyti %1"
@@ -1365,33 +1244,16 @@ msgstr "%1 Beta %2"
 #~ msgstr "Sistemos nuostatos"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The System Settings app lets you extensively customize the system to suit "
-#~ "your tastes and preferences. Default apps, wallpapers, visual styles and "
-#~ "icons, virtual desktops, power management, 3rd-party add-ons — you’ll "
-#~ "find it all there!"
-#~ msgstr ""
-#~ "Sistemos nuostatų programa jums leidžia plačiai tinkinti sistemą taip, "
-#~ "kad ji patenkintų jūsų pomėgius ir nuostatas. Numatytosios programos, "
-#~ "darbalaukio fonai, vaizdiniai stiliai ir piktogramos, virtualūs "
-#~ "darbalaukiai, energijos valdymas, trečiųjų šalių papildiniai – visa tai "
-#~ "rasite ten!"
+#~ msgid "The System Settings app lets you extensively customize the system to suit your tastes and preferences. Default apps, wallpapers, visual styles and icons, virtual desktops, power management, 3rd-party add-ons — you’ll find it all there!"
+#~ msgstr "Sistemos nuostatų programa jums leidžia plačiai tinkinti sistemą taip, kad ji patenkintų jūsų pomėgius ir nuostatas. Numatytosios programos, darbalaukio fonai, vaizdiniai stiliai ir piktogramos, virtualūs darbalaukiai, energijos valdymas, trečiųjų šalių papildiniai – visa tai rasite ten!"
 
 #~ msgctxt "@title:window"
 #~ msgid "Manage Software"
 #~ msgstr "Tvarkykite programinę įrangą"
 
-#~ msgctxt ""
-#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
-#~ msgid ""
-#~ "The <application>%1</application> app helps you find and install "
-#~ "applications, games, and tools. You can search or browse by category, "
-#~ "look at screenshots, and read reviews to help you find the perfect app."
-#~ msgstr ""
-#~ "Programa <application>%1</application> jums padeda atrasti ir įsidiegti "
-#~ "programas, žaidimus bei įrankius. Galite atlikti paiešką arba naršyti "
-#~ "kategorijas, žiūrėti ekrano kopijas ir skaityti apžvalgas, padėsiančias "
-#~ "jums surasti tobulai tinkančią programą."
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid "The <application>%1</application> app helps you find and install applications, games, and tools. You can search or browse by category, look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr "Programa <application>%1</application> jums padeda atrasti ir įsidiegti programas, žaidimus bei įrankius. Galite atlikti paiešką arba naršyti kategorijas, žiūrėti ekrano kopijas ir skaityti apžvalgas, padėsiančias jums surasti tobulai tinkančią programą."
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"
@@ -1401,8 +1263,7 @@ msgstr "%1 Beta %2"
 #~ msgid "Filter…"
 #~ msgstr "Filtruoti…"
 
-#~ msgid ""
-#~ "Display release notes for the current Plasma release, for beta versions."
+#~ msgid "Display release notes for the current Plasma release, for beta versions."
 #~ msgstr "Rodyti dabartinės Plasma versijos, Beta versijų laidos informaciją."
 
 #~ msgctxt "@label:URL"
@@ -1422,15 +1283,8 @@ msgstr "%1 Beta %2"
 #~ msgstr "Padėkite kuriant kitą versiją"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The KDE community relies on donations of expertise and funds, and is "
-#~ "supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support "
-#~ "the wider KDE community, and you can make a difference by donating today."
-#~ msgstr ""
-#~ "KDE bendruomenė yra priklausoma nuo paaukojimų bei lėšų ir yra remiama "
-#~ "„KDE e.V.“ – Vokietijoje įsikūrusios ne pelno organizacijos. Paaukojimai, "
-#~ "skirti „KDE e.V.“, remia platesnę KDE bendruomenę, tad aukodami šiandien, "
-#~ "galite skatinti teigiamus pokyčius."
+#~ msgid "The KDE community relies on donations of expertise and funds, and is supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support the wider KDE community, and you can make a difference by donating today."
+#~ msgstr "KDE bendruomenė yra priklausoma nuo paaukojimų bei lėšų ir yra remiama „KDE e.V.“ – Vokietijoje įsikūrusios ne pelno organizacijos. Paaukojimai, skirti „KDE e.V.“, remia platesnę KDE bendruomenę, tad aukodami šiandien, galite skatinti teigiamus pokyčius."
 
 #~ msgid "6.0 Dev"
 #~ msgstr "6.0 plėtojama"
@@ -1457,45 +1311,16 @@ msgstr "%1 Beta %2"
 #~ msgstr "(c) 2021"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "KDE is not a big company; it's an international volunteer community, and "
-#~ "its software is made by people like you donating their time and passion. "
-#~ "You too can help make things better, whether it's through translation, "
-#~ "visual design, and promotion, or programming and bug triaging.<nl/><nl/"
-#~ ">By contributing to KDE, you can become part of something special, meet "
-#~ "new friends, learn new skills, and make a difference to millions while "
-#~ "working with people from around the globe to deliver a stunning free "
-#~ "software computing experience."
-#~ msgstr ""
-#~ "KDE nėra didelė kompanija; tai tarptautinė savanorių bendruomenė, kurios "
-#~ "programinę įrangą plėtoja tokie pat žmonės kaip jūs, aukojantys savo "
-#~ "laiką ir jėgas. Jūs irgi galite atnešti gerų pokyčių per vertimą, "
-#~ "vaizdinį dizainą, skleidimą, programavimą ar klaidų paieškas.<nl/><nl/"
-#~ ">Talkindami KDE galite būti dalis kažko ypatingo, susipažinti su naujais "
-#~ "draugais, išsiugdyti naujų įgūdžių ir dirbdami su žmonėmis iš viso "
-#~ "pasaulio, nešti pokyčius milijonams žmonių bei pristatyti stulbinantį "
-#~ "laisvos programinės įrangos ir naudojimosi kompiuteriu patyrimą."
+#~ msgid "KDE is not a big company; it's an international volunteer community, and its software is made by people like you donating their time and passion. You too can help make things better, whether it's through translation, visual design, and promotion, or programming and bug triaging.<nl/><nl/>By contributing to KDE, you can become part of something special, meet new friends, learn new skills, and make a difference to millions while working with people from around the globe to deliver a stunning free software computing experience."
+#~ msgstr "KDE nėra didelė kompanija; tai tarptautinė savanorių bendruomenė, kurios programinę įrangą plėtoja tokie pat žmonės kaip jūs, aukojantys savo laiką ir jėgas. Jūs irgi galite atnešti gerų pokyčių per vertimą, vaizdinį dizainą, skleidimą, programavimą ar klaidų paieškas.<nl/><nl/>Talkindami KDE galite būti dalis kažko ypatingo, susipažinti su naujais draugais, išsiugdyti naujų įgūdžių ir dirbdami su žmonėmis iš viso pasaulio, nešti pokyčius milijonams žmonių bei pristatyti stulbinantį laisvos programinės įrangos ir naudojimosi kompiuteriu patyrimą."
 
 #~ msgctxt "@title:window"
 #~ msgid "Support Your Freedom"
 #~ msgstr "Paremkite savo laisvę"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The KDE community relies on donations of expertise and funds, and is "
-#~ "supported by KDE e.V.--a German nonprofit that manages legal matters, "
-#~ "funds development sprints and server resources, and offers employment "
-#~ "opportunities for KDE developers. Donations to KDE e.V. support the wider "
-#~ "KDE community, and you can make a difference by donating today!<nl/><nl/"
-#~ ">Donations are tax-deductible in Germany."
-#~ msgstr ""
-#~ "KDE bendruomenė yra priklausoma nuo paaukojimų bei lėšų ir yra remiama "
-#~ "„KDE e.V.“ – Vokietijoje įsikūrusios ne pelno organizacijos, kuri tvarko "
-#~ "teisinius reikalus, remia plėtojimo susibūrimus, padengia serverio "
-#~ "išteklių išlaidas ir siūlo KDE plėtotojams įsidarbinimo galimybes. "
-#~ "Paaukojimai, skirti „KDE e.V.“, remia platesnę KDE bendruomenę, tad "
-#~ "aukodami šiandien, galite skatinti teigiamus pokyčius!<nl/><nl/>Mokesčiai "
-#~ "iš paaukojimų Vokietijoje yra išskaičiuojami."
+#~ msgid "The KDE community relies on donations of expertise and funds, and is supported by KDE e.V.--a German nonprofit that manages legal matters, funds development sprints and server resources, and offers employment opportunities for KDE developers. Donations to KDE e.V. support the wider KDE community, and you can make a difference by donating today!<nl/><nl/>Donations are tax-deductible in Germany."
+#~ msgstr "KDE bendruomenė yra priklausoma nuo paaukojimų bei lėšų ir yra remiama „KDE e.V.“ – Vokietijoje įsikūrusios ne pelno organizacijos, kuri tvarko teisinius reikalus, remia plėtojimo susibūrimus, padengia serverio išteklių išlaidas ir siūlo KDE plėtotojams įsidarbinimo galimybes. Paaukojimai, skirti „KDE e.V.“, remia platesnę KDE bendruomenę, tad aukodami šiandien, galite skatinti teigiamus pokyčius!<nl/><nl/>Mokesčiai iš paaukojimų Vokietijoje yra išskaičiuojami."
 
 #~ msgctxt "@action:button"
 #~ msgid "Plasma 6 Supporters"
@@ -1518,24 +1343,8 @@ msgstr "%1 Beta %2"
 #~ msgstr "Gaukite naujų dalykų"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "Throughout Plasma, System Settings, and KDE apps, you'll find buttons "
-#~ "marked \"Get New <emphasis>thing</emphasis>…\". Clicking on them will "
-#~ "show you 3rd-party content to extend the system, made by other people "
-#~ "like you! In this way, it is often possible to add functionality you want "
-#~ "without having to ask KDE developers to implement it themselves.<nl/><nl/"
-#~ ">Note that content acquired this way has not been reviewed by your "
-#~ "distributor for functionality or stability."
-#~ msgstr ""
-#~ "Plasma aplinkoje, sistemos nuostatose ir KDE programose rasite mygtukus, "
-#~ "pažymėtus užrašu „Gauti naują <emphasis>elementą</emphasis>…“. "
-#~ "Spustelėjus ant jų, bus rodomas trečiųjų šalių pateiktas turinys, kurį "
-#~ "sukūrė tokie žmonės kaip jūs, ir kuris yra skirtas išplėsti sistemos "
-#~ "ypatybes! Tokiu būdu, dažnu atveju yra įmanoma pridėti pageidaujamą "
-#~ "funkcionalumą be būtinybės prašyti KDE programuotojų pagalbos "
-#~ "įgyvendinant tam tikrą funkciją.<nl/><nl/>Turėkite omenyje, kad turinio "
-#~ "platintojas neperžiūri tokio turinio atitikimo funkcionalumo ar stabilumo "
-#~ "reikalavimams."
+#~ msgid "Throughout Plasma, System Settings, and KDE apps, you'll find buttons marked \"Get New <emphasis>thing</emphasis>…\". Clicking on them will show you 3rd-party content to extend the system, made by other people like you! In this way, it is often possible to add functionality you want without having to ask KDE developers to implement it themselves.<nl/><nl/>Note that content acquired this way has not been reviewed by your distributor for functionality or stability."
+#~ msgstr "Plasma aplinkoje, sistemos nuostatose ir KDE programose rasite mygtukus, pažymėtus užrašu „Gauti naują <emphasis>elementą</emphasis>…“. Spustelėjus ant jų, bus rodomas trečiųjų šalių pateiktas turinys, kurį sukūrė tokie žmonės kaip jūs, ir kuris yra skirtas išplėsti sistemos ypatybes! Tokiu būdu, dažnu atveju yra įmanoma pridėti pageidaujamą funkcionalumą be būtinybės prašyti KDE programuotojų pagalbos įgyvendinant tam tikrą funkciją.<nl/><nl/>Turėkite omenyje, kad turinio platintojas neperžiūri tokio turinio atitikimo funkcionalumo ar stabilumo reikalavimams."
 
 #~ msgctxt "@action:button"
 #~ msgid "See 3rd-Party Content…"

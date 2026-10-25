@@ -17,7 +17,7 @@ Welcome.Page {
     heading: i18nc("@info:window", "Powerful When Needed")
     // Don't change the weird indentation; it's intentional to make this
     // long string nicer for translators
-    description: xi18nc("@info:usagetip", "Plasma is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>\
+    description: xi18nc("@info:usagetip", "SonicDE is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>\
 Click the cards below to see just a smattering of what it can do for you:")
 
     ColumnLayout {
@@ -121,8 +121,8 @@ Click the cards below to see just a smattering of what it can do for you:")
         }
 
         Kirigami.UrlButton {
-            text: i18nc("@action:button", "Learn about more Plasma features")
-            url: "https://userbase.kde.org/Plasma?source=plasma-welcome"
+            text: i18nc("@action:button", "Learn about more SonicDE features")
+            url: "https://sonicde.org"
         }
     }
 }

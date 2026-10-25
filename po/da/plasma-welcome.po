@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-13 00:45+0000\n"
+"Report-Msgid-Bugs-To: https://sonicde.org\n"
+"POT-Creation-Date: 2026-10-25 21:33+1000\n"
 "PO-Revision-Date: 2026-05-07 23:11+0200\n"
 "Last-Translator: Rasmus Rosendahl-Kaa <rasmus@rosendahl-kaa.name>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -17,21 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 26.04.1\n"
 
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Rasmus Rosendahl-Kaa"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "Rasmus@Rosendahl-kaa.name"
-
 #: src/main.cpp:43
 #, kde-format
 msgctxt "@info:usagetip"
-msgid "Friendly onboarding wizard for Plasma"
-msgstr "Venlig onboardingsguide til Plasma"
+msgid "Friendly onboarding wizard for SonicDE"
+msgstr "Venlig onboardingsguide til SonicDE"
 
 #: src/main.cpp:48
 #, kde-format
@@ -69,10 +59,15 @@ msgctxt "@info:credit"
 msgid "Oliver Beard"
 msgstr "Oliver Beard"
 
+#: src/main.cpp:67
+msgctxt "@info:credit"
+msgid "Joseph Crowell"
+msgstr ""
+
 #: src/main.cpp:77
 #, kde-format
-msgid "Display release notes for the current Plasma release."
-msgstr "Vis udgivelsesnoter for den nuværende Plasma-udgivelse."
+msgid "Display release notes for the current SonicDE release."
+msgstr "Vis udgivelsesnoter for den nuværende SonicDE-udgivelse."
 
 #: src/main.cpp:78
 #, kde-format
@@ -131,28 +126,51 @@ msgid "Unassigned"
 msgstr "Ikke tildelt"
 
 #: src/qml/ContributionCard.qml:18
-#, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"If you find Plasma to be useful, consider getting involved or donating. KDE "
-"is an international volunteer community, not a big company; your "
-"contributions make a real difference!"
+msgid "If you find SonicDE useful, consider getting involved. Your contributions to the SonicDE community make a real difference!"
 msgstr ""
-"Hvis du finder Plasma nyttigt, kan du overveje at blive involveret eller "
-"donere. KDE er en international, frivilligt fællesskab, ikke et stort firma; "
-"dine bidrag gør en stor forskel!"
-
-#: src/qml/ContributionCard.qml:29
-#, kde-format
-msgctxt "@action:button"
-msgid "Make a donation"
-msgstr "Lav en donation"
 
 #: src/qml/ContributionCard.qml:36
 #, kde-format
 msgctxt "@action:button"
 msgid "Get involved"
 msgstr "Bliv involveret"
+
+#: src/qml/PageError.qml:22
+#, kde-format
+msgctxt "@info:window"
+msgid "Error loading page"
+msgstr "Fejl ved indlæsning af side"
+
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
+#, kde-format
+msgctxt "@action:button"
+msgid "Report Bug…"
+msgstr "Rapportér programfejl…"
+
+#: src/qml/PageError.qml:33
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Kopiér detaljer"
+
+#: src/qml/PageError.qml:46
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page could not be loaded"
+msgstr "Denne side kunne ikke indlæses"
+
+#: src/qml/PageError.qml:49
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by your distribution could not be loaded"
+msgstr "Denne side, leveret af din distribution, kunne ikke indlæses"
+
+#: src/qml/PageError.qml:51
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "This page provided by Welcome Center could not be loaded"
+msgstr "Denne siver, leveret af Velkomstcenter, kunne ikke indlæses"
 
 #: src/qml/footers/FooterDefault.qml:28
 #, kde-format
@@ -181,8 +199,8 @@ msgstr "&Næste"
 #: src/qml/footers/FooterUpdate.qml:21
 #, kde-format
 msgctxt "@option:check"
-msgid "Show after Plasma is updated"
-msgstr "Vis når Plasma er opdateret"
+msgid "Show after SonicDE is updated"
+msgstr "Vis når SonicDE er opdateret"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -232,11 +250,6 @@ msgctxt "@action:button Button in the Plasma activities sidebar"
 msgid "Create activity…"
 msgstr "Opret aktivitet..."
 
-#: src/qml/mock/MockKRunner.qml:81
-#, kde-format
-msgid "Search…"
-msgstr "Søg…"
-
 #: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
@@ -249,70 +262,6 @@ msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "Udvid vinduet"
 
-#: src/qml/PageError.qml:22
-#, kde-format
-msgctxt "@info:window"
-msgid "Error loading page"
-msgstr "Fejl ved indlæsning af side"
-
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
-#, kde-format
-msgctxt "@action:button"
-msgid "Report Bug…"
-msgstr "Rapportér programfejl…"
-
-#: src/qml/PageError.qml:33
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy Details"
-msgstr "Kopiér detaljer"
-
-#: src/qml/PageError.qml:46
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page could not be loaded"
-msgstr "Denne side kunne ikke indlæses"
-
-#: src/qml/PageError.qml:49
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by your distribution could not be loaded"
-msgstr "Denne side, leveret af din distribution, kunne ikke indlæses"
-
-#: src/qml/PageError.qml:51
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid "This page provided by Welcome Center could not be loaded"
-msgstr "Denne siver, leveret af Velkomstcenter, kunne ikke indlæses"
-
-#: src/qml/pages/Discover.qml:20
-#, kde-format
-msgctxt "@title:window"
-msgid "Find Great Apps"
-msgstr "Find fantastiske apps"
-
-#: src/qml/pages/Discover.qml:21
-#, kde-kuit-format
-msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
-"%2 is the distro name."
-msgid ""
-"There’s no need to search the web to download app installers or use a "
-"command-line package manager; KDE’s app store <application>%1</application> "
-"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
-"try!"
-msgstr ""
-"Der er ingen grund til at søge på nettet for at installere apps eller bruge "
-"en kommandolinjebaseret pakkehåndtør; KDE's appstore <application>%1</"
-"application> gør det hele for dig!<nl/><nl/> Klik på enhver af ikonerne "
-"nedenfor for at prøve den af!"
-
-#: src/qml/pages/Discover.qml:103
-#, kde-format
-msgctxt "@action:button %1 is the name of an app"
-msgid "Show %1 in Discover"
-msgstr "Vis %1 i Discover"
-
 #: src/qml/pages/Enjoy.qml:20
 #, kde-format
 msgctxt "@title:window"
@@ -322,86 +271,19 @@ msgstr "Nyd det!"
 #: src/qml/pages/Enjoy.qml:21
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"We hope you love Plasma as much as we loved making it for you! Now it’s time "
-"to jump right in. Explore its features, install your favorite apps and "
-"games, and get busy doing what makes you you!"
-msgstr ""
-"Vi håber du elsker Plasma lige så meget som vi elskede at lave det til dig! "
-"Nu er det tid til at springe ud i det. Udforsk dets funktioner, installér "
-"din favoritprogrammer og spil og få travlt med det, der gør dig til dig!"
+msgid "We hope you love SonicDE as much as we loved making it for you! Now it’s time to jump right in. Explore its features, install your favorite apps and games, and get busy doing what makes you you!"
+msgstr "Vi håber du elsker SonicDE lige så meget som vi elskede at lave det til dig! Nu er det tid til at springe ud i det. Udforsk dets funktioner, installér din favoritprogrammer og spil og få travlt med det, der gør dig til dig!"
 
 #: src/qml/pages/Enjoy.qml:26
 #, kde-format
 msgctxt "@label:URL"
-msgid "Learn more about the KDE community"
-msgstr "Lær mere om KDE-fællesskabet"
+msgid "Learn more about the SonicDE community"
+msgstr "Lær mere om SonicDE-fællesskabet"
 
 #: src/qml/pages/Enjoy.qml:31
-#, kde-format
 msgctxt "@label:URL"
-msgid "Get help at KDE’s discussion forums"
-msgstr "Få hjælp fra KDEs diskussionsfora"
-
-#: src/qml/pages/Enjoy.qml:39
-#, kde-format
-msgctxt "@action:button"
-msgid "Supporting Members"
-msgstr "Støttende medlemmer"
-
-#: src/qml/pages/enjoy/Supporters.qml:18
-#, kde-format
-msgctxt "@title:window"
-msgid "Supporting Members"
-msgstr "Støttende medlemmer"
-
-#: src/qml/pages/enjoy/Supporters.qml:19
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"We thank the following supporting members for their recurring donation to "
-"KDE:"
+msgid "Find help with SonicDE"
 msgstr ""
-"Vi takker følgende støttende medlemmer for deres gentagende donationer til "
-"KDE:"
-
-#: src/qml/pages/enjoy/Supporters.qml:39
-#, kde-format
-msgctxt "@action:button %1 is the selected sort order, e.g. Random"
-msgid "Sort: %1"
-msgstr "Sorterings: %1"
-
-#: src/qml/pages/enjoy/Supporters.qml:45
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Random"
-msgstr "Tilfældigt"
-
-#: src/qml/pages/enjoy/Supporters.qml:56
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "Last Name"
-msgstr "Efternavn"
-
-#: src/qml/pages/enjoy/Supporters.qml:67
-#, kde-format
-msgctxt "@action:inmenu An order to sort a list"
-msgid "First Name"
-msgstr "Fornavn"
-
-#: src/qml/pages/enjoy/Supporters.qml:78
-#, kde-format
-msgctxt ""
-"@action:inmenu An order to sort a list, referring to the date a user has "
-"first made a donation"
-msgid "Contribution Date"
-msgstr "Bidragsdato"
-
-#: src/qml/pages/enjoy/Supporters.qml:91
-#, kde-format
-msgctxt "@action:inmenu An option to sort a list in reverse order"
-msgid "Reverse"
-msgstr "Omvendt"
 
 #: src/qml/pages/Feedback.qml:16
 #, kde-format
@@ -410,14 +292,9 @@ msgid "Share Anonymous Usage Information"
 msgstr "Del anonymt brugsinformation"
 
 #: src/qml/pages/Feedback.qml:17
-#, kde-format
 msgctxt "@info:usagetip"
-msgid ""
-"Our developers will use this anonymous data to improve KDE software. You can "
-"choose how much to share in System Settings, and here too."
+msgid "You can choose how much anonymous usage information to share in System Settings, and here too."
 msgstr ""
-"Vores udviklere vil bruge dette anonyme data til at forbedre KDE software. "
-"Du kan vælge, hvor meget du vil dele i systemindstillingerne og også her"
 
 #: src/qml/pages/Live.qml:21
 #, kde-format
@@ -428,24 +305,14 @@ msgstr "Velkommen til %1!"
 #: src/qml/pages/Live.qml:24
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Pressing the icon below will begin installing %1. Alternatively, you can "
-"close the window to explore the live environment or continue here to find "
-"out about KDE Plasma."
-msgstr ""
-"Installationen af %1 vil begynde, når du trykker på ikonet nedenfor. "
-"Alternativt kan du lukke vinduet og udforske live-miljøet eller fortsætte "
-"her for at lære mere om KDE Plasma."
+msgid "Pressing the icon below will begin installing %1. Alternatively, you can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Installationen af %1 vil begynde, når du trykker på ikonet nedenfor. Alternativt kan du lukke vinduet og udforske live-miljøet eller fortsætte her for at lære mere om SonicDE."
 
 #: src/qml/pages/Live.qml:26
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"You can close the window to explore the live environment or continue here to "
-"find out about KDE Plasma."
-msgstr ""
-"Du kan lukke vinduet for at udforske live-miljøet eller fortsætte her for at "
-"lære mere om KDE Plasma"
+msgid "You can close the window to explore the live environment or continue here to find out about SonicDE."
+msgstr "Du kan lukke vinduet for at udforske live-miljøet eller fortsætte her for at lære mere om SonicDE"
 
 #: src/qml/pages/Live.qml:32
 #, kde-format
@@ -476,18 +343,14 @@ msgstr ""
 #: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Networking support for Plasma is not currently installed"
-msgstr "Netværksunderstøttelse til Plasma er ikke installere i øjeblikket"
+msgid "Networking support for SonicDE is not currently installed"
+msgstr "Netværksunderstøttelse til SonicDE er ikke installere i øjeblikket"
 
 #: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"To manage network connections, Plasma requires <icode>plasma-nm</icode> to "
-"be installed. Please report this omission to %1."
-msgstr ""
-"For at adminstrere netværksforbindelser, kræver Plasma, at <icode>plasma-nm</"
-"icode> er installeret. Rapportér venligst denne udeladelse til %1."
+msgid "To manage network connections, SonicDE requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1."
+msgstr "For at adminstrere netværksforbindelser, kræver SonicDE, at <icode>plasma-nm</icode> er installeret. Rapportér venligst denne udeladelse til %1."
 
 #: src/qml/pages/Network.qml:211
 #, kde-format
@@ -522,31 +385,20 @@ msgstr "Skift tilstand"
 #: src/qml/pages/PlasmaUpdate.qml:21
 #, kde-format
 msgctxt "@title:window"
-msgid "Plasma has been updated to %1"
-msgstr "Plasma er blevet opdateret til %1"
+msgid "SonicDE has been updated to %1"
+msgstr "SonicDE er blevet opdateret til %1"
 
 #: src/qml/pages/PlasmaUpdate.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Thank you for testing this beta release of Plasma — your feedback is "
-"fundamental to helping us improve it! Please report any and all bugs you "
-"find so that we can fix them."
-msgstr ""
-"Tak for at teste denne betaudgivelse af Plasma — din feedback er fundamental "
-"i at hjælpe os forbedre Plasma! Rapportér venligst enhver fejl, du finder, "
-"så vi kan fikse dem."
+msgid "Thank you for testing this beta release of SonicDE — your feedback is fundamental to helping us improve it! Please report any and all bugs you find so that we can fix them."
+msgstr "Tak for at teste denne betaudgivelse af SonicDE — din feedback er fundamental i at hjælpe os forbedre SonicDE! Rapportér venligst enhver fejl, du finder, så vi kan fikse dem."
 
 #: src/qml/pages/PlasmaUpdate.qml:22
-#, kde-kuit-format
+#, kde-kuit-format, fuzzy
 msgctxt "@info:usagetip"
-msgid ""
-"KDE contributors have spent the last four months hard at work on this "
-"release. We hope you enjoy using Plasma as much as we enjoyed making it!"
-msgstr ""
-"KDE-bidragsydere har brugt de sidste fire måneder på at arbejde hårdt på "
-"denne udgivelse. Vi håber, at du vil nyde at bruge Plasma lige så meget, som "
-"vi har nydt at lave den!"
+msgid "SonicDE contributors have been hard at work on this release. We hope you enjoy using SonicDE as much as we enjoyed making it!"
+msgstr "SonicDE-bidragsydere har brugt de sidste fire måneder på at arbejde hårdt på denne udgivelse. Vi håber, at du vil nyde at bruge SonicDE lige så meget, som vi har nydt at lave den!"
 
 #: src/qml/pages/PlasmaUpdate.qml:29
 #, kde-format
@@ -615,13 +467,8 @@ msgstr "Indlæs forhåndsvisninger automatisk"
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
 msgctxt "@info:tooltip"
-msgid ""
-"The preview will be loaded automatically when this page is shown for future "
-"Plasma updates, except when using a metered network connection."
-msgstr ""
-"Denne forhåndsvisning vil automatisk blive indlæst, når denne side vises for "
-"fremtidige Plasma-opdateringer, med mindre der bruges en målt "
-"netværksforbindelse."
+msgid "The preview will be loaded automatically when this page is shown for future SonicDE updates, except when using a metered network connection."
+msgstr "Denne forhåndsvisning vil automatisk blive indlæst, når denne side vises for fremtidige SonicDE-opdateringer, med mindre der bruges en målt netværksforbindelse."
 
 #: src/qml/pages/PlasmaUpdate.qml:422
 #, kde-format
@@ -643,13 +490,8 @@ msgstr "Krafit hvis nødvendigt"
 #| "your productivity! Here is just a smattering of the things it can do for "
 #| "you:"
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma is a feature-rich environment, designed to super-charge your "
-"productivity!<nl/><nl/>Click the cards below to see just a smattering of "
-"what it can do for you:"
-msgstr ""
-"Plasma er et utroligt funktionsrigt miljø, designet til at øge din "
-"produktivitet! Her er bare et lille udpluk af, hvad den kan gøre for dig:"
+msgid "SonicDE is a feature-rich environment, designed to super-charge your productivity!<nl/><nl/>Click the cards below to see just a smattering of what it can do for you:"
+msgstr "SonicDE er et utroligt funktionsrigt miljø, designet til at øge din produktivitet! Her er bare et lille udpluk af, hvad den kan gøre for dig:"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:44
 #, kde-format
@@ -728,8 +570,189 @@ msgstr "Gem sensitive filer sikkert"
 #: src/qml/pages/PowerfulWhenNeeded.qml:124
 #, kde-format
 msgctxt "@action:button"
-msgid "Learn about more Plasma features"
-msgstr "Lær mere om Plasma-funktioner"
+msgid "Learn about more SonicDE features"
+msgstr "Lær mere om SonicDE-funktioner"
+
+#: src/qml/pages/SimpleByDefault.qml:21
+#, kde-format
+msgctxt "@info:window"
+msgid "Simple by Default"
+msgstr "Simpel som standard"
+
+#: src/qml/pages/SimpleByDefault.qml:22
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid "SonicDE is designed to be simple and usable out of the box. Things are where you would expect, and there is generally no need to configure anything before you can be comfortable and productive.<nl/><nl/>Below is a visual representation of a typical SonicDE desktop; move the pointer over or click on something to learn about it!"
+msgstr "SonicDE er designet til at være simpel at bruge og brugbar fra starten. Ting er, hvor du vil forvente, og der er generelt ikke nogen grund til at konfigurere noget, før du kan være komfortabel og produktiv.<nl/><nl/>Nedenfor er en visuel repræsentation af et typisk SonicDE-skrivebord; flyt din markør over eller klik på noget for at lære om det!"
+
+#: src/qml/pages/SimpleByDefault.qml:33
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is the “Desktop”. It shows files and folders that are contained in your "
+"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
+"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
+"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
+"interface> to add, remove or modify widgets."
+msgstr ""
+"Dette er \"Skrivebordet\". Det viser filer og mapper, der er i din "
+"<filename>skrivebordsmappe</filename> og kan rumme widgets. Højreklik på den "
+"og vælg <interface>Skrivebord og baggrunde…</interface> for at konfigurerer "
+"udseendet af skrivebordet. Du kan også vælge <interface>Skift til "
+"redigeringstilstand</interface> for at tilføje, fjerne elle redigere widgets."
+
+#: src/qml/pages/SimpleByDefault.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This is a “Panel” — a container to hold widgets. Right-click on it and "
+"choose <interface>Show Panel Configuration</interface> to change how it "
+"behaves, which screen edge it lives on, and to add, remove or modify widgets."
+msgstr ""
+"Dette er et \"Panel\" — en beholder til at holde widgets. Højreklik på den "
+"og vælg <interface>Vis panelkonfiguration</interface> for at ændre hvordan "
+"det opføre sig, hvilken skærmkant den vises på og for at tilføje, fjerne "
+"eller modificere widgets."
+
+#: src/qml/pages/SimpleByDefault.qml:39
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "This is the “Kickoff” widget, a multipurpose launcher. Here you can "
+#| "launch apps, shut down or restart the system, access recent files, and "
+#| "more. Click on it to get started!"
+msgctxt "@info"
+msgid ""
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
+msgstr ""
+"Dette er \"Kickoff\"-widgetten, en multifunktionel starter. Her kan du "
+"starte programmer, slukke eller genstarte systemet, tilgå nyligt brugte "
+"filer og mere. Klik på den for at komme i gang!"
+
+#: src/qml/pages/SimpleByDefault.qml:42
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Task Manager” widget, where you can switch between open apps "
+"and also launch new ones. Drag app icons to re-arrange them."
+msgstr ""
+"Dette er\"Opgavelinje\"-widgetten, hvor du kan skifte mellem åbne apps og "
+"også åbne nye. Træk appikoner for at flytte dem."
+
+#: src/qml/pages/SimpleByDefault.qml:45
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “System Tray” widget, which lets you control system functions "
+"like changing the volume and connecting to networks. Items will become "
+"visible here only when relevant. To see all available items, click the ⌃ "
+"arrow next to the clock."
+msgstr ""
+"Dette er \"Statusområde\"-widgetten, der lader dig kontrollerer "
+"systemfunktioner som at ændre lydstyrken og tilslutte til netværk. Elementer "
+"vil blive synlige her, kun når de er relevante. Klik ⌃-pilen ved siden af "
+"uret for at se alle tilgængelige elementer."
+
+#: src/qml/pages/SimpleByDefault.qml:48
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
+"be also configured to show other timezones and events from your digital "
+"calendars."
+msgstr ""
+"Dette er \"Digitale ur\"-widgetten. Klik på den for at vise en kalender. Den "
+"kan også blive konfigureret til at vise andre tidszoner og begivenheder fra "
+"din digitale kalendere."
+
+#: src/qml/pages/SimpleByDefault.qml:51
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
+"open windows so you can access the desktop. Click on it again to bring them "
+"back."
+msgstr ""
+"Dette er \"Kig på skrivebord\"-widgetten. Klik på den for, midlertidigt, at "
+"skjule alle åbne vinduer, så du kan tilgå skrivebordet. Klik på den igen for "
+"at bringe dem tilbage."
+
+#: src/qml/pages/Welcome.qml:21
+#, kde-format
+msgctxt "@title"
+msgid "Welcome"
+msgstr "Velkommen"
+
+#: src/qml/pages/Welcome.qml:23
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is custom text supplied by the distro"
+msgid "%1<nl/><nl/>This operating system is running SonicDE, a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "%1<nl/><nl/>Dette operativsystem kører SonicDE, et frit og åbent-kildekode skrivebordsmiljø lavet af SonicDE, et internationalt softwarefællesskab af frivillige. Det er designet til at være simpelt som standard for en problemfri oplevelse, men kraftig efter behov for at hjælpe dig med tingene gjort. Vi håber du elsker det!"
+
+#: src/qml/pages/Welcome.qml:24
+#, kde-kuit-format
+msgctxt "@info:usagetip %1 is the name of the user's distro"
+msgid "Welcome to the %1 operating system running SonicDE!<nl/><nl/>SonicDE is a free and open-source desktop environment developed by the SonicDE community. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!"
+msgstr "Velkommen til operativsystem %1, der kører SonicDE!<nl/><nl/>SonicDE et frit og åbent-kildekode skrivebordsmiljø lavet af SonicDE, et internationalt softwarefællesskab af frivillige. Det er designet til at være simpelt som standard for en problemfri oplevelse, men kraftig efter behov for at hjælpe dig med tingene gjort. Vi håber du elsker det!"
+
+#: src/qml/pages/Welcome.qml:28
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Welcome Center"
+msgstr "Om Velkomstcenter"
+
+#: src/qml/pages/Welcome.qml:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About SonicDE"
+msgstr "Om SonicDE"
+
+#: src/qml/pages/Welcome.qml:45
+msgctxt "@title:window"
+msgid "About SonicDE"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:46
+msgctxt "@info:usagetip"
+msgid "SonicDE is a free and open-source desktop project. SonicDE builds on KDE Plasma to provide a desktop experience with continued X11 support."
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:49
+msgctxt "@action:button"
+msgid "Visit the SonicDE website"
+msgstr ""
+
+#: src/qml/pages/Welcome.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Learn more about the SonicDE community"
+msgstr "Lær mere om SonicDE-fællesskabet"
+
+#: src/qml/pages/Welcome.qml:62
+#, kde-format
+msgctxt "@action:button %1 is the name of the user's distro"
+msgid "Learn more about %1"
+msgstr "Lær mere om %1"
+
+#: src/qml/pages/Welcome.qml:99
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "Indlæsning af billede mislykkedes"
+
+#: src/qml/pages/Welcome.qml:100
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr ""
+"Kunne ikke indlæse <filename>%1</filename>. Sørg for at den eksisterer."
+
+#: src/qml/pages/Welcome.qml:130
+msgctxt "@info"
+msgid "The SonicDE mascot Sonron welcomes you to the SonicDE community!"
+msgstr "SonicDE-maskotten Sonron byder dig velkommen til SonicDE fællesskabet!"
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:22
 #, kde-format
@@ -864,20 +887,8 @@ msgstr "KRunner"
 #| "search the web, convert between currencies, calculate math problems, and "
 #| "a lot more."
 msgctxt "@info:usagetip"
-msgid ""
-"KRunner is Plasma’s exceptionally powerful and versatile search system. It "
-"powers the search functionality in the Application Launcher menu and the "
-"Overview screen, and it can be accessed as a standalone search bar using the "
-"<shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding "
-"your files and folders, KRunner can launch apps, search the web, convert "
-"between currencies, calculate math problems, and a lot more."
-msgstr ""
-"KRunner er Plasmas exceptionel kraftfulde og alsidige søgesystem. Den driver "
-"søgefunktionen i Programstarter-menuen og Overbliks-skærmen og kan tilgås "
-"som et selvstændigt søgefelt ved at bruge tastaturgenvejen <shortcut>Alt"
-"+Mellemrum</shortcut>.<nl/><nl/>Ud over at kunne finde dine file og mapper, "
-"kan KRunner åbne programmer, søge på internettet, konvertere mellem "
-"valutaer, udregne matematikproblemer og meget mere."
+msgid "KRunner is SonicDE’s exceptionally powerful and versatile search system. It powers the search functionality in the Application Launcher menu and the Overview screen, and it can be accessed as a standalone search bar using the <shortcut>%1</shortcut> keyboard shortcut.<nl/><nl/>In addition to finding your files and folders, KRunner can launch apps, search the web, convert between currencies, calculate math problems, and a lot more."
+msgstr "KRunner er SonicDEs exceptionel kraftfulde og alsidige søgesystem. Den driver søgefunktionen i Programstarter-menuen og Overbliks-skærmen og kan tilgås som et selvstændigt søgefelt ved at bruge tastaturgenvejen <shortcut>Alt+Mellemrum</shortcut>.<nl/><nl/>Ud over at kunne finde dine file og mapper, kan KRunner åbne programmer, søge på internettet, konvertere mellem valutaer, udregne matematikproblemer og meget mere."
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:58
 #, fuzzy, kde-kuit-format
@@ -953,24 +964,13 @@ msgstr "Indstil genveje…"
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
-"keyboard, this is the “Command” key:"
-msgstr ""
-"Næsten alt i Plasma kan gøres via tastaturet, ved at bruge genveje der for "
-"det meste involverer <shortcut>Meta</shortcut>-tasten.<nl/><nl/>På et Mac-"
-"tastatur, er dette \"Kommando\"-tasten."
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac keyboard, this is the “Command” key:"
+msgstr "Næsten alt i SonicDE kan gøres via tastaturet, ved at bruge genveje der for det meste involverer <shortcut>Meta</shortcut>-tasten.<nl/><nl/>På et Mac-tastatur, er dette \"Kommando\"-tasten."
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Almost anything in Plasma can be done with the keyboard, using shortcuts "
-"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
-"usually located between the left <shortcut>Ctrl</shortcut> and "
-"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
-"the word “Super”:"
+msgid "Almost anything in SonicDE can be done with the keyboard, using shortcuts that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is usually located between the left <shortcut>Ctrl</shortcut> and <shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or the word “Super”:"
 msgstr ""
 
 #: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
@@ -1093,25 +1093,14 @@ msgstr ""
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
 msgctxt "@info:window"
-msgid "Plasma Vaults"
-msgstr "Plasma Sikkerhedsbokse"
+msgid "SonicDE Vaults"
+msgstr "SonicDE Sikkerhedsbokse"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:23
 #, kde-kuit-format
 msgctxt "@info:usagetip"
-msgid ""
-"Plasma Vaults allows you to create encrypted folders, called "
-"<interface>Vaults.</interface> Inside each Vault, you can securely store "
-"your passwords, files, pictures, and documents, safe from prying eyes. "
-"Vaults can live inside folders that are synced to cloud storage services "
-"too, providing extra privacy for that content."
-msgstr ""
-"Plasma Sikkerhedsbokse tillader dig at oprette krypterede mapper, kaldet "
-"<interface>Sikkerhedsbokse.</interface> Inden i hver sikkerhedsboks kan du "
-"sikkert gemme din adgangskoder, filer, billeder og dokumenter i sikkerhed "
-"fra nysgerrige øjne. Sikkerhedsbokse kan også leve inde i mapper, der er "
-"synkroniseret med cloud-lagringstjenester og give mere privatliv til det "
-"indhold."
+msgid "SonicDE Vaults allows you to create encrypted folders, called <interface>Vaults.</interface> Inside each Vault, you can securely store your passwords, files, pictures, and documents, safe from prying eyes. Vaults can live inside folders that are synced to cloud storage services too, providing extra privacy for that content."
+msgstr "SonicDE Sikkerhedsbokse tillader dig at oprette krypterede mapper, kaldet <interface>Sikkerhedsbokse.</interface> Inden i hver sikkerhedsboks kan du sikkert gemme din adgangskoder, filer, billeder og dokumenter i sikkerhed fra nysgerrige øjne. Sikkerhedsbokse kan også leve inde i mapper, der er synkroniseret med cloud-lagringstjenester og give mere privatliv til det indhold."
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
@@ -1131,11 +1120,6 @@ msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "Mine billeder"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
-#, kde-format
-msgid "Unlock and Open"
-msgstr "Lås op og åbn"
-
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
@@ -1146,203 +1130,6 @@ msgstr ""
 "For at starte, skal du klikke pien i <interface>Systembakken</interface> for "
 "at vise skjulte elementer og derefter klikke <interface>Sikkerhedsbokse</"
 "interface>-ikonet."
-
-#: src/qml/pages/SimpleByDefault.qml:21
-#, kde-format
-msgctxt "@info:window"
-msgid "Simple by Default"
-msgstr "Simpel som standard"
-
-#: src/qml/pages/SimpleByDefault.qml:22
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"Plasma is designed to be simple and usable out of the box. Things are where "
-"you would expect, and there is generally no need to configure anything "
-"before you can be comfortable and productive.<nl/><nl/>Below is a visual "
-"representation of a typical Plasma Desktop; move the pointer over or click "
-"on something to learn about it!"
-msgstr ""
-"Plasma er designet til at være simpel at bruge og brugbar fra starten. Ting "
-"er, hvor du vil forvente, og der er generelt ikke nogen grund til at "
-"konfigurere noget, før du kan være komfortabel og produktiv.<nl/><nl/"
-">Nedenfor er en visuel repræsentation af et typisk Plasma-skrivebord; flyt "
-"din markør over eller klik på noget for at lære om det!"
-
-#: src/qml/pages/SimpleByDefault.qml:33
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is the “Desktop”. It shows files and folders that are contained in your "
-"<filename>Desktop</filename> folder, and can hold widgets. Right-click on it "
-"and choose <interface>Desktop and Wallpaper…</interface> to configure the "
-"appearance of the desktop. You can also choose <interface>Enter Edit Mode</"
-"interface> to add, remove or modify widgets."
-msgstr ""
-"Dette er \"Skrivebordet\". Det viser filer og mapper, der er i din "
-"<filename>skrivebordsmappe</filename> og kan rumme widgets. Højreklik på den "
-"og vælg <interface>Skrivebord og baggrunde…</interface> for at konfigurerer "
-"udseendet af skrivebordet. Du kan også vælge <interface>Skift til "
-"redigeringstilstand</interface> for at tilføje, fjerne elle redigere widgets."
-
-#: src/qml/pages/SimpleByDefault.qml:36
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"This is a “Panel” — a container to hold widgets. Right-click on it and "
-"choose <interface>Show Panel Configuration</interface> to change how it "
-"behaves, which screen edge it lives on, and to add, remove or modify widgets."
-msgstr ""
-"Dette er et \"Panel\" — en beholder til at holde widgets. Højreklik på den "
-"og vælg <interface>Vis panelkonfiguration</interface> for at ændre hvordan "
-"det opføre sig, hvilken skærmkant den vises på og for at tilføje, fjerne "
-"eller modificere widgets."
-
-#: src/qml/pages/SimpleByDefault.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid ""
-#| "This is the “Kickoff” widget, a multipurpose launcher. Here you can "
-#| "launch apps, shut down or restart the system, access recent files, and "
-#| "more. Click on it to get started!"
-msgctxt "@info"
-msgid ""
-"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
-"can launch apps, shut down or restart the system, access recent files, and "
-"more. Click on it to get started!"
-msgstr ""
-"Dette er \"Kickoff\"-widgetten, en multifunktionel starter. Her kan du "
-"starte programmer, slukke eller genstarte systemet, tilgå nyligt brugte "
-"filer og mere. Klik på den for at komme i gang!"
-
-#: src/qml/pages/SimpleByDefault.qml:42
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Task Manager” widget, where you can switch between open apps "
-"and also launch new ones. Drag app icons to re-arrange them."
-msgstr ""
-"Dette er\"Opgavelinje\"-widgetten, hvor du kan skifte mellem åbne apps og "
-"også åbne nye. Træk appikoner for at flytte dem."
-
-#: src/qml/pages/SimpleByDefault.qml:45
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “System Tray” widget, which lets you control system functions "
-"like changing the volume and connecting to networks. Items will become "
-"visible here only when relevant. To see all available items, click the ⌃ "
-"arrow next to the clock."
-msgstr ""
-"Dette er \"Statusområde\"-widgetten, der lader dig kontrollerer "
-"systemfunktioner som at ændre lydstyrken og tilslutte til netværk. Elementer "
-"vil blive synlige her, kun når de er relevante. Klik ⌃-pilen ved siden af "
-"uret for at se alle tilgængelige elementer."
-
-#: src/qml/pages/SimpleByDefault.qml:48
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Digital Clock” widget. Click on it to show a calendar. It can "
-"be also configured to show other timezones and events from your digital "
-"calendars."
-msgstr ""
-"Dette er \"Digitale ur\"-widgetten. Klik på den for at vise en kalender. Den "
-"kan også blive konfigureret til at vise andre tidszoner og begivenheder fra "
-"din digitale kalendere."
-
-#: src/qml/pages/SimpleByDefault.qml:51
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This is the “Peek at Desktop” widget. Click on it to temporarily hide all "
-"open windows so you can access the desktop. Click on it again to bring them "
-"back."
-msgstr ""
-"Dette er \"Kig på skrivebord\"-widgetten. Klik på den for, midlertidigt, at "
-"skjule alle åbne vinduer, så du kan tilgå skrivebordet. Klik på den igen for "
-"at bringe dem tilbage."
-
-#: src/qml/pages/Welcome.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome"
-msgstr "Velkommen"
-
-#: src/qml/pages/Welcome.qml:23
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is custom text supplied by the distro"
-msgid ""
-"%1<nl/><nl/>This operating system is running Plasma, a free and open-source "
-"desktop environment created by KDE, an international software community of "
-"volunteers. It is designed to be simple by default for a smooth experience, "
-"but powerful when needed to help you really get things done. We hope you "
-"love it!"
-msgstr ""
-"%1<nl/><nl/>Dette operativsystem kører Plasma, et frit og åbent-kildekode "
-"skrivebordsmiljø lavet af KDE, et internationalt softwarefællesskab af "
-"frivillige. Det er designet til at være simpelt som standard for en "
-"problemfri oplevelse, men kraftig efter behov for at hjælpe dig med tingene "
-"gjort. Vi håber du elsker det!"
-
-#: src/qml/pages/Welcome.qml:24
-#, kde-kuit-format
-msgctxt "@info:usagetip %1 is the name of the user's distro"
-msgid ""
-"Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a "
-"free and open-source desktop environment created by KDE, an international "
-"software community of volunteers. It is designed to be simple by default for "
-"a smooth experience, but powerful when needed to help you really get things "
-"done. We hope you love it!"
-msgstr ""
-"Velkommen til operativsystem %1, der kører Plasma!<nl/><nl/>Plasma et frit "
-"og åbent-kildekode skrivebordsmiljø lavet af KDE, et internationalt "
-"softwarefællesskab af frivillige. Det er designet til at være simpelt som "
-"standard for en problemfri oplevelse, men kraftig efter behov for at hjælpe "
-"dig med tingene gjort. Vi håber du elsker det!"
-
-#: src/qml/pages/Welcome.qml:28
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About Welcome Center"
-msgstr "Om Velkomstcenter"
-
-#: src/qml/pages/Welcome.qml:34
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About KDE"
-msgstr "Om KDE"
-
-#: src/qml/pages/Welcome.qml:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Learn more about the KDE community"
-msgstr "Lær mere om KDE-fællesskabet"
-
-#: src/qml/pages/Welcome.qml:62
-#, kde-format
-msgctxt "@action:button %1 is the name of the user's distro"
-msgid "Learn more about %1"
-msgstr "Lær mere om %1"
-
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "Indlæsning af billede mislykkedes"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr ""
-"Kunne ikke indlæse <filename>%1</filename>. Sørg for at den eksisterer."
-
-#: src/qml/pages/Welcome.qml:120
-#, kde-format
-msgctxt "@info"
-msgid "The KDE mascot Konqi welcomes you to the KDE community!"
-msgstr "KDE-maskotten Konqi byder dig velkommen til KDE fællesskabet!"
 
 #: src/release.cpp:42
 #, kde-format
@@ -1362,6 +1149,109 @@ msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
 
+#, kde-format
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Rasmus Rosendahl-Kaa"
+
+#, kde-format
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "Rasmus@Rosendahl-kaa.name"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "If you find Plasma to be useful, consider getting involved or donating. KDE is an international volunteer community, not a big company; your contributions make a real difference!"
+#~ msgstr "Hvis du finder Plasma nyttigt, kan du overveje at blive involveret eller donere. KDE er en international, frivilligt fællesskab, ikke et stort firma; dine bidrag gør en stor forskel!"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Make a donation"
+#~ msgstr "Lav en donation"
+
+#, kde-format
+#~ msgid "Search…"
+#~ msgstr "Søg…"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Find Great Apps"
+#~ msgstr "Find fantastiske apps"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app, and %2 is the distro name."
+#~ msgid "There’s no need to search the web to download app installers or use a command-line package manager; KDE’s app store <application>%1</application> does it all for you!<nl/><nl/>Click on any of the icons below to give it a try!"
+#~ msgstr "Der er ingen grund til at søge på nettet for at installere apps eller bruge en kommandolinjebaseret pakkehåndtør; KDE's appstore <application>%1</application> gør det hele for dig!<nl/><nl/> Klik på enhver af ikonerne nedenfor for at prøve den af!"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the name of an app"
+#~ msgid "Show %1 in Discover"
+#~ msgstr "Vis %1 i Discover"
+
+#, kde-format
+#~ msgctxt "@label:URL"
+#~ msgid "Get help at KDE’s discussion forums"
+#~ msgstr "Få hjælp fra KDEs diskussionsfora"
+
+#, kde-format
+#~ msgctxt "@action:button"
+#~ msgid "Supporting Members"
+#~ msgstr "Støttende medlemmer"
+
+#, kde-format
+#~ msgctxt "@title:window"
+#~ msgid "Supporting Members"
+#~ msgstr "Støttende medlemmer"
+
+#, kde-kuit-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "We thank the following supporting members for their recurring donation to KDE:"
+#~ msgstr "Vi takker følgende støttende medlemmer for deres gentagende donationer til KDE:"
+
+#, kde-format
+#~ msgctxt "@action:button %1 is the selected sort order, e.g. Random"
+#~ msgid "Sort: %1"
+#~ msgstr "Sorterings: %1"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Random"
+#~ msgstr "Tilfældigt"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "Last Name"
+#~ msgstr "Efternavn"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list"
+#~ msgid "First Name"
+#~ msgstr "Fornavn"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An order to sort a list, referring to the date a user has first made a donation"
+#~ msgid "Contribution Date"
+#~ msgstr "Bidragsdato"
+
+#, kde-format
+#~ msgctxt "@action:inmenu An option to sort a list in reverse order"
+#~ msgid "Reverse"
+#~ msgstr "Omvendt"
+
+#, kde-format
+#~ msgctxt "@info:usagetip"
+#~ msgid "Our developers will use this anonymous data to improve KDE software. You can choose how much to share in System Settings, and here too."
+#~ msgstr "Vores udviklere vil bruge dette anonyme data til at forbedre KDE software. Du kan vælge, hvor meget du vil dele i systemindstillingerne og også her"
+
+#, kde-format
+#~ msgid "Unlock and Open"
+#~ msgstr "Lås op og åbn"
+
+#, kde-format
+#~ msgctxt "@info"
+#~ msgid "The KDE mascot Konqi welcomes you to the KDE community!"
+#~ msgstr "KDE-maskotten Konqi byder dig velkommen til KDE fællesskabet!"
+
 #~ msgctxt "@action:button clicking on this takes the user to a web page"
 #~ msgid "Visit %1"
 #~ msgstr "Besøg %1"
@@ -1379,32 +1269,16 @@ msgstr "%1 Beta %2"
 #~ msgstr "Systemindstillinger"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The System Settings app lets you extensively customize the system to suit "
-#~ "your tastes and preferences. Default apps, wallpapers, visual styles and "
-#~ "icons, virtual desktops, power management, 3rd-party add-ons — you’ll "
-#~ "find it all there!"
-#~ msgstr ""
-#~ "Systemindstillingsappen lader dig tilpasse systemet, så det passer din "
-#~ "smag og dine præferencer. Standardprogrammer, baggrunde, visuel stil og "
-#~ "ikoner, virtuelle skriveborde, strømstyring, tredjepartstilføjelser — du "
-#~ "vil finde det hele derinde!"
+#~ msgid "The System Settings app lets you extensively customize the system to suit your tastes and preferences. Default apps, wallpapers, visual styles and icons, virtual desktops, power management, 3rd-party add-ons — you’ll find it all there!"
+#~ msgstr "Systemindstillingsappen lader dig tilpasse systemet, så det passer din smag og dine præferencer. Standardprogrammer, baggrunde, visuel stil og ikoner, virtuelle skriveborde, strømstyring, tredjepartstilføjelser — du vil finde det hele derinde!"
 
 #~ msgctxt "@title:window"
 #~ msgid "Manage Software"
 #~ msgstr "Adminstrér software"
 
-#~ msgctxt ""
-#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
-#~ msgid ""
-#~ "The <application>%1</application> app helps you find and install "
-#~ "applications, games, and tools. You can search or browse by category, "
-#~ "look at screenshots, and read reviews to help you find the perfect app."
-#~ msgstr ""
-#~ "Appen <application>%1</application> hjælper dig med at finde og "
-#~ "installere programmer, spil og værktøjer. Du kan søge eller gennemse "
-#~ "efter kategori, kigge på skærmbilleder og læse anmeldelser for at hjælpe "
-#~ "dig med at vælge det perfekte program."
+#~ msgctxt "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid "The <application>%1</application> app helps you find and install applications, games, and tools. You can search or browse by category, look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr "Appen <application>%1</application> hjælper dig med at finde og installere programmer, spil og værktøjer. Du kan søge eller gennemse efter kategori, kigge på skærmbilleder og læse anmeldelser for at hjælpe dig med at vælge det perfekte program."
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"
@@ -1414,10 +1288,8 @@ msgstr "%1 Beta %2"
 #~ msgid "Filter…"
 #~ msgstr "Filtrér..."
 
-#~ msgid ""
-#~ "Display release notes for the current Plasma release, for beta versions."
-#~ msgstr ""
-#~ "Vis udgivelsesnoter for den nuværende Plasma-udgivelse, for betaversioner."
+#~ msgid "Display release notes for the current Plasma release, for beta versions."
+#~ msgstr "Vis udgivelsesnoter for den nuværende Plasma-udgivelse, for betaversioner."
 
 #~ msgctxt "@label:URL"
 #~ msgid "<b>Find out what’s new</b>"
@@ -1436,14 +1308,8 @@ msgstr "%1 Beta %2"
 #~ msgstr "Hjælp med at arbejde på næste udgivelse"
 
 #~ msgctxt "@info:usagetip"
-#~ msgid ""
-#~ "The KDE community relies on donations of expertise and funds, and is "
-#~ "supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support "
-#~ "the wider KDE community, and you can make a difference by donating today."
-#~ msgstr ""
-#~ "KDE-fællesskabet er afhængig af donationer af ekspertise og penge, og er "
-#~ "støttet af KDE e.V.—en tysk nonprofit. Donationer til KDE e.V. hjælper "
-#~ "det bredere KDE-fællesskab, og du kan gøre en forskel ved at donere i dag."
+#~ msgid "The KDE community relies on donations of expertise and funds, and is supported by KDE e.V.—a German nonprofit. Donations to KDE e.V. support the wider KDE community, and you can make a difference by donating today."
+#~ msgstr "KDE-fællesskabet er afhængig af donationer af ekspertise og penge, og er støttet af KDE e.V.—en tysk nonprofit. Donationer til KDE e.V. hjælper det bredere KDE-fællesskab, og du kan gøre en forskel ved at donere i dag."
 
 #~ msgid "6.0 Dev"
 #~ msgstr "6.0 Dev"
