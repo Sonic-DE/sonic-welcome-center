@@ -60,10 +60,11 @@ Welcome.Page {
             Layout.fillWidth: true
             Layout.fillHeight: true
             Layout.maximumWidth: Kirigami.Units.gridUnit * 25
+            Layout.maximumHeight: Layout.maximumWidth
 
             fillMode: Image.PreserveAspectFit
             mipmap: true
-            source: "konqi-default.png"
+            source: "sonron-sparx.png"
         }
 
         Private.ContributionCard {

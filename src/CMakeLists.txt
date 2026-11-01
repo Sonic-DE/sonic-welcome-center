@@ -78,7 +78,7 @@ ecm_target_qml_sources(plasma-welcome
 
     RESOURCES
     assets/konqi-kde-hi.png
-    assets/konqi-default.png
+    assets/sonron-sparx.png
 )
 
 target_compile_definitions(plasma-welcome PRIVATE "DISTRO_CUSTOM_PAGE_FOLDER=\"${DISTRO_CUSTOM_PAGE_FOLDER}\"")
