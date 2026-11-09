@@ -99,11 +99,11 @@ Welcome.Page {
 
                 Image {
                     id: image
-                    source: Private.App.customIntroIcon || "konqi-kde-hi.png"
+                    source: Private.App.customIntroIcon || "sonron-welcome.png"
                     fillMode: Image.PreserveAspectFit
 
                     Kirigami.PlaceholderMessage {
-                        width: root.width - (Kirigami.Units.largeSpacing * 4)
+                        width: image.width
                         anchors.centerIn: parent
                         text: i18nc("@title", "Image loading failed")
                         explanation: xi18nc("@info:placeholder", "Could not load <filename>%1</filename>. Make sure it exists.", Private.App.customIntroIcon)

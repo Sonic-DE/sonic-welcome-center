@@ -77,7 +77,7 @@ ecm_target_qml_sources(plasma-welcome
     # qml/pages/enjoy/Supporters.qml
 
     RESOURCES
-    assets/konqi-kde-hi.png
+    assets/sonron-welcome.png
     assets/sonron-sparx.png
 )
 
