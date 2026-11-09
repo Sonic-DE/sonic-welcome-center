@@ -4,9 +4,9 @@ SPDX-PackageSupplier = "Nate Graham <nate@kde.org>"
 SPDX-PackageDownloadLocation = "https://invent.kde.org/plasma/plasma-welcome"
 
 [[annotations]]
-path = "src/assets/konqi-kde-hi.png"
+path = "src/assets/sonron-welcome.png"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2014 Tyson Tan <tysontan@mail.com>"
+SPDX-FileCopyrightText = "2026 Joseph Crowell <joseph.w.crowell@gmail.com>"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
