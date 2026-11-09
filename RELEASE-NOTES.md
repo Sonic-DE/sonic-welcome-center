@@ -2,9 +2,11 @@
 
 The SonicDE welcome app that greets you on first login and helps you get set up.
 
-## Unreleased
+## 6.8.2 (2026-11-10)
 
 - Now presents itself with SonicDE names and identity throughout the desktop.
+- Sonron, the SonicDE mascot, now also greets you on the last page.
+- If a custom welcome image can't be loaded, the message saying so now stays within the image area.
 
 ## 6.8.0 (2026-10-20)
 
